@@ -1,0 +1,5565 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKSY — Digital Marketing Agency | Strategy, Creativity & Growth</title>
+  <meta name="description" content="IKSY is a modern digital marketing agency helping businesses grow through social media marketing, SEO, web design, content creation, advertising and branding. 4 Minds | 1 Vision | Infinite Possibilities.">
+  <meta name="keywords" content="IKSY, digital marketing agency, brand strategy, SEO, luxury web design, social media marketing, performance advertising, creative studio">
+  <meta name="author" content="IKSY — Ishika, Kartik, Sapna, Yash">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://iksy.studio/">
+  <meta property="og:title" content="IKSY — Digital Marketing Agency | Strategy, Creativity & Growth">
+  <meta property="og:description" content="A creative digital marketing studio where strategy meets creativity, and ideas turn into meaningful brand growth. Ishika | Kartik | Sapna | Yash.">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://iksy.studio/">
+  <meta property="twitter:title" content="IKSY — Digital Marketing Agency | Strategy, Creativity & Growth">
+  <meta property="twitter:description" content="4 Minds | 1 Vision | Infinite Possibilities. Strategy. Creativity. Growth.">
+  <meta property="twitter:image" content="logo.png">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "IKSY Digital Marketing Studio",
+    "image": "logo.png",
+    "@id": "https://iksy.studio",
+    "url": "https://iksy.studio",
+    "telephone": "+91 90793 69668",
+    "priceRange": "$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "The Foothill Pavilion, Studio 4, Ridge Road",
+      "addressLocality": "Dehradun / Mumbai",
+      "addressRegion": "UK / MH",
+      "postalCode": "248001",
+      "addressCountry": "IN"
+    },
+    "founder": [
+      { "@type": "Person", "name": "Ishika" },
+      { "@type": "Person", "name": "Kartik" },
+      { "@type": "Person", "name": "Sapna" },
+      { "@type": "Person", "name": "Yash" }
+    ],
+    "description": "IKSY is a creative digital marketing studio where strategy meets creativity, and ideas turn into meaningful brand growth.",
+    "slogan": "Your Brand. Our Digital Vision.",
+    "serviceType": [
+      "Social Media Marketing",
+      "Search Engine Optimization",
+      "Website Design & Development",
+      "Content Creation",
+      "Paid Advertising",
+      "Branding & Strategy"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif), Plus Jakarta Sans (Clean UI), Italiana (Handwritten luxury script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <style>
+/* ==========================================================================
+   IKSY — Luxury Creative Digital Marketing Studio
+   Design System & Master Stylesheet
+   Palette: Deep Forest (#123A34), Dark Green (#0D2B27), Warm Sand (#D8B98A),
+            Light Sand (#E9D7B8), Cream (#F7F1E5), Ivory (#FCF9F2),
+            Muted Gold (#B28A4A), Charcoal (#252522)
+   Typography: Cormorant Garamond (Editorial Serif), Plus Jakarta Sans, Italiana
+   ========================================================================== */
+
+:root {
+  /* Brand Colors */
+  --color-deep-forest: #123A34;
+  --color-dark-green: #0D2B27;
+  --color-forest-darker: #081B18;
+  --color-forest-translucent: rgba(18, 58, 52, 0.92);
+  
+  --color-warm-sand: #D8B98A;
+  --color-light-sand: #E9D7B8;
+  --color-sand-muted: #F3EADB;
+  --color-sand-glow: rgba(216, 185, 138, 0.25);
+  
+  --color-cream: #F7F1E5;
+  --color-cream-subtle: #FDFBF7;
+  --color-ivory: #FCF9F2;
+  
+  --color-muted-gold: #B28A4A;
+  --color-gold-light: #C9A465;
+  --color-gold-translucent: rgba(178, 138, 74, 0.15);
+  
+  --color-charcoal: #252522;
+  --color-charcoal-light: #3D3D38;
+  --color-charcoal-muted: #6B6B63;
+  --color-border-subtle: rgba(37, 37, 34, 0.08);
+  --color-border-sand: rgba(216, 185, 138, 0.35);
+  --color-border-gold: rgba(178, 138, 74, 0.3);
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Garamond, 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script: 'Italiana', 'Playfair Display', Georgia, serif;
+
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6.5rem;
+  --space-3xl: 9rem;
+
+  /* Layout & Widths */
+  --container-max: 1380px;
+  --container-wide: 1560px;
+  --container-narrow: 1040px;
+  --header-height: 96px;
+
+  /* Refined Architectural Geometry */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-arch: 140px 140px 0 0;
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-subtle: 0 4px 20px rgba(18, 58, 52, 0.04);
+  --shadow-luxury: 0 16px 48px rgba(13, 43, 39, 0.09);
+  --shadow-deep: 0 24px 64px rgba(8, 27, 24, 0.25);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Custom Cursor Glow (Desktop Only) */
+.cursor-glow {
+  position: fixed;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(216, 185, 138, 0.12) 0%, rgba(216, 185, 138, 0) 70%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 1024px) {
+  .cursor-glow { display: none; }
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 3rem);
+  padding-right: clamp(1.25rem, 4vw, 3rem);
+}
+
+.container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 3.5rem);
+  padding-right: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: var(--container-narrow);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 2.5rem);
+  padding-right: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+/* Section Spacing */
+.section {
+  padding-top: clamp(4.5rem, 8vw, var(--space-3xl));
+  padding-bottom: clamp(4.5rem, 8vw, var(--space-3xl));
+  position: relative;
+}
+
+/* Editorial Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--color-charcoal);
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 6.2vw, 5.2rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4.4vw, 3.8rem);
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 1.8vw, 1.6rem);
+}
+
+p {
+  color: var(--color-charcoal-light);
+  font-size: clamp(1rem, 1.1vw, 1.125rem);
+}
+
+p.lead {
+  font-size: clamp(1.15rem, 1.4vw, 1.35rem);
+  line-height: 1.6;
+  color: var(--color-charcoal);
+}
+
+/* Eyebrows & Accents */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-muted-gold);
+  margin-bottom: 1.25rem;
+}
+
+.eyebrow-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.eyebrow-dots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--color-muted-gold);
+  display: inline-block;
+}
+
+/* 4-Point Motif (The 4 Partners: I, K, S, Y) */
+.four-motif {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.four-motif span {
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-muted-gold);
+  transform: rotate(45deg);
+  display: inline-block;
+  opacity: 0.85;
+}
+
+/* Handwriting Accent on "Vision" */
+.script-accent {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-deep-forest);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.15em;
+  letter-spacing: normal;
+}
+
+.script-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 6%;
+  width: 88%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(178, 138, 74, 0.1) 0%, rgba(178, 138, 74, 0.8) 50%, rgba(178, 138, 74, 0.1) 100%);
+  border-radius: 2px;
+}
+
+/* Buttons & Links */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-xs);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background-color: var(--color-deep-forest);
+  color: var(--color-ivory);
+  border-color: var(--color-deep-forest);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-dark-green);
+  color: var(--color-light-sand);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(18, 58, 52, 0.2);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-deep-forest);
+  border-color: rgba(18, 58, 52, 0.35);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(216, 185, 138, 0.12);
+  border-color: var(--color-deep-forest);
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+  border-color: var(--color-muted-gold);
+}
+
+.btn-gold:hover {
+  background-color: #9c753b;
+  box-shadow: 0 8px 24px rgba(178, 138, 74, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-ghost-light {
+  background-color: rgba(252, 249, 242, 0.12);
+  color: var(--color-ivory);
+  border-color: rgba(252, 249, 242, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+.btn-ghost-light:hover {
+  background-color: var(--color-ivory);
+  color: var(--color-deep-forest);
+  border-color: var(--color-ivory);
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-deep-forest);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.btn-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transition: var(--transition-smooth);
+  transform-origin: right;
+  transform: scaleX(0.4);
+}
+
+.btn-link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.btn-link .arrow {
+  transition: transform 0.3s ease;
+}
+
+.btn-link:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.site-header.scrolled {
+  background-color: rgba(247, 241, 229, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-subtle);
+  height: 80px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Brand Wordmark & Logo */
+.brand-wordmark {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-deep-forest);
+}
+
+.site-logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transition: transform 0.3s ease;
+}
+
+.site-logo-img:hover {
+  transform: scale(1.02);
+}
+
+.footer-logo-img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  background-color: var(--color-sand-muted);
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-sand);
+  margin-bottom: 0.5rem;
+  transition: var(--transition-smooth);
+}
+
+.footer-logo-img:hover {
+  border-color: var(--color-muted-gold);
+  transform: translateY(-2px);
+}
+
+.brand-main {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-letters {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-deep-forest);
+  line-height: 1;
+}
+
+.brand-symbol {
+  width: 14px;
+  height: 14px;
+  color: var(--color-muted-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-partners {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-muted);
+  margin-top: 3px;
+  opacity: 0.9;
+}
+
+.brand-partners span {
+  margin: 0 3px;
+  color: var(--color-muted-gold);
+  opacity: 0.6;
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: clamp(1.25rem, 2vw, 2.25rem);
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-charcoal);
+  transition: color 0.3s ease;
+  position: relative;
+  padding: 0.4rem 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: var(--color-muted-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-deep-forest);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Mobile Toggle */
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001;
+}
+
+.mobile-toggle span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-deep-forest);
+  transition: var(--transition-smooth);
+}
+
+.mobile-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.mobile-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.mobile-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 380px;
+  height: 100vh;
+  background-color: var(--color-cream);
+  z-index: 999;
+  padding: 6rem 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-deep);
+  transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-drawer.open {
+  right: 0;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav-link {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: var(--color-charcoal);
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.mobile-nav-link:hover {
+  color: var(--color-muted-gold);
+}
+
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(8, 27, 24, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.drawer-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ==========================================================================
+   HERO SECTION — CINEMATIC GOLDEN HOUR & FOOTHILLS
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  padding-top: calc(var(--header-height) + 2rem);
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FAF7F0 0%, #F5ECDD 45%, #EADBCA 80%, #DFCBAC 100%);
+}
+
+/* Ambient Dust Particles Canvas */
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.65;
+}
+
+/* Mountain & Architectural Backdrop */
+.hero-backdrop-scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Foothill Silhouette Layers */
+.foothill-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 52%;
+}
+
+.foothill-far {
+  fill: #D4BFA4;
+  opacity: 0.42;
+}
+
+.foothill-mid {
+  fill: #BB9F7D;
+  opacity: 0.52;
+}
+
+.foothill-near {
+  fill: #997C5B;
+  opacity: 0.58;
+}
+
+.hero-sun-glow {
+  position: absolute;
+  top: 12%;
+  right: 22%;
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(233, 215, 184, 0.75) 0%, rgba(216, 185, 138, 0.35) 45%, rgba(216, 185, 138, 0) 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* Hanging Lanterns */
+.hanging-lantern {
+  position: absolute;
+  top: -10px;
+  z-index: 3;
+  transform-origin: top center;
+  animation: lanternSway 9s ease-in-out infinite alternate;
+}
+
+.lantern-left {
+  left: 7%;
+  animation-duration: 8.5s;
+}
+
+.lantern-right {
+  right: 9%;
+  animation-duration: 10s;
+  animation-delay: -2s;
+}
+
+@keyframes lanternSway {
+  0% { transform: rotate(-2.2deg); }
+  100% { transform: rotate(2.2deg); }
+}
+
+.lantern-wire {
+  width: 1px;
+  height: 130px;
+  background: linear-gradient(180deg, rgba(37, 37, 34, 0.3) 0%, rgba(37, 37, 34, 0.75) 100%);
+  margin: 0 auto;
+}
+
+.lantern-cage {
+  width: 32px;
+  height: 48px;
+  border: 1.5px solid var(--color-muted-gold);
+  border-radius: 6px 6px 14px 14px;
+  background: rgba(247, 241, 229, 0.35);
+  backdrop-filter: blur(4px);
+  position: relative;
+  box-shadow: 0 6px 20px rgba(178, 138, 74, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lantern-flame {
+  width: 8px;
+  height: 14px;
+  background: radial-gradient(circle, #FFF7D1 0%, #E9B969 60%, rgba(178, 138, 74, 0) 100%);
+  border-radius: 50% 50% 35% 35%;
+  box-shadow: 0 0 12px 3px rgba(233, 185, 105, 0.8);
+  animation: flamePulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes flamePulse {
+  0% { transform: scale(0.92); opacity: 0.85; }
+  100% { transform: scale(1.08); opacity: 1; }
+}
+
+/* Hero Content Grid */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  position: relative;
+  z-index: 4;
+}
+
+.hero-text-content {
+  max-width: 680px;
+}
+
+.hero-title {
+  margin-bottom: 1.5rem;
+  color: var(--color-deep-forest);
+}
+
+.hero-subtext {
+  font-size: clamp(1.1rem, 1.3vw, 1.28rem);
+  line-height: 1.7;
+  color: var(--color-charcoal-light);
+  margin-bottom: 2.5rem;
+  max-width: 580px;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Hero Stat/Badge Strip */
+.hero-partners-badge {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(18, 58, 52, 0.12);
+}
+
+.badge-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--color-charcoal-muted);
+}
+
+.badge-names {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.badge-name-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-deep-forest);
+}
+
+.badge-name-item .letter {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-warm-sand);
+  color: var(--color-deep-forest);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* Hero Visual Composition */
+.hero-visual-card {
+  position: relative;
+  width: 100%;
+}
+
+.sandstone-arch-frame {
+  position: relative;
+  border-radius: var(--radius-arch);
+  border: 1px solid var(--color-border-sand);
+  padding: 1rem;
+  background: linear-gradient(180deg, rgba(247, 241, 229, 0.75) 0%, rgba(233, 215, 184, 0.5) 100%);
+  box-shadow: var(--shadow-luxury);
+  backdrop-filter: blur(8px);
+}
+
+.studio-artwork-inner {
+  position: relative;
+  border-radius: 125px 125px 4px 4px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  background-color: var(--color-deep-forest);
+}
+
+.studio-illustration-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Floating Studio Badge on Hero */
+.hero-floating-tag {
+  position: absolute;
+  bottom: 2rem;
+  right: -1.5rem;
+  background: var(--color-ivory);
+  border: 1px solid var(--color-border-sand);
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-luxury);
+  max-width: 260px;
+}
+
+.floating-tag-eyebrow {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-muted-gold);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.floating-tag-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--color-deep-forest);
+}
+
+/* ==========================================================================
+   SECTION: INTRODUCTION ("NOT JUST MARKETING. WE BUILD BRANDS.")
+   ========================================================================== */
+.intro-section {
+  background-color: var(--color-cream);
+  position: relative;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.intro-header-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-bottom: clamp(3.5rem, 6vw, 6rem);
+  align-items: flex-end;
+}
+
+.intro-lead-text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+  line-height: 1.45;
+  color: var(--color-charcoal);
+}
+
+.intro-body-copy {
+  color: var(--color-charcoal-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* 4 Partners Editorial Showcase */
+.partners-editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.partner-card {
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 2.25rem 1.75rem;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.partner-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-border-subtle);
+  transition: var(--transition-smooth);
+}
+
+.partner-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-luxury);
+  border-color: var(--color-border-sand);
+}
+
+.partner-card:hover::before {
+  background: linear-gradient(90deg, var(--color-muted-gold), var(--color-deep-forest));
+}
+
+.partner-letter-box {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-xs);
+  background-color: var(--color-sand-muted);
+  border: 1px solid var(--color-border-sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-deep-forest);
+  margin-bottom: 1.5rem;
+  transition: var(--transition-smooth);
+}
+
+.partner-card:hover .partner-letter-box {
+  background-color: var(--color-deep-forest);
+  color: var(--color-light-sand);
+  border-color: var(--color-deep-forest);
+}
+
+.partner-name {
+  font-size: 1.6rem;
+  margin-bottom: 0.35rem;
+  color: var(--color-deep-forest);
+}
+
+.partner-discipline {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: var(--color-muted-gold);
+  margin-bottom: 1rem;
+}
+
+.partner-quote {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--color-charcoal-muted);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.partner-focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed rgba(37, 37, 34, 0.12);
+}
+
+.partner-focus-tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  background-color: rgba(216, 185, 138, 0.15);
+  color: var(--color-charcoal);
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   SECTION: THE IKSY STORY & 4 PILLARS
+   ========================================================================== */
+.story-section {
+  background: linear-gradient(180deg, var(--color-ivory) 0%, var(--color-cream-subtle) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.story-statement {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+  line-height: 1.15;
+  color: var(--color-deep-forest);
+  margin-bottom: 2rem;
+}
+
+.story-narrative p {
+  margin-bottom: 1.5rem;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+/* The 4 Architectural Pillars */
+.pillars-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.pillar-item {
+  background: var(--color-cream);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-sm);
+  padding: 2rem 1.75rem;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.pillar-item:hover {
+  background: var(--color-ivory);
+  box-shadow: var(--shadow-luxury);
+  border-color: var(--color-muted-gold);
+}
+
+.pillar-num {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-muted-gold);
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.pillar-title {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-deep-forest);
+}
+
+.pillar-desc {
+  font-size: 0.88rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   SECTION: SERVICES ("WHAT WE DO") — EDITORIAL ASYMMETRIC GRID
+   ========================================================================== */
+.services-section {
+  background-color: var(--color-deep-forest);
+  color: var(--color-ivory);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section h2, 
+.services-section h3, 
+.services-section h4 {
+  color: var(--color-ivory);
+}
+
+.services-section .eyebrow {
+  color: var(--color-warm-sand);
+}
+
+.services-header {
+  max-width: 720px;
+  margin-bottom: clamp(3rem, 5vw, 5rem);
+}
+
+.services-subhead {
+  color: var(--color-light-sand);
+  font-size: clamp(1.15rem, 1.4vw, 1.35rem);
+  opacity: 0.9;
+  margin-top: 1rem;
+}
+
+/* Interactive Services Layout */
+.services-interactive-wrapper {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: start;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item {
+  border-top: 1px solid rgba(233, 215, 184, 0.2);
+  padding: 1.8rem 0;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  position: relative;
+}
+
+.service-item:last-child {
+  border-bottom: 1px solid rgba(233, 215, 184, 0.2);
+}
+
+.service-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.service-meta-left {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.service-index {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--color-warm-sand);
+  opacity: 0.8;
+  font-style: italic;
+  min-width: 2rem;
+}
+
+.service-name {
+  font-size: clamp(1.45rem, 2vw, 1.85rem);
+  color: var(--color-ivory);
+  transition: color 0.3s ease;
+}
+
+.service-item:hover .service-name,
+.service-item.active .service-name {
+  color: var(--color-warm-sand);
+}
+
+.service-arrow {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(233, 215, 184, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-warm-sand);
+  transition: var(--transition-smooth);
+}
+
+.service-item:hover .service-arrow,
+.service-item.active .service-arrow {
+  background-color: var(--color-warm-sand);
+  color: var(--color-deep-forest);
+  transform: translateX(6px) rotate(-45deg);
+}
+
+.service-brief {
+  margin-top: 0.75rem;
+  margin-left: 3.5rem;
+  color: rgba(252, 249, 242, 0.72);
+  font-size: 0.95rem;
+  max-width: 540px;
+  transition: var(--transition-smooth);
+}
+
+/* Service Preview Panel */
+.service-preview-panel {
+  position: sticky;
+  top: 120px;
+  background: rgba(13, 43, 39, 0.75);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-sm);
+  padding: 2.5rem;
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-deep);
+}
+
+.preview-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-warm-sand);
+  margin-bottom: 1rem;
+}
+
+.preview-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--color-ivory);
+}
+
+.preview-desc {
+  color: rgba(252, 249, 242, 0.85);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.preview-deliverables-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-warm-sand);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.preview-deliverables-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2.25rem;
+}
+
+.preview-deliverables-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  color: rgba(252, 249, 242, 0.9);
+}
+
+.preview-deliverables-list li::before {
+  content: '◆';
+  color: var(--color-warm-sand);
+  font-size: 0.6rem;
+}
+
+.preview-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(233, 215, 184, 0.2);
+  margin-bottom: 2rem;
+}
+
+.metric-num {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--color-warm-sand);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.78rem;
+  color: rgba(252, 249, 242, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ==========================================================================
+   SECTION: WHY IKSY ("MORE THAN MARKETING")
+   ========================================================================== */
+.why-section {
+  background: linear-gradient(180deg, #FBF8F1 0%, #F5EDE1 100%);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.why-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.why-subheadline {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+  line-height: 1.4;
+  color: var(--color-charcoal);
+  margin-top: 1rem;
+}
+
+/* Dramatic Metric Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  margin-bottom: clamp(3.5rem, 6vw, 6rem);
+}
+
+.metric-box {
+  background: var(--color-ivory);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-sm);
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: var(--transition-smooth);
+  position: relative;
+}
+
+.metric-box:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-luxury);
+  border-color: var(--color-muted-gold);
+}
+
+.metric-big-num {
+  font-family: var(--font-serif);
+  font-size: clamp(3.2rem, 5.5vw, 4.8rem);
+  line-height: 1;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.metric-box-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--color-muted-gold);
+  margin-bottom: 0.5rem;
+}
+
+.metric-box-desc {
+  font-size: 0.88rem;
+  color: var(--color-charcoal-muted);
+}
+
+/* 3 Deep Differentiators */
+.differentiators-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.diff-card {
+  padding: 2.5rem;
+  background-color: rgba(247, 241, 229, 0.7);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-subtle);
+  transition: var(--transition-smooth);
+}
+
+.diff-card:hover {
+  background-color: var(--color-ivory);
+  box-shadow: var(--shadow-subtle);
+}
+
+.diff-title {
+  font-size: 1.5rem;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.75rem;
+}
+
+.diff-desc {
+  font-size: 0.95rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   SECTION: CREATIVE STUDIO ("INSIDE THE IKSY STUDIO")
+   ========================================================================== */
+.studio-section {
+  background-color: var(--color-charcoal);
+  color: var(--color-ivory);
+  position: relative;
+  overflow: hidden;
+}
+
+.studio-section h2,
+.studio-section h3 {
+  color: var(--color-ivory);
+}
+
+.studio-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto clamp(3rem, 5vw, 4.5rem);
+}
+
+.studio-header .eyebrow {
+  color: var(--color-warm-sand);
+}
+
+.studio-header p {
+  color: rgba(252, 249, 242, 0.75);
+}
+
+/* Studio Interactive Visual */
+.studio-interactive-container {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(216, 185, 138, 0.3);
+  box-shadow: var(--shadow-deep);
+  background-color: #171715;
+}
+
+.studio-scene-visual {
+  width: 100%;
+  aspect-ratio: 16/9;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.studio-svg-backdrop {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Studio Hotspots */
+.hotspot-btn {
+  position: absolute;
+  background: var(--color-ivory);
+  color: var(--color-deep-forest);
+  border: 1px solid var(--color-muted-gold);
+  border-radius: 30px;
+  padding: 0.5rem 1.15rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  transition: var(--transition-smooth);
+  z-index: 10;
+}
+
+.hotspot-btn::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-muted-gold);
+  box-shadow: 0 0 0 2px rgba(178, 138, 74, 0.3);
+}
+
+.hotspot-btn:hover,
+.hotspot-btn.active {
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+  border-color: var(--color-ivory);
+  transform: scale(1.08);
+}
+
+.hotspot-strategy { top: 38%; left: 16%; }
+.hotspot-creative { top: 26%; left: 48%; }
+.hotspot-content { top: 62%; right: 18%; }
+.hotspot-growth { top: 48%; right: 38%; }
+
+/* Studio Hotspot Card Drawer */
+.studio-hotspot-modal {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  max-width: 380px;
+  background: rgba(18, 58, 52, 0.95);
+  border: 1px solid var(--color-border-sand);
+  backdrop-filter: blur(16px);
+  padding: 2rem;
+  border-radius: var(--radius-sm);
+  z-index: 20;
+  box-shadow: var(--shadow-deep);
+  transition: var(--transition-smooth);
+}
+
+.hotspot-card-eyebrow {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-warm-sand);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hotspot-card-title {
+  font-size: 1.5rem;
+  color: var(--color-ivory);
+  margin-bottom: 0.75rem;
+}
+
+.hotspot-card-text {
+  font-size: 0.9rem;
+  color: rgba(252, 249, 242, 0.85);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.hotspot-card-tools {
+  font-size: 0.76rem;
+  color: var(--color-warm-sand);
+  border-top: 1px solid rgba(233, 215, 184, 0.2);
+  padding-top: 0.75rem;
+}
+
+/* ==========================================================================
+   SECTION: PROCESS ("FROM IDEA TO IMPACT") — 4 CONNECTED STEPS
+   ========================================================================== */
+.process-section {
+  background-color: var(--color-cream);
+  position: relative;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.process-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+/* Architectural Sandstone Steps Progression */
+.process-card {
+  background: var(--color-ivory);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-sm);
+  padding: 3rem 2rem 2.5rem;
+  position: relative;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.process-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: var(--color-border-sand);
+  transition: var(--transition-smooth);
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-luxury);
+  border-color: var(--color-muted-gold);
+}
+
+.process-card:hover::before {
+  background: var(--color-muted-gold);
+  left: 0;
+  right: 0;
+}
+
+.process-step-indicator {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--color-muted-gold);
+  margin-bottom: 1.25rem;
+}
+
+.process-step-title {
+  font-size: 1.7rem;
+  color: var(--color-deep-forest);
+  margin-bottom: 1rem;
+}
+
+.process-step-desc {
+  font-size: 0.95rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.process-step-deliverables {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed rgba(37, 37, 34, 0.12);
+}
+
+.process-step-deliverables li {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-charcoal);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.process-step-deliverables li::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--color-muted-gold);
+}
+
+/* ==========================================================================
+   SECTION: PORTFOLIO ("SELECTED WORK")
+   ========================================================================== */
+.portfolio-section {
+  background-color: var(--color-ivory);
+  position: relative;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.portfolio-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Filter Tabs */
+.portfolio-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--color-border-subtle);
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-charcoal-light);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-deep-forest);
+  color: var(--color-ivory);
+  border-color: var(--color-deep-forest);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(2rem, 3.5vw, 3.5rem);
+}
+
+.project-card {
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.project-media-wrap {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border-subtle);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-subtle);
+}
+
+.project-artwork-svg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.project-card:hover .project-artwork-svg {
+  transform: scale(1.04);
+}
+
+.project-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(18, 58, 52, 0.1) 0%, rgba(18, 58, 52, 0.65) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+}
+
+.project-card:hover .project-hover-overlay {
+  opacity: 1;
+}
+
+.project-view-badge {
+  background-color: var(--color-ivory);
+  color: var(--color-deep-forest);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-xs);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-category-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: var(--color-muted-gold);
+  margin-bottom: 0.4rem;
+}
+
+.project-title {
+  font-size: 1.85rem;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: var(--color-muted-gold);
+}
+
+.project-excerpt {
+  font-size: 0.95rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   SECTION: TESTIMONIALS ("GOOD WORK GETS NOTICED. GREAT WORK GETS REMEMBERED.")
+   ========================================================================== */
+.testimonials-section {
+  background-color: var(--color-cream);
+  position: relative;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.testimonials-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto clamp(3.5rem, 6vw, 5.5rem);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+
+.testimonial-card {
+  background: var(--color-ivory);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-sm);
+  padding: 3rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-luxury);
+}
+
+.testimonial-quote-mark {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--color-muted-gold);
+  opacity: 0.4;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: var(--color-charcoal);
+  margin-bottom: 2rem;
+  flex-grow: 1;
+  font-style: italic;
+}
+
+.testimonial-author-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.author-avatar-initials {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-sand-muted);
+  border: 1px solid var(--color-border-sand);
+  color: var(--color-deep-forest);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-deep-forest);
+}
+
+.author-title {
+  font-size: 0.8rem;
+  color: var(--color-charcoal-muted);
+}
+
+/* ==========================================================================
+   SECTION: INSIGHTS & EDITORIAL JOURNAL ("IDEAS WORTH SHARING")
+   ========================================================================== */
+.insights-section {
+  background-color: var(--color-ivory);
+  position: relative;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.insights-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+
+.insight-card {
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: 2.5rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.insight-card:hover {
+  transform: translateY(-4px);
+}
+
+.insight-category-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.insight-tag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--color-muted-gold);
+}
+
+.insight-read-time {
+  font-size: 0.75rem;
+  color: var(--color-charcoal-muted);
+}
+
+.insight-title {
+  font-size: 1.65rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: var(--color-deep-forest);
+  transition: color 0.3s ease;
+}
+
+.insight-card:hover .insight-title {
+  color: var(--color-muted-gold);
+}
+
+.insight-summary {
+  font-size: 0.95rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.insight-author-credit {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-charcoal-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.insight-author-credit::before {
+  content: '';
+  width: 14px;
+  height: 1px;
+  background-color: var(--color-muted-gold);
+}
+
+/* ==========================================================================
+   SECTION: FINAL CTA ("YOUR NEXT GROWTH STORY STARTS HERE.")
+   ========================================================================== */
+.final-cta-section {
+  background: linear-gradient(180deg, #123A34 0%, #0D2B27 60%, #081B18 100%);
+  color: var(--color-ivory);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-top: clamp(6rem, 10vw, 10rem);
+  padding-bottom: clamp(6rem, 10vw, 10rem);
+}
+
+.final-cta-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+.cta-sun-glow {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 185, 138, 0.18) 0%, rgba(18, 58, 52, 0) 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.final-cta-content {
+  position: relative;
+  z-index: 5;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.final-cta-content .eyebrow {
+  color: var(--color-warm-sand);
+}
+
+.final-cta-title {
+  font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+  color: var(--color-ivory);
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
+}
+
+.final-cta-desc {
+  font-size: clamp(1.15rem, 1.4vw, 1.35rem);
+  color: rgba(252, 249, 242, 0.85);
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto 3rem;
+}
+
+.final-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  background-color: var(--color-forest-darker);
+  color: rgba(252, 249, 242, 0.75);
+  padding-top: clamp(4.5rem, 7vw, 6.5rem);
+  padding-bottom: 2.5rem;
+  border-top: 1px solid rgba(216, 185, 138, 0.15);
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+  gap: clamp(2rem, 4vw, 4.5rem);
+  margin-bottom: clamp(3.5rem, 6vw, 5rem);
+}
+
+.footer-brand-column .brand-letters {
+  color: var(--color-ivory);
+}
+
+.footer-brand-column .brand-partners {
+  color: rgba(252, 249, 242, 0.6);
+}
+
+.footer-tagline {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--color-warm-sand);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand-bio {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(252, 249, 242, 0.65);
+  max-width: 320px;
+}
+
+.footer-col-title {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-warm-sand);
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(252, 249, 242, 0.75);
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-warm-sand);
+}
+
+.footer-newsletter-text {
+  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.footer-newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-newsletter-input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(216, 185, 138, 0.25);
+  border-radius: var(--radius-xs);
+  padding: 0.75rem 1rem;
+  color: var(--color-ivory);
+  font-size: 0.88rem;
+  flex-grow: 1;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.footer-newsletter-input:focus {
+  border-color: var(--color-warm-sand);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-newsletter-btn {
+  background: var(--color-warm-sand);
+  color: var(--color-deep-forest);
+  border: none;
+  border-radius: var(--radius-xs);
+  padding: 0 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.footer-newsletter-btn:hover {
+  background: var(--color-light-sand);
+}
+
+/* Footer Bottom Bar */
+.footer-bottom-bar {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.82rem;
+  color: rgba(252, 249, 242, 0.5);
+}
+
+.footer-bottom-partners {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-bottom-partners span {
+  color: var(--color-warm-sand);
+}
+
+/* ==========================================================================
+   MODAL SYSTEMS (CONSULTATION DRAWER, CASE STUDY MODAL, ARTICLE MODAL)
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(8, 27, 24, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-container {
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-sm);
+  width: 100%;
+  max-width: 820px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-deep);
+  transform: translateY(20px) scale(0.98);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: clamp(2rem, 4vw, 3.5rem);
+}
+
+.modal-overlay.active .modal-container {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-sand-muted);
+  border: 1px solid var(--color-border-sand);
+  color: var(--color-deep-forest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: var(--transition-smooth);
+}
+
+.modal-close-btn:hover {
+  background: var(--color-deep-forest);
+  color: var(--color-ivory);
+}
+
+/* Luxury Consultation Form Styles */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  background: var(--color-cream);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-xs);
+  padding: 0.85rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-charcoal);
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.form-control:focus {
+  border-color: var(--color-deep-forest);
+  background: var(--color-ivory);
+  box-shadow: 0 0 0 3px rgba(18, 58, 52, 0.08);
+}
+
+.form-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.custom-radio-card {
+  position: relative;
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-xs);
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.82rem;
+  cursor: pointer;
+  background: var(--color-cream);
+  transition: var(--transition-smooth);
+}
+
+.custom-radio-card input {
+  position: absolute;
+  opacity: 0;
+}
+
+.custom-radio-card:hover,
+.custom-radio-card.selected {
+  border-color: var(--color-deep-forest);
+  background: var(--color-deep-forest);
+  color: var(--color-light-sand);
+}
+
+/* Case Study Content Inside Modal */
+.case-study-hero {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin: 1.5rem 0 2rem;
+  background: var(--color-cream);
+}
+
+.case-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--color-cream);
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--color-border-sand);
+}
+
+/* Article Reader Modal */
+.article-reader-content {
+  line-height: 1.85;
+  color: var(--color-charcoal);
+}
+
+.article-reader-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .partners-editorial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .hero-text-content {
+    max-width: 100%;
+  }
+  .intro-header-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-interactive-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .service-preview-panel {
+    display: none;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+  .differentiators-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-menu, .header-cta-desktop {
+    display: none;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+}
+
+/* ==========================================================================
+   SECTION: PACKAGES & PRICING (pricing.jpeg & addon.jpeg)
+   ========================================================================== */
+.pricing-section {
+  background-color: var(--color-ivory);
+  position: relative;
+}
+
+.pricing-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 3.5rem;
+}
+
+.pricing-motto-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-deep-forest);
+  background: var(--color-sand-muted);
+  border: 1px solid var(--color-border-sand);
+  padding: 0.4rem 1.25rem;
+  border-radius: 40px;
+  margin-bottom: 1rem;
+}
+
+/* 3 Column Package Grid */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.package-card {
+  background-color: var(--color-cream-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-luxury);
+  border-color: var(--color-border-sand);
+}
+
+.package-card.featured {
+  background-color: var(--color-ivory);
+  border: 2px solid var(--color-muted-gold);
+  box-shadow: var(--shadow-luxury);
+}
+
+.package-card.featured:hover {
+  transform: translateY(-4px);
+}
+
+.package-badge-tag {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.3rem 1.25rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.package-title-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.package-name {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.35rem;
+}
+
+.package-subhead {
+  font-size: 0.88rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.5;
+  min-height: 2.7em;
+}
+
+.package-price-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-deep-forest);
+  color: var(--color-light-sand);
+  padding: 0.85rem 1.5rem;
+  border-radius: 40px;
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+.package-card.featured .package-price-badge {
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+}
+
+.price-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  opacity: 0.9;
+}
+
+.price-amount {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.price-period {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.package-content {
+  flex-grow: 1;
+  margin-bottom: 2rem;
+}
+
+.package-section-label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted-gold);
+  margin-bottom: 1rem;
+}
+
+.included-list {
+  list-style: none;
+  margin-bottom: 1.75rem;
+}
+
+.included-list li {
+  font-size: 0.88rem;
+  color: var(--color-charcoal);
+  padding: 0.45rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  border-bottom: 1px dashed rgba(37, 37, 34, 0.07);
+}
+
+.included-list li::before {
+  content: '✓';
+  color: var(--color-deep-forest);
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.package-card.featured .included-list li::before {
+  color: var(--color-muted-gold);
+}
+
+.ideal-for-box {
+  background: var(--color-sand-muted);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+}
+
+.ideal-for-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.ideal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.ideal-tag {
+  font-size: 0.75rem;
+  background: var(--color-ivory);
+  color: var(--color-charcoal-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-border-subtle);
+}
+
+/* Add-ons Subsection */
+.addons-divider-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 3.5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--color-border-sand);
+}
+
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .addons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .addons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .addons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.addon-card {
+  background-color: var(--color-cream-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.addon-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-muted-gold);
+  box-shadow: var(--shadow-luxury);
+  background-color: var(--color-ivory);
+}
+
+.addon-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-deep-forest);
+  color: var(--color-light-sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  transition: var(--transition-smooth);
+}
+
+.addon-card:hover .addon-icon {
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+}
+
+.addon-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+
+.addon-desc {
+  font-size: 0.82rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.45;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.addon-price-tag {
+  background-color: var(--color-deep-forest);
+  color: var(--color-light-sand);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.45rem 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.addon-card:hover .addon-price-tag {
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+}
+
+/* Why Choose IKSY Value Banner */
+.why-iksy-banner {
+  background-color: var(--color-dark-green);
+  border-radius: var(--radius-md);
+  padding: 2.75rem 2.25rem;
+  color: var(--color-ivory);
+  box-shadow: var(--shadow-luxury);
+}
+
+.why-banner-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(216, 185, 138, 0.25);
+}
+
+.why-banner-title {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  color: var(--color-light-sand);
+}
+
+.why-guarantees-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .why-guarantees-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .why-guarantees-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.guarantee-item {
+  padding: 0.75rem;
+}
+
+.guarantee-icon {
+  font-size: 1.5rem;
+  color: var(--color-muted-gold);
+  margin-bottom: 0.5rem;
+}
+
+.guarantee-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-cream);
+  line-height: 1.3;
+}
+
+/* WhatsApp Direct Chat Floating Button (IKSY Deep Forest #123A34) */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 60px;
+  height: 60px;
+  background-color: #123A34;
+  color: #FCF9F2;
+  border: 1.5px solid var(--color-border-sand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 28px rgba(18, 58, 52, 0.45);
+  z-index: 9999;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.whatsapp-float:hover {
+  background-color: #0D2B27;
+  color: #D8B98A;
+  border-color: #B28A4A;
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 14px 36px rgba(13, 43, 39, 0.6);
+}
+
+.whatsapp-float::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  border: 2px solid #123A34;
+  opacity: 0.75;
+  animation: waPulse 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes waPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  background-color: var(--color-deep-forest);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--color-deep-forest);
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 640px) {
+  .partners-editorial-grid,
+  .pillars-container,
+  .metrics-grid,
+  .process-grid,
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-options-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-partners-badge {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Ambient Cursor Glow (Desktop Only) -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container-wide header-container">
+      <!-- IKSY Brand Logo -->
+      <a href="#hero" class="brand-wordmark" aria-label="IKSY Homepage">
+        <img src="logo.png" alt="IKSY — बढ़ेगा Brand बढ़ेगा Business" class="site-logo-img">
+        <div class="brand-partners">
+          Ishika<span>•</span>Kartik<span>•</span>Sapna<span>•</span>Yash
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-wrapper" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#intro" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#portfolio" class="nav-link">Work</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#studio" class="nav-link">Studio</a></li>
+          <li><a href="#insights" class="nav-link">Insights</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary header-cta header-cta-desktop open-consultation-btn">
+          Let's Grow Together →
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div style="padding: 1.25rem 1.5rem 0.5rem; text-align: center; border-bottom: 1px solid var(--color-border-subtle);">
+      <a href="#hero" aria-label="IKSY Homepage">
+        <img src="logo.png" alt="IKSY Logo" style="height: 44px; width: auto; mix-blend-mode: multiply;">
+      </a>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#intro" class="mobile-nav-link">About Us</a></li>
+      <li><a href="#story" class="mobile-nav-link">The IKSY Story</a></li>
+      <li><a href="#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="#pricing" class="mobile-nav-link">Pricing & Add-ons</a></li>
+      <li><a href="#portfolio" class="mobile-nav-link">Selected Work</a></li>
+      <li><a href="#process" class="mobile-nav-link">Our Process</a></li>
+      <li><a href="#studio" class="mobile-nav-link">The Studio</a></li>
+      <li><a href="#insights" class="mobile-nav-link">Editorial Journal</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <p style="font-size: 0.8rem; color: var(--color-charcoal-muted); margin-bottom: 1.25rem;">
+        4 Minds | 1 Vision | Infinite Possibilities
+      </p>
+      <button class="btn btn-primary open-consultation-btn" style="width: 100%;">
+        Let's Grow Together →
+      </button>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION: CINEMATIC GOLDEN HOUR & FOOTHILLS WORKSPACE
+         ========================================================================== -->
+    <section id="hero" class="hero-section" aria-label="Welcome to IKSY">
+      <!-- Canvas for Floating Ambient Dust Particles -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Backdrop: Layered Foothills & Golden Hour Sun Glow -->
+      <div class="hero-backdrop-scene" aria-hidden="true">
+        <div class="hero-sun-glow"></div>
+
+        <!-- Layered Mountain Foothills SVGs -->
+        <svg class="foothill-layer foothill-far" viewBox="0 0 1440 380" preserveAspectRatio="none">
+          <path d="M0,280 C240,210 480,290 720,230 C960,170 1200,260 1440,210 L1440,380 L0,380 Z"/>
+        </svg>
+        <svg class="foothill-layer foothill-mid" viewBox="0 0 1440 380" preserveAspectRatio="none">
+          <path d="M0,310 C320,240 620,330 920,270 C1180,220 1340,300 1440,270 L1440,380 L0,380 Z"/>
+        </svg>
+        <svg class="foothill-layer foothill-near" viewBox="0 0 1440 380" preserveAspectRatio="none">
+          <path d="M0,340 C280,290 560,350 880,310 C1140,270 1320,340 1440,320 L1440,380 L0,380 Z"/>
+        </svg>
+
+        <!-- Hanging Lanterns with Pendulum Physics Animation -->
+        <div class="hanging-lantern lantern-left">
+          <div class="lantern-wire"></div>
+          <div class="lantern-cage">
+            <div class="lantern-flame"></div>
+          </div>
+        </div>
+        <div class="hanging-lantern lantern-right">
+          <div class="lantern-wire" style="height: 170px;"></div>
+          <div class="lantern-cage">
+            <div class="lantern-flame"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-text-content">
+          <div class="eyebrow">
+            <span>STRATEGY</span>
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span>CREATIVITY</span>
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span>GROWTH</span>
+          </div>
+
+          <h1 class="hero-title">
+            Your Brand.<br>
+            Our Digital <span class="script-accent">Vision</span>.
+          </h1>
+
+          <p class="hero-subtext">
+            IKSY is a creative digital marketing studio where strategy meets creativity, and ideas turn into meaningful brand growth.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#services" class="btn btn-primary">
+              Explore Our Services →
+            </a>
+            <a href="#portfolio" class="btn btn-secondary">
+              View Our Work
+            </a>
+          </div>
+
+          <!-- Hero Partners Badge Strip -->
+          <div class="hero-partners-badge">
+            <span class="badge-label">Founding Minds:</span>
+            <div class="badge-names">
+              <span class="badge-name-item"><span class="letter">I</span> Ishika</span>
+              <span class="badge-name-item"><span class="letter">K</span> Kartik</span>
+              <span class="badge-name-item"><span class="letter">S</span> Sapna</span>
+              <span class="badge-name-item"><span class="letter">Y</span> Yash</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Composition: Sandstone Architectural Arch with Studio Workspace Scene -->
+        <div class="hero-visual-card">
+          <div class="sandstone-arch-frame">
+            <div class="studio-artwork-inner">
+              <!-- Bespoke Vector Composition: Workspace Overlooking Foothills -->
+              <svg class="studio-illustration-svg" viewBox="0 0 540 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FAF1E0"/>
+                    <stop offset="45%" stop-color="#E8CCA7"/>
+                    <stop offset="85%" stop-color="#B28A4A"/>
+                    <stop offset="100%" stop-color="#123A34"/>
+                  </linearGradient>
+                  <linearGradient id="sandstoneGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#E2CCA6"/>
+                    <stop offset="100%" stop-color="#B89664"/>
+                  </linearGradient>
+                  <linearGradient id="woodGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#4A3423"/>
+                    <stop offset="50%" stop-color="#694C34"/>
+                    <stop offset="100%" stop-color="#3D2B1C"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Arch Silhouette Background Sky -->
+                <rect width="540" height="680" fill="url(#skyGrad)"/>
+
+                <!-- Distant Mountain Ridges Through the Arch -->
+                <path d="M0 380 Q 140 310 280 340 T 540 310 L 540 500 L 0 500 Z" fill="#917454" opacity="0.65"/>
+                <path d="M0 410 Q 180 360 360 390 T 540 365 L 540 520 L 0 520 Z" fill="#6E553B" opacity="0.75"/>
+                <path d="M0 450 Q 220 410 420 440 T 540 420 L 540 540 L 0 540 Z" fill="#4B3925" opacity="0.85"/>
+
+                <!-- Golden Hour Sun Orb -->
+                <circle cx="380" cy="240" r="70" fill="#FFF2CF" opacity="0.55"/>
+                <circle cx="380" cy="240" r="45" fill="#FFE299" opacity="0.8"/>
+
+                <!-- Studio Terrace Sandstone Floor -->
+                <path d="M0 510 L 540 510 L 540 680 L 0 680 Z" fill="url(#sandstoneGrad)"/>
+                <line x1="0" y1="510" x2="540" y2="510" stroke="#7E5F36" stroke-width="2"/>
+
+                <!-- Studio Wooden Work Desk -->
+                <polygon points="40,550 500,550 520,575 20,575" fill="url(#woodGrad)"/>
+                <rect x="50" y="575" width="20" height="105" fill="#2E1E12"/>
+                <rect x="470" y="575" width="20" height="105" fill="#2E1E12"/>
+
+                <!-- Studio Objects on Desk -->
+                <!-- Laptop -->
+                <rect x="180" y="505" width="130" height="80" rx="3" fill="#252522"/>
+                <polygon points="170,585 320,585 328,590 162,590" fill="#696962"/>
+                <rect x="190" y="515" width="110" height="60" fill="#F7F1E5"/>
+                <!-- Graph line on laptop screen -->
+                <path d="M198 560 L 220 548 L 245 554 L 270 532 L 292 524" stroke="#123A34" stroke-width="2.5" fill="none"/>
+
+                <!-- Marketing Strategy Books Stack -->
+                <rect x="360" y="555" width="80" height="12" rx="1" fill="#123A34"/>
+                <rect x="365" y="543" width="75" height="12" rx="1" fill="#B28A4A"/>
+                <rect x="370" y="533" width="68" height="10" rx="1" fill="#E9D7B8"/>
+
+                <!-- Moleskine Notebook & Brass Pen -->
+                <rect x="100" y="552" width="55" height="34" rx="2" fill="#3A281E"/>
+                <line x1="125" y1="552" x2="125" y2="586" stroke="#D8B98A" stroke-width="1"/>
+                <line x1="160" y1="558" x2="162" y2="580" stroke="#B28A4A" stroke-width="2.5"/>
+
+                <!-- Warm Ceramic Coffee Cup -->
+                <ellipse cx="80" cy="564" rx="12" ry="7" fill="#EADBC6"/>
+                <rect x="68" y="550" width="24" height="14" rx="3" fill="#F7F1E5"/>
+                <path d="M92 553 C 97 553 97 560 92 560" stroke="#D8B98A" stroke-width="2" fill="none"/>
+
+                <!-- Potted Indoor Botanical Plant (Ficus / Monstera) -->
+                <path d="M465 470 C 440 450 435 400 460 380 C 480 405 480 450 465 470 Z" fill="#1B4940"/>
+                <path d="M485 490 C 515 460 520 410 495 390 C 475 420 475 470 485 490 Z" fill="#123A34"/>
+                <path d="M450 515 C 415 500 405 450 435 435 C 455 460 460 500 450 515 Z" fill="#2E695D"/>
+                <!-- Terracotta Plant Pot -->
+                <polygon points="460,520 490,520 485,550 465,550" fill="#995738"/>
+
+                <!-- Brass Studio Desk Lamp -->
+                <path d="M335 550 L 335 480 Q 335 460 315 460 L 290 460" stroke="#B28A4A" stroke-width="3" fill="none"/>
+                <path d="M280 450 L 305 460 L 285 472 Z" fill="#B28A4A"/>
+                <!-- Warm Glow from Lamp -->
+                <polygon points="275,465 170,580 320,580 295,465" fill="#FFE8B2" opacity="0.16"/>
+
+                <!-- Hanging Brass Lantern Frame in Studio Arch -->
+                <line x1="120" y1="0" x2="120" y2="120" stroke="#3D2B1C" stroke-width="1.5"/>
+                <rect x="105" y="120" width="30" height="46" rx="4" fill="none" stroke="#B28A4A" stroke-width="1.5"/>
+                <circle cx="120" cy="143" r="6" fill="#FFAF38" opacity="0.9"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Floating Studio Badge -->
+          <div class="hero-floating-tag">
+            <div class="floating-tag-eyebrow">Studio Coordinates</div>
+            <div class="floating-tag-title">4 Minds | 1 Vision</div>
+            <p style="font-size: 0.78rem; color: var(--color-charcoal-muted); margin-top: 0.25rem;">
+              Crafted in the calm of the foothills. Delivering across global capitals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: INTRODUCTION ("NOT JUST MARKETING. WE BUILD BRANDS.")
+         ========================================================================== -->
+    <section id="intro" class="section intro-section" aria-label="About IKSY">
+      <div class="container">
+        <!-- Header Grid -->
+        <div class="intro-header-grid">
+          <div>
+            <div class="eyebrow">
+              <div class="eyebrow-dots"><span></span><span></span><span></span><span></span></div>
+              WHO WE ARE
+            </div>
+            <h2>Not Just Marketing.<br>We Build Brands.</h2>
+          </div>
+          <div>
+            <p class="intro-lead-text">
+              Behind every successful brand is a clear idea, a strong strategy and people who care about the details.
+            </p>
+            <p class="intro-body-copy" style="margin-top: 1rem;">
+              At IKSY, four different perspectives come together with one shared vision — to help businesses become more visible, more memorable and more valuable online.
+            </p>
+          </div>
+        </div>
+
+        <!-- The 4 Partners Editorial Cards (Ishika, Kartik, Sapna, Yash) -->
+        <div class="partners-editorial-grid">
+          <!-- 01 — Ishika -->
+          <article class="partner-card">
+            <div class="partner-letter-box">I</div>
+            <h3 class="partner-name">Ishika</h3>
+            <div class="partner-discipline">Brand Strategy & Narrative</div>
+            <p class="partner-quote">
+              “A brand without a soul is just inventory waiting to be discounted. We discover the emotional heartbeat that makes you irreplaceable.”
+            </p>
+            <div class="partner-focus-tags">
+              <span class="partner-focus-tag">Market Positioning</span>
+              <span class="partner-focus-tag">Brand Narrative</span>
+              <span class="partner-focus-tag">Cultural Relevance</span>
+            </div>
+          </article>
+
+          <!-- 02 — Kartik -->
+          <article class="partner-card">
+            <div class="partner-letter-box">K</div>
+            <h3 class="partner-name">Kartik</h3>
+            <div class="partner-discipline">Performance & Growth</div>
+            <p class="partner-quote">
+              “Creativity without conversion is an indulgence. We engineer acquisition engines where every rupee spent compounds brand equity.”
+            </p>
+            <div class="partner-focus-tags">
+              <span class="partner-focus-tag">Paid Media ROAS</span>
+              <span class="partner-focus-tag">SEO Architecture</span>
+              <span class="partner-focus-tag">Attribution Modeling</span>
+            </div>
+          </article>
+
+          <!-- 03 — Sapna -->
+          <article class="partner-card">
+            <div class="partner-letter-box">S</div>
+            <h3 class="partner-name">Sapna</h3>
+            <div class="partner-discipline">Creative Direction & Design</div>
+            <p class="partner-quote">
+              “True luxury whispers. We craft visual identities, typography systems, and aesthetics that captivate without gimmicks or noise.”
+            </p>
+            <div class="partner-focus-tags">
+              <span class="partner-focus-tag">Visual Identity</span>
+              <span class="partner-focus-tag">Art Direction</span>
+              <span class="partner-focus-tag">Editorial Content</span>
+            </div>
+          </article>
+
+          <!-- 04 — Yash -->
+          <article class="partner-card">
+            <div class="partner-letter-box">Y</div>
+            <h3 class="partner-name">Yash</h3>
+            <div class="partner-discipline">Digital Architecture & Web</div>
+            <p class="partner-quote">
+              “Your website is your global flagship salon. We build high-speed, bespoke digital experiences that turn visitors into devoted patrons.”
+            </p>
+            <div class="partner-focus-tags">
+              <span class="partner-focus-tag">Bespoke UI/UX</span>
+              <span class="partner-focus-tag">Sub-Second Speed</span>
+              <span class="partner-focus-tag">Scalable Engineering</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: THE IKSY STORY ("4 MINDS. 1 VISION. INFINITE POSSIBILITIES.")
+         ========================================================================== -->
+    <section id="story" class="section story-section" aria-label="The IKSY Story">
+      <div class="container story-grid">
+        <!-- Story Narrative Column -->
+        <div class="story-narrative">
+          <div class="eyebrow">
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            THE IKSY STORY
+          </div>
+
+          <h2 class="story-statement">
+            4 Minds.<br>
+            1 Vision.<br>
+            Infinite Possibilities.
+          </h2>
+
+          <p>
+            IKSY was born out of a shared frustration with the assembly-line mentality of modern digital marketing. Agencies either offered dry data dashboards devoid of taste, or superficial design that failed to deliver commercial impact.
+          </p>
+          <p>
+            By uniting <strong>Ishika</strong> (Strategy), <strong>Kartik</strong> (Growth), <strong>Sapna</strong> (Aesthetics), and <strong>Yash</strong> (Technology), we established a boutique studio where no client is passed to junior trainees.
+          </p>
+          <p>
+            We operate like master artisans in our foothill retreat: calm, deliberate, deeply invested in every detail, and relentless about measurable client ascension.
+          </p>
+
+          <div style="margin-top: 2rem;">
+            <a href="#studio" class="btn-link">
+              Step inside our creative studio <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- The 4 Connected Architectural Pillars -->
+        <div class="pillars-container">
+          <div class="pillar-item">
+            <div class="pillar-num">Pillar I</div>
+            <h3 class="pillar-title">Strategic Clarity</h3>
+            <p class="pillar-desc">
+              We never guess. Every engagement begins with rigorous commercial diagnostics and sharp competitor deconstruction.
+            </p>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-num">Pillar II</div>
+            <h3 class="pillar-title">Sensory Distinction</h3>
+            <p class="pillar-desc">
+              Visual craft inspired by timeless architecture, balanced typography, and warm editorial nuance that commands instant authority.
+            </p>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-num">Pillar III</div>
+            <h3 class="pillar-title">Conversion Rigor</h3>
+            <p class="pillar-desc">
+              Data-informed acquisition frameworks and ruthless funnel optimization that respect your bottom-line profitability.
+            </p>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-num">Pillar IV</div>
+            <h3 class="pillar-title">Durable Technology</h3>
+            <p class="pillar-desc">
+              Clean code, zero bloat, and lightning-fast digital experiences engineered to perform seamlessly across all screens.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: SERVICES ("WHAT WE DO") — EDITORIAL ASYMMETRIC GRID
+         ========================================================================== -->
+    <section id="services" class="section services-section" aria-label="Services We Offer">
+      <div class="container">
+        <!-- Services Section Header -->
+        <div class="services-header">
+          <div class="eyebrow">
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            OUR CAPABILITIES
+          </div>
+          <h2>What We Do</h2>
+          <p class="services-subhead">
+            Digital solutions designed to make your brand impossible to ignore.
+          </p>
+        </div>
+
+        <!-- Interactive Editorial Services Layout -->
+        <div class="services-interactive-wrapper">
+          <!-- Left: Services List -->
+          <div class="services-list" role="list">
+            <!-- 01: Social Media -->
+            <div class="service-item active" data-service="social-media" role="listitem" tabindex="0">
+              <div class="service-item-head">
+                <div class="service-meta-left">
+                  <span class="service-index">01</span>
+                  <h3 class="service-name">Social Media Marketing</h3>
+                </div>
+                <div class="service-arrow" aria-hidden="true">→</div>
+              </div>
+              <p class="service-brief">
+                Build communities, increase engagement and create a consistent digital presence that resonates with cultural depth.
+              </p>
+            </div>
+
+            <!-- 02: SEO -->
+            <div class="service-item" data-service="seo" role="listitem" tabindex="0">
+              <div class="service-item-head">
+                <div class="service-meta-left">
+                  <span class="service-index">02</span>
+                  <h3 class="service-name">Search Engine Optimization</h3>
+                </div>
+                <div class="service-arrow" aria-hidden="true">→</div>
+              </div>
+              <p class="service-brief">
+                Improve visibility, attract relevant traffic and build sustainable organic authority that competitors cannot buy.
+              </p>
+            </div>
+
+            <!-- 03: Web Design & Dev -->
+            <div class="service-item" data-service="web-design" role="listitem" tabindex="0">
+              <div class="service-item-head">
+                <div class="service-meta-left">
+                  <span class="service-index">03</span>
+                  <h3 class="service-name">Website Design & Development</h3>
+                </div>
+                <div class="service-arrow" aria-hidden="true">→</div>
+              </div>
+              <p class="service-brief">
+                Create beautiful, fast and conversion-focused digital experiences that reflect the prestige of your company.
+              </p>
+            </div>
+
+            <!-- 04: Content Creation -->
+            <div class="service-item" data-service="content-creation" role="listitem" tabindex="0">
+              <div class="service-item-head">
+                <div class="service-meta-left">
+                  <span class="service-index">04</span>
+                  <h3 class="service-name">Content Creation</h3>
+                </div>
+                <div class="service-arrow" aria-hidden="true">→</div>
+              </div>
+              <p class="service-brief">
+                Turn ideas into stories, visuals and content people remember. High-production cinematography and editorial copy.
+              </p>
+            </div>
+
+            <!-- 05: Paid Advertising -->
+            <div class="service-item" data-service="paid-ads" role="listitem" tabindex="0">
+              <div class="service-item-head">
+                <div class="service-meta-left">
+                  <span class="service-index">05</span>
+                  <h3 class="service-name">Paid Advertising</h3>
+                </div>
+                <div class="service-arrow" aria-hidden="true">→</div>
+              </div>
+              <p class="service-brief">
+                Reach the right audience with strategic multi-channel campaigns designed around measurable bottom-line profit.
+              </p>
+            </div>
+
+            <!-- 06: Branding & Strategy -->
+            <div class="service-item" data-service="branding" role="listitem" tabindex="0">
+              <div class="service-item-head">
+                <div class="service-meta-left">
+                  <span class="service-index">06</span>
+                  <h3 class="service-name">Branding & Strategy</h3>
+                </div>
+                <div class="service-arrow" aria-hidden="true">→</div>
+              </div>
+              <p class="service-brief">
+                Build a clear identity, stronger market positioning and a brand people respect, trust, and seek out.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Sticky Live Preview Panel -->
+          <div class="service-preview-panel" aria-live="polite">
+            <span class="preview-badge">01 — Community & Culture</span>
+            <h3 class="preview-title">Social Media Marketing</h3>
+            <p class="preview-desc">
+              We turn passive scrollers into passionate brand advocates through culturally attuned storytelling, aesthetic coherence, and high-engagement content systems.
+            </p>
+
+            <div class="preview-deliverables-title">Core Studio Deliverables</div>
+            <ul class="preview-deliverables-list">
+              <li>Bespoke Visual Feed Curation & Art Direction</li>
+              <li>High-Impact Short-Form Video (Reels/TikTok)</li>
+              <li>Community Architecture & Proactive Engagement</li>
+              <li>Influencer Alignment & Creator Collaborations</li>
+            </ul>
+
+            <div class="preview-metrics">
+              <div class="metric-item">
+                <div class="metric-num">+340%</div>
+                <div class="metric-label">Avg. Organic Reach</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">12.4M+</div>
+                <div class="metric-label">Quarterly Views</div>
+              </div>
+            </div>
+
+            <button class="btn btn-gold open-consultation-btn" style="width: 100%;">
+              Inquire About This Service →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: PACKAGES & PRICING (MODELS FROM PRICING.JPEG & ADDON.JPEG)
+         ========================================================================== -->
+    <section id="pricing" class="section pricing-section" aria-label="Packages & Pricing">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="pricing-header">
+          <div class="eyebrow">
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            TRANSPARENT VALUE
+          </div>
+          <div class="pricing-motto-badge">
+            बढ़ेगा BRAND • बढ़ेगा BUSINESS
+          </div>
+          <h2>Digital Marketing Packages</h2>
+          <p class="lead" style="margin-top: 0.75rem;">
+            Strategic Marketing | Creative Content | Real Business Growth
+          </p>
+          <p style="font-family: var(--font-script); font-size: 1.3rem; color: var(--color-deep-forest); margin-top: 0.5rem; font-style: italic;">
+            "Your Growth is Our Mission"
+          </p>
+        </div>
+
+        <!-- 3 Core Packages Grid -->
+        <div class="packages-grid">
+          <!-- 01: STARTER PACKAGE -->
+          <div class="package-card">
+            <div>
+              <div class="package-title-header">
+                <h3 class="package-name">Starter Package</h3>
+                <p class="package-subhead">Perfect for businesses taking their first step online.</p>
+                <div class="package-price-badge">
+                  <span class="price-label">ONLY</span>
+                  <span class="price-amount">₹4,999</span>
+                  <span class="price-period">/ MONTH</span>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <div class="package-section-label">WHAT'S INCLUDED</div>
+                <ul class="included-list">
+                  <li><strong>1 Social Media Platform</strong> (Instagram or Facebook)</li>
+                  <li><strong>8 Posts Per Month</strong> (Creative Images)</li>
+                  <li><strong>2 Reels Per Month</strong></li>
+                  <li><strong>8 Stories Per Month</strong></li>
+                  <li>Captions + Hashtags (Engaging & Relevant)</li>
+                  <li>Creative Designing</li>
+                  <li>Basic Content Strategy</li>
+                  <li>Monthly Performance Report</li>
+                </ul>
+
+                <div class="ideal-for-box">
+                  <div class="ideal-for-title">IDEAL FOR</div>
+                  <div class="ideal-tags">
+                    <span class="ideal-tag">Local Shops</span>
+                    <span class="ideal-tag">Startups</span>
+                    <span class="ideal-tag">Entrepreneurs</span>
+                    <span class="ideal-tag">Service Providers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-secondary open-consultation-btn" style="width: 100%;" onclick="openConsultationModal('Inquiry for: Starter Package (₹4,999/mo)')">
+              Choose Starter Package →
+            </button>
+          </div>
+
+          <!-- 02: GROWTH PACKAGE (FEATURED) -->
+          <div class="package-card featured">
+            <div class="package-badge-tag">MOST POPULAR</div>
+            <div>
+              <div class="package-title-header">
+                <h3 class="package-name">Growth Package</h3>
+                <p class="package-subhead">For businesses ready to grow their reach & engagement.</p>
+                <div class="package-price-badge">
+                  <span class="price-label">ONLY</span>
+                  <span class="price-amount">₹9,999</span>
+                  <span class="price-period">/ MONTH</span>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <div class="package-section-label">WHAT'S INCLUDED</div>
+                <ul class="included-list">
+                  <li><strong>2 Social Media Platforms</strong> (Instagram + Facebook)</li>
+                  <li><strong>12 Posts Per Month</strong> (Creative Images)</li>
+                  <li><strong>4 Reels Per Month</strong></li>
+                  <li><strong>12 Stories Per Month</strong></li>
+                  <li>Captions + Hashtags (Engaging & Relevant)</li>
+                  <li>Google Business Profile Management</li>
+                  <li>Basic Local SEO</li>
+                  <li>Competitor Research</li>
+                  <li>Monthly Content Calendar</li>
+                  <li>Monthly Performance Report</li>
+                </ul>
+
+                <div class="ideal-for-box">
+                  <div class="ideal-for-title">IDEAL FOR</div>
+                  <div class="ideal-tags">
+                    <span class="ideal-tag">Retail Stores</span>
+                    <span class="ideal-tag">Restaurants</span>
+                    <span class="ideal-tag">Gyms & Salons</span>
+                    <span class="ideal-tag">Local Businesses</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-gold open-consultation-btn" style="width: 100%;" onclick="openConsultationModal('Inquiry for: Growth Package (₹9,999/mo)')">
+              Choose Growth Package →
+            </button>
+          </div>
+
+          <!-- 03: PREMIUM PACKAGE -->
+          <div class="package-card">
+            <div>
+              <div class="package-title-header">
+                <h3 class="package-name">Premium Package</h3>
+                <p class="package-subhead">For businesses serious about growth, leads & brand dominance.</p>
+                <div class="package-price-badge">
+                  <span class="price-label">ONLY</span>
+                  <span class="price-amount">₹17,999</span>
+                  <span class="price-period">/ MONTH</span>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <div class="package-section-label">WHAT'S INCLUDED</div>
+                <ul class="included-list">
+                  <li><strong>3–4 Social Media Platforms</strong> (Instagram, Facebook, YouTube, LinkedIn)</li>
+                  <li><strong>16 Posts Per Month</strong> (Creative Images)</li>
+                  <li><strong>8 Reels Per Month</strong></li>
+                  <li><strong>20 Stories Per Month</strong></li>
+                  <li>Captions + Hashtags (Engaging & Relevant)</li>
+                  <li>Google Business Profile Full Management & Optimization</li>
+                  <li>Advanced SEO</li>
+                  <li>Competitor Analysis</li>
+                  <li>Content Strategy & Planning</li>
+                  <li>Ad Campaign Setup & Management (Meta / Google Ads)</li>
+                  <li>WhatsApp Marketing Strategy</li>
+                  <li>Monthly Performance Report (Detailed Analytics)</li>
+                </ul>
+
+                <div class="ideal-for-box">
+                  <div class="ideal-for-title">IDEAL FOR</div>
+                  <div class="ideal-tags">
+                    <span class="ideal-tag">Established Businesses</span>
+                    <span class="ideal-tag">E-commerce Brands</span>
+                    <span class="ideal-tag">Real Estate</span>
+                    <span class="ideal-tag">Enterprises</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary open-consultation-btn" style="width: 100%;" onclick="openConsultationModal('Inquiry for: Premium Package (₹17,999/mo)')">
+              Choose Premium Package →
+            </button>
+          </div>
+        </div>
+
+        <!-- ==========================================================================
+             ADD-ON SERVICES SUBSECTION (addon.jpeg)
+             ========================================================================== -->
+        <div class="addons-divider-header">
+          <div class="eyebrow">
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            EXTRA SERVICES • EXTRA GROWTH!
+          </div>
+          <h2>Result-Driven Add-On Services</h2>
+          <p class="lead" style="margin-top: 0.5rem;">
+            Add more power to your brand with our customized add-on services.
+          </p>
+          <p style="font-family: var(--font-script); font-size: 1.25rem; color: var(--color-deep-forest); margin-top: 0.4rem; font-style: italic;">
+            "Tailored for Your Business Needs!"
+          </p>
+        </div>
+
+        <!-- 12 Add-On Service Cards Grid -->
+        <div class="addons-grid">
+          <!-- 01: Product Photography -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Product Photography (Starting ₹2,000)')">
+            <div class="addon-icon">📷</div>
+            <div>
+              <h3 class="addon-title">Product Photography</h3>
+              <p class="addon-desc">High-quality product photos that attract attention and build trust.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹2,000</div>
+          </div>
+
+          <!-- 02: Professional Video Shoot -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Professional Video Shoot (Starting ₹3,000)')">
+            <div class="addon-icon">📹</div>
+            <div>
+              <h3 class="addon-title">Professional Video Shoot</h3>
+              <p class="addon-desc">Professional shoots that showcase your brand in the best way.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹3,000</div>
+          </div>
+
+          <!-- 03: Extra Reel Creation -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Extra Reel Creation (Starting ₹700)')">
+            <div class="addon-icon">🎬</div>
+            <div>
+              <h3 class="addon-title">Extra Reel Creation</h3>
+              <p class="addon-desc">High-quality, engaging reels to increase reach and engagement.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹700</div>
+          </div>
+
+          <!-- 04: Extra Static Post -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Extra Static Post (Starting ₹300)')">
+            <div class="addon-icon">🖼️</div>
+            <div>
+              <h3 class="addon-title">Extra Static Post</h3>
+              <p class="addon-desc">Additional eye-catching posts to keep your feed active and attractive.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹300</div>
+          </div>
+
+          <!-- 05: Meta Ads -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Meta Ads Management (Starting ₹3,000/mo)')">
+            <div class="addon-icon">📣</div>
+            <div>
+              <h3 class="addon-title">Meta (FB & IG) Ads</h3>
+              <p class="addon-desc">Targeted ad campaigns to reach the right audience and get more leads.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹3,000 / MO</div>
+          </div>
+
+          <!-- 06: Google Ads -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Google Ads Management (Starting ₹3,000/mo)')">
+            <div class="addon-icon">🎯</div>
+            <div>
+              <h3 class="addon-title">Google Ads Management</h3>
+              <p class="addon-desc">Drive quality traffic & leads with performance-based Google Ads.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹3,000 / MO</div>
+          </div>
+
+          <!-- 07: SEO -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Search Engine Optimization (Starting ₹5,000/mo)')">
+            <div class="addon-icon">🔍</div>
+            <div>
+              <h3 class="addon-title">Search Engine Optimization</h3>
+              <p class="addon-desc">Improve your website ranking & get discovered by more potential customers.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹5,000 / MO</div>
+          </div>
+
+          <!-- 08: Website Development -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Website Development (Starting ₹8,000)')">
+            <div class="addon-icon">🌐</div>
+            <div>
+              <h3 class="addon-title">Website Development</h3>
+              <p class="addon-desc">Modern, responsive & SEO-friendly websites that convert visitors.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹8,000</div>
+          </div>
+
+          <!-- 09: Landing Page Design -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Landing Page Design (Starting ₹3,000)')">
+            <div class="addon-icon">💻</div>
+            <div>
+              <h3 class="addon-title">Landing Page Design</h3>
+              <p class="addon-desc">High-converting landing pages for campaigns, offers & lead generation.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹3,000</div>
+          </div>
+
+          <!-- 10: WhatsApp Marketing -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: WhatsApp Marketing (Starting ₹2,000/mo)')">
+            <div class="addon-icon">💬</div>
+            <div>
+              <h3 class="addon-title">WhatsApp Marketing</h3>
+              <p class="addon-desc">Smart WhatsApp strategies to engage, nurture & convert customers.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹2,000 / MO</div>
+          </div>
+
+          <!-- 11: Google Business Profile Setup -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Google Business Profile Setup (Starting ₹1,500)')">
+            <div class="addon-icon">🏪</div>
+            <div>
+              <h3 class="addon-title">Google Business Setup</h3>
+              <p class="addon-desc">Setup & optimize your GMB profile for more calls, direction requests & views.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹1,500</div>
+          </div>
+
+          <!-- 12: Logo & Branding Design -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Logo & Branding Design (Starting ₹1,500)')">
+            <div class="addon-icon">✒️</div>
+            <div>
+              <h3 class="addon-title">Logo & Branding Design</h3>
+              <p class="addon-desc">Creative logos & branding that make your business stand out.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹1,500</div>
+          </div>
+        </div>
+
+        <!-- Why Choose IKSY Packages Banner -->
+        <div class="why-iksy-banner">
+          <div class="why-banner-top">
+            <div>
+              <h3 class="why-banner-title">Why Choose IKSY Packages & Add-Ons?</h3>
+              <p style="font-size: 0.9rem; color: var(--color-light-sand); margin-top: 0.25rem;">
+                CHOOSE WHAT YOUR BUSINESS NEEDS & GROW FASTER WITH IKSY!
+              </p>
+            </div>
+            <button class="btn btn-gold open-consultation-btn" onclick="openConsultationModal('Custom Growth Package Inquiry')">
+              Let's Grow Your Brand Together! →
+            </button>
+          </div>
+
+          <div class="why-guarantees-grid">
+            <div class="guarantee-item">
+              <div class="guarantee-icon">🎯</div>
+              <div class="guarantee-label">Result-Driven<br>Services</div>
+            </div>
+            <div class="guarantee-item">
+              <div class="guarantee-icon">📈</div>
+              <div class="guarantee-label">Improve Reach<br>& Engagement</div>
+            </div>
+            <div class="guarantee-item">
+              <div class="guarantee-icon">🤝</div>
+              <div class="guarantee-label">Customized for<br>Your Business</div>
+            </div>
+            <div class="guarantee-item">
+              <div class="guarantee-icon">⚡</div>
+              <div class="guarantee-label">Quality Work &<br>Timely Delivery</div>
+            </div>
+            <div class="guarantee-item">
+              <div class="guarantee-icon">💎</div>
+              <div class="guarantee-label">Affordable &<br>Transparent</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: WHY IKSY ("MORE THAN MARKETING")
+         ========================================================================== -->
+    <section class="section why-section" aria-label="Why Choose IKSY">
+      <div class="container">
+        <!-- Header -->
+        <div class="why-header">
+          <div class="eyebrow">
+            <div class="eyebrow-dots"><span></span><span></span><span></span><span></span></div>
+            OUR CONVICTION
+          </div>
+          <h2>More Than Marketing.</h2>
+          <p class="why-subheadline">
+            We build brands that people notice, remember and choose.
+          </p>
+        </div>
+
+        <!-- The 4 Core Metrics -->
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <div class="metric-big-num">04</div>
+            <div class="metric-box-title">Creative Minds</div>
+            <p class="metric-box-desc">Ishika, Kartik, Sapna, and Yash actively leading your strategy.</p>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-big-num">01</div>
+            <div class="metric-box-title">Shared Vision</div>
+            <p class="metric-box-desc">Zero misalignment between design elegance and commercial numbers.</p>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-big-num">100%</div>
+            <div class="metric-box-title">Client Focused</div>
+            <p class="metric-box-desc">Capped client roster ensuring uncompromising focus and craft.</p>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-big-num">∞</div>
+            <div class="metric-box-title">Growth Possibilities</div>
+            <p class="metric-box-desc">Building compounding digital authority that outlasts trends.</p>
+          </div>
+        </div>
+
+        <!-- 3 Differentiators -->
+        <div class="differentiators-grid">
+          <div class="diff-card">
+            <h3 class="diff-title">Boutique Dedication</h3>
+            <p class="diff-desc">
+              You work directly with the four founding partners. No junior account reps, no communication layers, no broken promises.
+            </p>
+          </div>
+          <div class="diff-card">
+            <h3 class="diff-title">Indian Elegance & Global Rigor</h3>
+            <p class="diff-desc">
+              Our aesthetic sensitivity draws inspiration from sandstone architecture and warm light, executed with world-class engineering.
+            </p>
+          </div>
+          <div class="diff-card">
+            <h3 class="diff-title">Compounding Value</h3>
+            <p class="diff-desc">
+              We reject fleeting gimmicks. Every visual asset, line of code, and SEO cluster is built to compound your brand equity over years.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: CREATIVE STUDIO ("INSIDE THE IKSY STUDIO")
+         ========================================================================== -->
+    <section id="studio" class="section studio-section" aria-label="Inside the IKSY Studio">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="studio-header">
+          <div class="eyebrow">
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            BEHIND THE CRAFT
+          </div>
+          <h2>Inside The IKSY Studio</h2>
+          <p>
+            An immersive creative sanctuary positioned overlooking misty foothills. Where strategic quiet meets digital momentum.
+          </p>
+        </div>
+
+        <!-- Studio Interactive Canvas View with Hotspots -->
+        <div class="studio-interactive-container">
+          <div class="studio-scene-visual">
+            <!-- Studio Scene SVG Backdrop -->
+            <svg class="studio-svg-backdrop" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="studioWallGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#2D2D2A"/>
+                  <stop offset="60%" stop-color="#20201D"/>
+                  <stop offset="100%" stop-color="#141412"/>
+                </linearGradient>
+                <linearGradient id="warmWindowGlow" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#FBF2DE"/>
+                  <stop offset="50%" stop-color="#E5C79E"/>
+                  <stop offset="100%" stop-color="#9C7642"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Studio Interior Wall -->
+              <rect width="1200" height="675" fill="url(#studioWallGrad)"/>
+
+              <!-- Large Floor-to-Ceiling Foothill Vista Window (Indian Jali/Arch accents) -->
+              <path d="M150 70 Q 600 20 1050 70 L 1050 500 L 150 500 Z" fill="url(#warmWindowGlow)" opacity="0.35"/>
+              <!-- Foothill silhouettes seen through the studio window -->
+              <path d="M150 360 Q 420 280 650 330 T 1050 290 L 1050 500 L 150 500 Z" fill="#4B3929" opacity="0.6"/>
+              <path d="M150 410 Q 500 340 780 380 T 1050 360 L 1050 500 L 150 500 Z" fill="#2E2319" opacity="0.8"/>
+
+              <!-- Subtle Hanging Brass Lanterns across the studio ceiling -->
+              <line x1="280" y1="0" x2="280" y2="180" stroke="#7A684C" stroke-width="1.5"/>
+              <polygon points="270,180 290,180 285,215 275,215" fill="#B28A4A"/>
+              <circle cx="280" cy="200" r="14" fill="#FFC978" opacity="0.25"/>
+
+              <line x1="600" y1="0" x2="600" y2="140" stroke="#7A684C" stroke-width="1.5"/>
+              <polygon points="590,140 610,140 605,175 595,175" fill="#B28A4A"/>
+              <circle cx="600" cy="160" r="16" fill="#FFC978" opacity="0.25"/>
+
+              <line x1="920" y1="0" x2="920" y2="190" stroke="#7A684C" stroke-width="1.5"/>
+              <polygon points="910,190 930,190 925,225 915,225" fill="#B28A4A"/>
+              <circle cx="920" cy="210" r="14" fill="#FFC978" opacity="0.25"/>
+
+              <!-- Studio Long Communal Oak Table -->
+              <polygon points="120,490 1080,490 1140,580 60,580" fill="#3D291C"/>
+              <line x1="60" y1="580" x2="1140" y2="580" stroke="#5E402D" stroke-width="3"/>
+              <!-- Table Legs -->
+              <rect x="180" y="580" width="24" height="95" fill="#261910"/>
+              <rect x="996" y="580" width="24" height="95" fill="#261910"/>
+
+              <!-- Moodboard Pinboard on the Left Wall -->
+              <rect x="50" y="160" width="90" height="180" rx="3" fill="#695642" stroke="#8A735B" stroke-width="2"/>
+              <rect x="60" y="180" width="30" height="40" fill="#F7F1E5"/>
+              <rect x="98" y="180" width="32" height="25" fill="#123A34"/>
+              <rect x="65" y="235" width="60" height="45" fill="#D8B98A"/>
+
+              <!-- Studio Equipment On Table -->
+              <!-- Laptop 1 -->
+              <rect x="240" y="470" width="80" height="50" rx="2" fill="#252522"/>
+              <!-- Cinema Camera Rig -->
+              <rect x="740" y="465" width="55" height="35" rx="3" fill="#1A1A18"/>
+              <circle cx="795" cy="482" r="14" fill="#333330" stroke="#B28A4A" stroke-width="2"/>
+              <!-- Coffee Pour-Over Carafe -->
+              <path d="M480 460 L 500 500 L 460 500 Z" fill="#E8D2B7" opacity="0.5"/>
+              <!-- Architecture & Strategy Folios -->
+              <rect x="360" y="495" width="80" height="45" rx="1" fill="#F7F1E5"/>
+              <rect x="580" y="500" width="95" height="40" rx="1" fill="#123A34"/>
+            </svg>
+
+            <!-- 4 Interactive Hotspot Buttons -->
+            <button class="hotspot-btn hotspot-strategy active" data-hotspot="strategy" aria-label="Inspect Strategy Desk">
+              Strategy
+            </button>
+
+            <button class="hotspot-btn hotspot-creative" data-hotspot="creative" aria-label="Inspect Creative Direction">
+              Creative Direction
+            </button>
+
+            <button class="hotspot-btn hotspot-content" data-hotspot="content" aria-label="Inspect Content Lab">
+              Content Lab
+            </button>
+
+            <button class="hotspot-btn hotspot-growth" data-hotspot="growth" aria-label="Inspect Growth Terminal">
+              Growth Engine
+            </button>
+
+            <!-- Dynamic Studio Hotspot Card Drawer -->
+            <div class="studio-hotspot-modal" aria-live="polite">
+              <div class="hotspot-card-eyebrow">01 / Strategic Foundation</div>
+              <h3 class="hotspot-card-title">The Strategy Desk</h3>
+              <p class="hotspot-card-text">
+                Where market diagnostics, competitive whitespace analysis, and brand positioning take physical form. We dissect consumer psychology before writing a single line of code or copy.
+              </p>
+              <div class="hotspot-card-tools">
+                Tools: Primary Research, Persona Archetyping, Category Definition, Unit Economic Audits
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: PROCESS ("FROM IDEA TO IMPACT") — 4 CONNECTED STEPS
+         ========================================================================== -->
+    <section id="process" class="section process-section" aria-label="Our Process">
+      <div class="container">
+        <!-- Process Header -->
+        <div class="process-header">
+          <div class="eyebrow">
+            <div class="eyebrow-dots"><span></span><span></span><span></span><span></span></div>
+            HOW WE WORK
+          </div>
+          <h2>From Idea to Impact</h2>
+          <p style="font-size: 1.15rem; color: var(--color-charcoal-muted); margin-top: 1rem;">
+            A disciplined four-phase methodology bridging deep brand intuition with repeatable digital execution.
+          </p>
+        </div>
+
+        <!-- 4 Step Sandstone Progression Cards -->
+        <div class="process-grid">
+          <!-- Step 01: Discover -->
+          <div class="process-card">
+            <div class="process-step-indicator">Phase 01</div>
+            <h3 class="process-step-title">Discover</h3>
+            <p class="process-step-desc">
+              Understand your business, audience, and goals. We conduct thorough stakeholder interviews, competitive whitespace audits, and audience empathy mapping.
+            </p>
+            <ul class="process-step-deliverables">
+              <li>Comprehensive Brand Audit</li>
+              <li>Competitive Landscape Dossier</li>
+              <li>Customer Archetype Personas</li>
+            </ul>
+          </div>
+
+          <!-- Step 02: Strategize -->
+          <div class="process-card">
+            <div class="process-step-indicator">Phase 02</div>
+            <h3 class="process-step-title">Strategize</h3>
+            <p class="process-step-desc">
+              Build the right digital strategy. We architect channel distribution plans, messaging hierarchies, unit economic targets, and growth timelines.
+            </p>
+            <ul class="process-step-deliverables">
+              <li>Strategic Brand Roadmap</li>
+              <li>Channel Acquisition Plan</li>
+              <li>Content & Search Architecture</li>
+            </ul>
+          </div>
+
+          <!-- Step 03: Create -->
+          <div class="process-card">
+            <div class="process-step-indicator">Phase 03</div>
+            <h3 class="process-step-title">Create</h3>
+            <p class="process-step-desc">
+              Design content and experiences that connect. High-contrast typography, bespoke UI design, compelling editorial cinematography, and clean front-end code.
+            </p>
+            <ul class="process-step-deliverables">
+              <li>Visual Identity & Guidelines</li>
+              <li>High-Converting Web Platform</li>
+              <li>Cinematic Media Assets</li>
+            </ul>
+          </div>
+
+          <!-- Step 04: Grow -->
+          <div class="process-card">
+            <div class="process-step-indicator">Phase 04</div>
+            <h3 class="process-step-title">Grow</h3>
+            <p class="process-step-desc">
+              Measure, optimize, and scale. We activate paid acquisition channels, track multi-touch attribution, compound organic rankings, and maximize client LTV.
+            </p>
+            <ul class="process-step-deliverables">
+              <li>Multi-Channel Media Scaling</li>
+              <li>Continuous SEO Momentum</li>
+              <li>Bi-Weekly Executive Reviews</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: PORTFOLIO ("SELECTED WORK")
+         ========================================================================== -->
+    <section id="portfolio" class="section portfolio-section" aria-label="Selected Work">
+      <div class="container">
+        <!-- Header & Filter Row -->
+        <div class="portfolio-header-row">
+          <div>
+            <div class="eyebrow">
+              <div class="four-motif">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              PROVEN OUTCOMES
+            </div>
+            <h2>Selected Work</h2>
+            <p style="font-size: 1.15rem; color: var(--color-charcoal-muted); margin-top: 0.5rem;">
+              Ideas brought to life. Click any project to review the complete case study.
+            </p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="portfolio-filters" role="tablist">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Work</button>
+            <button class="filter-btn" data-filter="branding" role="tab" aria-selected="false">Branding</button>
+            <button class="filter-btn" data-filter="web-design" role="tab" aria-selected="false">Web Design</button>
+            <button class="filter-btn" data-filter="seo" role="tab" aria-selected="false">SEO</button>
+            <button class="filter-btn" data-filter="social-media" role="tab" aria-selected="false">Social Media</button>
+            <button class="filter-btn" data-filter="advertising" role="tab" aria-selected="false">Advertising</button>
+          </div>
+        </div>
+
+        <!-- Portfolio Projects Grid -->
+        <div class="portfolio-grid">
+          <!-- Project 1: Kashmir Loom & Heritage -->
+          <article class="project-card" data-category="branding web-design" data-project="kashmir" tabindex="0">
+            <div class="project-media-wrap">
+              <!-- Custom Luxury Textile SVG Artwork -->
+              <svg class="project-artwork-svg" viewBox="0 0 600 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="375" fill="#1B2F2B"/>
+                <!-- Intricate Kashmiri paisley and pashmina weave geometries -->
+                <circle cx="300" cy="187" r="130" stroke="#D8B98A" stroke-width="1.5" stroke-dasharray="4 4"/>
+                <circle cx="300" cy="187" r="95" stroke="#B28A4A" stroke-width="1"/>
+                <path d="M300 90 C 340 120 370 170 330 220 C 300 260 260 220 280 180 C 290 160 310 140 300 90 Z" fill="#D8B98A" opacity="0.3"/>
+                <text x="300" y="325" font-family="'Cormorant Garamond', serif" font-size="20" fill="#E9D7B8" text-anchor="middle" letter-spacing="4">KASHMIR LOOM ATELIER</text>
+              </svg>
+              <div class="project-hover-overlay">
+                <span class="project-view-badge">View Case Study →</span>
+              </div>
+            </div>
+            <div class="project-category-tag">Branding / Web Design / E-Commerce</div>
+            <h3 class="project-title">Kashmir Heritage Textiles</h3>
+            <p class="project-excerpt">
+              Reimagining a 100-year-old pashmina weaving house for global collectors. +310% online DTC revenue lift.
+            </p>
+          </article>
+
+          <!-- Project 2: Aura Fine Living -->
+          <article class="project-card" data-category="web-design seo" data-project="aura" tabindex="0">
+            <div class="project-media-wrap">
+              <!-- Architectural Sandstone Villa SVG Artwork -->
+              <svg class="project-artwork-svg" viewBox="0 0 600 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="375" fill="#F5EFE6"/>
+                <!-- Sandstone architectural colonnade and evening sun -->
+                <circle cx="480" cy="110" r="50" fill="#E8CCA7"/>
+                <rect x="80" y="140" width="30" height="235" fill="#D8B98A"/>
+                <rect x="180" y="140" width="30" height="235" fill="#D8B98A"/>
+                <rect x="280" y="140" width="30" height="235" fill="#D8B98A"/>
+                <rect x="380" y="140" width="30" height="235" fill="#D8B98A"/>
+                <path d="M80 140 Q 130 90 180 140" stroke="#B28A4A" stroke-width="2" fill="none"/>
+                <path d="M180 140 Q 230 90 280 140" stroke="#B28A4A" stroke-width="2" fill="none"/>
+                <path d="M280 140 Q 330 90 380 140" stroke="#B28A4A" stroke-width="2" fill="none"/>
+                <text x="300" y="340" font-family="'Cormorant Garamond', serif" font-size="22" fill="#123A34" text-anchor="middle" letter-spacing="5">AURA ARCHITECTURE</text>
+              </svg>
+              <div class="project-hover-overlay">
+                <span class="project-view-badge">View Case Study →</span>
+              </div>
+            </div>
+            <div class="project-category-tag">Web Design / SEO / Inbound Growth</div>
+            <h3 class="project-title">Aura Fine Living</h3>
+            <p class="project-excerpt">
+              Bespoke digital architecture for luxury villa developments. 4.6x increase in qualified high-net-worth inquiries.
+            </p>
+          </article>
+
+          <!-- Project 3: Vesta Botanical Wellness -->
+          <article class="project-card" data-category="advertising social-media" data-project="vesta" tabindex="0">
+            <div class="project-media-wrap">
+              <!-- Botanical Skincare Bottle Artwork -->
+              <svg class="project-artwork-svg" viewBox="0 0 600 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="375" fill="#132F2B"/>
+                <!-- Glass Dropper Bottle & Botanical Leaves -->
+                <path d="M160 300 C 130 240 140 150 200 120 C 230 180 210 270 160 300 Z" fill="#2E695D" opacity="0.4"/>
+                <rect x="270" y="130" width="60" height="150" rx="10" fill="#F7F1E5"/>
+                <rect x="285" y="95" width="30" height="35" rx="3" fill="#B28A4A"/>
+                <text x="300" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#123A34" text-anchor="middle" letter-spacing="3">VESTA</text>
+                <text x="300" y="235" font-family="'Cormorant Garamond', serif" font-size="10" fill="#7A684C" text-anchor="middle">BOTANICALS</text>
+              </svg>
+              <div class="project-hover-overlay">
+                <span class="project-view-badge">View Case Study →</span>
+              </div>
+            </div>
+            <div class="project-category-tag">Paid Advertising / Social Media / Content</div>
+            <h3 class="project-title">Vesta Botanical Wellness</h3>
+            <p class="project-excerpt">
+              Scaling a direct-to-consumer clinical skincare brand across India and the UAE. Maintained 5.2x blended ROAS.
+            </p>
+          </article>
+
+          <!-- Project 4: Siddhartha Private Wealth -->
+          <article class="project-card" data-category="branding web-design" data-project="siddhartha" tabindex="0">
+            <div class="project-media-wrap">
+              <!-- Institutional Monogram Artwork -->
+              <svg class="project-artwork-svg" viewBox="0 0 600 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="375" fill="#20201D"/>
+                <circle cx="300" cy="170" r="85" stroke="#B28A4A" stroke-width="1.5"/>
+                <path d="M280 140 L 320 140 L 320 200 L 280 200 Z" stroke="#D8B98A" stroke-width="1.5" fill="none"/>
+                <text x="300" y="315" font-family="'Cormorant Garamond', serif" font-size="20" fill="#F7F1E5" text-anchor="middle" letter-spacing="6">SIDDHARTHA WEALTH</text>
+              </svg>
+              <div class="project-hover-overlay">
+                <span class="project-view-badge">View Case Study →</span>
+              </div>
+            </div>
+            <div class="project-category-tag">Branding / Strategy / Web Design</div>
+            <h3 class="project-title">Siddhartha Private Wealth</h3>
+            <p class="project-excerpt">
+              Discreet digital presence for a multi-family wealth office. Influenced ₹4.2B in new assets under management.
+            </p>
+          </article>
+
+          <!-- Project 5: Samudra Coastal Retreats -->
+          <article class="project-card" data-category="seo social-media" data-project="samudra" tabindex="0">
+            <div class="project-media-wrap">
+              <!-- Coastal Cliff Retreat Artwork -->
+              <svg class="project-artwork-svg" viewBox="0 0 600 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="375" fill="#EADBCA"/>
+                <path d="M0 240 Q 200 200 400 230 T 600 210 L 600 375 L 0 375 Z" fill="#123A34"/>
+                <circle cx="180" cy="130" r="40" fill="#FFF4D6"/>
+                <text x="300" y="325" font-family="'Cormorant Garamond', serif" font-size="22" fill="#E9D7B8" text-anchor="middle" letter-spacing="5">SAMUDRA RETREATS</text>
+              </svg>
+              <div class="project-hover-overlay">
+                <span class="project-view-badge">View Case Study →</span>
+              </div>
+            </div>
+            <div class="project-category-tag">SEO / Social Media / Content</div>
+            <h3 class="project-title">Samudra Coastal Retreats</h3>
+            <p class="project-excerpt">
+              Transforming boutique hotel direct bookings through cinematic monsoon storytelling and intent-driven local SEO.
+            </p>
+          </article>
+
+          <!-- Project 6: Nirvana Artisan Coffee -->
+          <article class="project-card" data-category="advertising branding" data-project="nirvana" tabindex="0">
+            <div class="project-media-wrap">
+              <!-- Coffee Bean Single Estate Artwork -->
+              <svg class="project-artwork-svg" viewBox="0 0 600 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="375" fill="#2E1F16"/>
+                <ellipse cx="300" cy="170" rx="60" ry="85" fill="#543A2A"/>
+                <path d="M300 85 Q 275 170 300 255" stroke="#D8B98A" stroke-width="3" fill="none"/>
+                <text x="300" y="325" font-family="'Cormorant Garamond', serif" font-size="20" fill="#D8B98A" text-anchor="middle" letter-spacing="6">NIRVANA ESTATE</text>
+              </svg>
+              <div class="project-hover-overlay">
+                <span class="project-view-badge">View Case Study →</span>
+              </div>
+            </div>
+            <div class="project-category-tag">Branding / Paid Advertising / E-Commerce</div>
+            <h3 class="project-title">Nirvana Artisan Coffee</h3>
+            <p class="project-excerpt">
+              Product launch sprint for single-origin shade-grown beans. Scaled to 14,000+ monthly active coffee subscribers.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: TESTIMONIALS ("GOOD WORK GETS NOTICED. GREAT WORK GETS REMEMBERED.")
+         ========================================================================== -->
+    <section class="section testimonials-section" aria-label="Client Testimonials">
+      <div class="container">
+        <!-- Testimonial Header -->
+        <div class="testimonials-header">
+          <div class="eyebrow">
+            <div class="eyebrow-dots"><span></span><span></span><span></span><span></span></div>
+            ENDORSEMENTS
+          </div>
+          <h2>Good Work Gets Noticed.<br>Great Work Gets Remembered.</h2>
+        </div>
+
+        <!-- Testimonial Grid -->
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-mark" aria-hidden="true">“</div>
+            <p class="testimonial-quote-text">
+              Working with IKSY feels like collaborating with a master architect. They don’t just execute campaigns; they protected our heritage and multiplied our revenue threefold without a single discount.
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar-initials">MS</div>
+              <div>
+                <div class="author-name">Muzaffar Shah</div>
+                <div class="author-title">Master Weaver, Kashmir Loom Atelier</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-mark" aria-hidden="true">“</div>
+            <p class="testimonial-quote-text">
+              The four partners bring an unmatched harmony. Ishika gave us our voice, Sapna created our timeless visual system, Kartik made our ad spend massively profitable, and Yash built a website that wins awards.
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar-initials">DK</div>
+              <div>
+                <div class="author-name">Devina Khurana</div>
+                <div class="author-title">Founder, Vesta Bio-Formulations</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-mark" aria-hidden="true">“</div>
+            <p class="testimonial-quote-text">
+              In wealth management, loud marketing destroys credibility. IKSY understood our discretion. The editorial website they built attracts ultra-high-net-worth families who immediately respect our stature.
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar-initials">AS</div>
+              <div>
+                <div class="author-name">Anand Siddhartha</div>
+                <div class="author-title">Managing Partner, Siddhartha Wealth</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: INSIGHTS & EDITORIAL JOURNAL ("IDEAS WORTH SHARING")
+         ========================================================================== -->
+    <section id="insights" class="section insights-section" aria-label="Editorial Insights">
+      <div class="container">
+        <!-- Header Row -->
+        <div class="insights-header-row">
+          <div>
+            <div class="eyebrow">
+              <div class="four-motif">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              EDITORIAL JOURNAL
+            </div>
+            <h2>Ideas Worth Sharing</h2>
+            <p style="font-size: 1.15rem; color: var(--color-charcoal-muted); margin-top: 0.5rem;">
+              Critical perspectives on strategy, taste, performance, and the digital economy.
+            </p>
+          </div>
+          <div>
+            <a href="#contact" class="btn-link">
+              Subscribe to the studio journal <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Insights Grid -->
+        <div class="insights-grid">
+          <!-- Article 1: Luxury Digital -->
+          <article class="insight-card" data-article="luxury-digital" tabindex="0">
+            <div class="insight-category-time">
+              <span class="insight-tag">Brand Strategy</span>
+              <span class="insight-read-time">6 Min Read</span>
+            </div>
+            <h3 class="insight-title">
+              Why The World’s Most Desirable Brands Never Compete On Volume
+            </h3>
+            <p class="insight-summary">
+              When everyone is shouting on social media, restraint becomes the ultimate differentiator. How editorial curation builds gravitational brand pull.
+            </p>
+            <div class="insight-author-credit">
+              By Ishika (Brand Strategy & Narrative)
+            </div>
+          </article>
+
+          <!-- Article 2: Growth Rigor -->
+          <article class="insight-card" data-article="growth-rigor" tabindex="0">
+            <div class="insight-category-time">
+              <span class="insight-tag">Performance & Scale</span>
+              <span class="insight-read-time">8 Min Read</span>
+            </div>
+            <h3 class="insight-title">
+              Beyond Blended ROAS: Engineering Durable Customer Lifetime Value in 2026
+            </h3>
+            <p class="insight-summary">
+              Why day-1 ad metrics lie, and how top direct-to-consumer founders build compounding retention engines that survive platform price hikes.
+            </p>
+            <div class="insight-author-credit">
+              By Kartik (Performance & Growth)
+            </div>
+          </article>
+
+          <!-- Article 3: Web Craft -->
+          <article class="insight-card" data-article="web-craft" tabindex="0">
+            <div class="insight-category-time">
+              <span class="insight-tag">Digital Architecture</span>
+              <span class="insight-read-time">5 Min Read</span>
+            </div>
+            <h3 class="insight-title">
+              The Editorial Web: Why Websites Should Feel Like Flagship Boutiques
+            </h3>
+            <p class="insight-summary">
+              Rejecting generic SaaS templates and cookie-cutter dashboards in favor of sandstone textures, calm serif hierarchy, and lightning speed.
+            </p>
+            <div class="insight-author-credit">
+              By Yash (Digital Architecture)
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: FINAL CTA ("YOUR NEXT GROWTH STORY STARTS HERE.")
+         ========================================================================== -->
+    <section id="contact" class="final-cta-section" aria-label="Start Your Growth Story">
+      <div class="cta-sun-glow" aria-hidden="true"></div>
+
+      <div class="container final-cta-content">
+        <div class="eyebrow">
+          <div class="four-motif">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          BEGIN THE JOURNEY
+        </div>
+
+        <h2 class="final-cta-title">
+          Your Next Growth Story<br>Starts Here.
+        </h2>
+
+        <p class="final-cta-desc">
+          Have an idea, a business or a brand ready for its next chapter? Let's build something meaningful together.
+        </p>
+
+        <div class="final-cta-buttons">
+          <button class="btn btn-gold open-consultation-btn">
+            Let's Grow Together →
+          </button>
+          <button class="btn btn-ghost-light open-consultation-btn">
+            Start a Conversation
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-column">
+          <a href="#hero" aria-label="IKSY Homepage" style="display: inline-block;">
+            <img src="logo.png" alt="IKSY — बढ़ेगा Brand बढ़ेगा Business" class="footer-logo-img">
+          </a>
+          <div class="brand-partners">
+            Ishika<span>•</span>Kartik<span>•</span>Sapna<span>•</span>Yash
+          </div>
+          <div class="footer-tagline">
+            बढ़ेगा Brand, बढ़ेगा Business • Strategy. Creativity. Growth.
+          </div>
+          <p class="footer-brand-bio">
+            A luxury boutique creative studio fusing Indian architectural elegance with world-class digital performance.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#intro">About IKSY</a></li>
+            <li><a href="#story">The 4 Partners</a></li>
+            <li><a href="#services">What We Do</a></li>
+            <li><a href="#pricing">Packages & Pricing</a></li>
+            <li><a href="#portfolio">Selected Work</a></li>
+            <li><a href="#studio">Inside The Studio</a></li>
+            <li><a href="#insights">Editorial Journal</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer-col">
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#services">Social Media Marketing</a></li>
+            <li><a href="#services">Search Engine Optimization</a></li>
+            <li><a href="#services">Website Design & Dev</a></li>
+            <li><a href="#services">Content Creation</a></li>
+            <li><a href="#services">Paid Advertising</a></li>
+            <li><a href="#services">Branding & Strategy</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Direct Contact -->
+        <div class="footer-col">
+          <div class="footer-col-title">The Foothill Dispatch</div>
+          <p class="footer-newsletter-text">
+            Receive our quarterly private monograph on luxury brand building and algorithmic growth.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to The Foothill Dispatch.'); this.reset();">
+            <input type="email" class="footer-newsletter-input" placeholder="Your email address" required aria-label="Your email address">
+            <button type="submit" class="footer-newsletter-btn" aria-label="Subscribe">→</button>
+          </form>
+          <div style="margin-top: 1.5rem; font-size: 0.85rem; line-height: 1.8;">
+            <div><a href="tel:+919079369668" style="color: inherit; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--color-muted-gold)'" onmouseout="this.style.color='inherit'">Direct Line: +91 90793 69668</a></div>
+            <div><a href="mailto:iksydigital@gmail.com" style="color: inherit; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--color-muted-gold)'" onmouseout="this.style.color='inherit'">Inquiries: iksydigital@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 IKSY. All Rights Reserved. Your Brand. Our Digital Vision.
+        </div>
+        <div class="footer-bottom-partners">
+          <span>4 Minds</span> | <span>1 Vision</span> | <span>Infinite Possibilities</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL: CASE STUDY DETAIL DRAWER
+       ========================================================================== -->
+  <div id="case-study-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Case Study Details">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="case-study-modal-body">
+        <!-- Dynamic Case Study Content injected by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: EDITORIAL ARTICLE READER
+       ========================================================================== -->
+  <div id="article-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Editorial Article">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close article">✕</button>
+      <div class="article-modal-body">
+        <!-- Dynamic Article Content injected by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: LUXURY GROWTH CONSULTATION & INQUIRY FORM
+       ========================================================================== -->
+  <div id="consultation-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Consultation Inquiry">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close inquiry modal">✕</button>
+      
+      <div class="consultation-header" style="text-align: center; max-width: 620px; margin: 0 auto 2rem;">
+        <span class="eyebrow" style="margin-bottom: 0.5rem;">DIRECT PARTNER CONSULTATION</span>
+        <h2 style="font-size: clamp(2rem, 3.2vw, 2.6rem); color: var(--color-deep-forest); margin-bottom: 0.75rem;">
+          Let's Grow Together
+        </h2>
+        <p style="font-size: 0.95rem; color: var(--color-charcoal-muted);">
+          Connect directly with Ishika, Kartik, Sapna, and Yash. We take on a limited number of brands each quarter to ensure obsessive attention to detail.
+        </p>
+      </div>
+
+      <form id="consultation-form">
+        <div class="form-grid">
+          <!-- Full Name -->
+          <div>
+            <label class="form-label" for="inquiry-name">Your Full Name *</label>
+            <input type="text" id="inquiry-name" class="form-control" placeholder="e.g. Vikramaditya Singhania" required>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label class="form-label" for="inquiry-email">Corporate Email *</label>
+            <input type="email" id="inquiry-email" class="form-control" placeholder="vikram@brand.com" required>
+          </div>
+
+          <!-- Brand / Organization -->
+          <div>
+            <label class="form-label" for="inquiry-brand">Company / Brand Name *</label>
+            <input type="text" id="inquiry-brand" class="form-control" placeholder="e.g. Aura Living" required>
+          </div>
+
+          <!-- Website / Current URL -->
+          <div>
+            <label class="form-label" for="inquiry-url">Website or Social URL</label>
+            <input type="text" id="inquiry-url" class="form-control" placeholder="https://yourbrand.com">
+          </div>
+
+          <!-- Core Capability Needed -->
+          <div class="form-group-full">
+            <label class="form-label">Primary Strategic Objective *</label>
+            <div class="form-options-grid">
+              <label class="custom-radio-card selected" data-group="service">
+                <input type="radio" name="objective" value="Full Brand Transformation" checked>
+                Full Brand & Growth Sprint
+              </label>
+              <label class="custom-radio-card" data-group="service">
+                <input type="radio" name="objective" value="Bespoke Web Design">
+                Bespoke Website Architecture
+              </label>
+              <label class="custom-radio-card" data-group="service">
+                <input type="radio" name="objective" value="Paid Media Scaling">
+                Paid Media & SEO Scale
+              </label>
+            </div>
+          </div>
+
+          <!-- Estimated Investment Tier -->
+          <div class="form-group-full">
+            <label class="form-label">Anticipated Monthly / Project Investment Tier *</label>
+            <div class="form-options-grid">
+              <label class="custom-radio-card" data-group="budget">
+                <input type="radio" name="budget" value="₹2.5L – ₹5L">
+                ₹2.5L – ₹5L /mo ($3k–$6k)
+              </label>
+              <label class="custom-radio-card selected" data-group="budget">
+                <input type="radio" name="budget" value="₹5L – ₹15L" checked>
+                ₹5L – ₹15L /mo ($6k–$18k)
+              </label>
+              <label class="custom-radio-card" data-group="budget">
+                <input type="radio" name="budget" value="₹15L+">
+                ₹15L+ /mo ($18k+)
+              </label>
+            </div>
+          </div>
+
+          <!-- Specific Project Context / Notes -->
+          <div class="form-group-full">
+            <label class="form-label" for="inquiry-notes">Describe Your Current Challenge & Vision</label>
+            <textarea id="inquiry-notes" class="form-control" rows="3" placeholder="Tell Ishika, Kartik, Sapna, and Yash about your current traction, ambitions, or upcoming milestones..."></textarea>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.15rem;">
+            Submit Growth Brief To Partners →
+          </button>
+          <div style="font-size: 0.76rem; color: var(--color-charcoal-muted); margin-top: 0.75rem;">
+            Confidentiality guaranteed. You will hear back directly from a founding partner within 24 hours.
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script>
+/**
+ * IKSY — Luxury Creative Digital Marketing Studio
+ * Core Interactive Architecture & Micro-Interactions
+ * Zero-dependency, performant Vanilla ES6+
+ */
+
+(function () {
+  'use strict';
+
+  // -------------------------------------------------------------------------
+  // 1. DATA REPOSITORIES (Services, Case Studies, Insights, Studio Hotspots)
+  // -------------------------------------------------------------------------
+  const SERVICES_DATA = {
+    'social-media': {
+      index: '01',
+      name: 'Social Media Marketing',
+      badge: 'Community & Culture',
+      description: 'We turn passive scrollers into passionate brand advocates through culturally attuned storytelling, aesthetic coherence, and high-engagement content systems.',
+      deliverables: [
+        'Bespoke Visual Feed Curation & Art Direction',
+        'High-Impact Short-Form Video (Reels/TikTok)',
+        'Community Architecture & Proactive Engagement',
+        'Influencer Alignment & Creator Collaborations',
+        'Executive Personal Branding (Founders & Leadership)'
+      ],
+      metrics: [
+        { value: '+340%', label: 'Avg. Organic Engagement' },
+        { value: '12.4M+', label: 'Quarterly Video Impressions' }
+      ]
+    },
+    'seo': {
+      index: '02',
+      name: 'Search Engine Optimization',
+      badge: 'Organic Authority',
+      description: 'Sustainable visibility engineered for qualified buyer intent. We blend deep technical architecture with high-editorial content to capture the highest-value search real estate.',
+      deliverables: [
+        'Architectural Technical Audits & Core Web Vitals',
+        'High-Intent Commercial Keyword Mapping',
+        'Editorial Topical Authority Clustering',
+        'Digital PR & High-Domain Citation Building',
+        'Local SEO & Multi-Location Geo-Optimization'
+      ],
+      metrics: [
+        { value: '4.6x', label: 'Inbound Organic Pipeline' },
+        { value: '#1', label: 'Rankings for Tier-1 Industry Terms' }
+      ]
+    },
+    'web-design': {
+      index: '03',
+      name: 'Website Design & Development',
+      badge: 'Digital Architecture',
+      description: 'Flagship digital flagship experiences built with editorial elegance and uncompromising conversion engineering. Fast, responsive, and unmistakably memorable.',
+      deliverables: [
+        'Custom Editorial UI/UX & Interactive Design',
+        'Ultra-Fast Front-End Architecture (Sub-second load)',
+        'E-Commerce & High-Converting Funnel Design',
+        'Interactive Product Showcases & 3D WebGL Accents',
+        'Enterprise CMS Integrations (Headless/Webflow/Custom)'
+      ],
+      metrics: [
+        { value: '99/100', label: 'Lighthouse Performance Score' },
+        { value: '+185%', label: 'Lead-to-Opportunity Conversion' }
+      ]
+    },
+    'content-creation': {
+      index: '04',
+      name: 'Content Creation',
+      badge: 'Narrative & Visual Craft',
+      description: 'Words, imagery, and cinematography that demand emotional connection. We craft authentic narratives that elevate your brand far above commodity status.',
+      deliverables: [
+        'Editorial Brand Copywriting & Voice Guides',
+        'Studio & Location Art Direction / Photography',
+        'Cinematic Brand Films & Founder Documentaries',
+        'Thought Leadership Whitepapers & Industry Reports',
+        'Interactive Digital Annual Reviews & Lookbooks'
+      ],
+      metrics: [
+        { value: '4.8x', label: 'Average Time On Page' },
+        { value: '88%', label: 'Brand Recall Lift' }
+      ]
+    },
+    'paid-ads': {
+      index: '05',
+      name: 'Paid Advertising',
+      badge: 'Performance & Scale',
+      description: 'Precision media buying across Meta, Google Search, YouTube, and LinkedIn. We test aggressively, allocate ruthlessly, and maximize net profitability.',
+      deliverables: [
+        'Omnichannel Full-Funnel Paid Acquisition',
+        'Creative Testing Matrices & Iterative Ad Sprints',
+        'First-Party Conversion API & Server-Side Tracking',
+        'High-ROAS Retargeting & Customer LTV Maximization',
+        'B2B Account-Based Marketing (ABM) Campaigns'
+      ],
+      metrics: [
+        { value: '5.2x', label: 'Blended Paid ROAS' },
+        { value: '$18M+', label: 'Client Revenue Generated' }
+      ]
+    },
+    'branding': {
+      index: '06',
+      name: 'Branding & Strategy',
+      badge: 'Foundational Identity',
+      description: 'Before you scale, you must be distinct. We define your market positioning, brand archetypes, and sensory visual systems that withstand the test of time.',
+      deliverables: [
+        'Strategic Brand Positioning & Value Matrix',
+        'Sensory Identity Systems (Logo, Typography, Palette)',
+        'Brand Guidelines, Voice & Tone Frameworks',
+        'Packaging & Tactile Collateral Art Direction',
+        'Internal Brand Launch & Team Onboarding'
+      ],
+      metrics: [
+        { value: '100%', label: 'Custom Identity Craft' },
+        { value: '4-Week', label: 'Comprehensive Sprint Cycle' }
+      ]
+    }
+  };
+
+  const CASE_STUDIES = {
+    'kashmir': {
+      title: 'Kashmir Heritage Textiles',
+      category: 'Branding / Web Design / E-Commerce',
+      client: 'Kashmir Loom Atelier',
+      duration: '4 Months Sprint',
+      challenge: 'A century-old luxury pashmina weaving house was losing market share to mass-produced synthetic copies online. Their outdated website failed to convey the visceral tactile luxury and generational provenance of their handspun fabrics.',
+      solution: 'IKSY reimagined their entire digital presence as an editorial museum catalog. We instituted high-definition macro-texture photography, a bespoke typography pairing (Cormorant Garamond + Manrope), an interactive artisan lineage map, and an invite-only VIP collector drop system.',
+      results: [
+        { metric: '+310%', label: 'Online DTC Revenue' },
+        { metric: '₹84,000', label: 'Average Order Value' },
+        { metric: '42%', label: 'Repeat Collector Rate' }
+      ],
+      quote: '“IKSY didn’t just build us a website; they preserved our generational soul and translated it into pure digital prestige.”',
+      quoteAuthor: 'Muzaffar Shah, 4th Generation Master Weaver'
+    },
+    'aura': {
+      title: 'Aura Fine Living',
+      category: 'Web Design / SEO / Growth',
+      client: 'Aura Architecture & Interior Design Studio',
+      duration: '3 Months Sprint',
+      challenge: 'A high-end architectural firm in Udaipur and Mumbai depended exclusively on slow word-of-mouth referrals. Their project portfolio wasn’t ranking for high-net-worth property keywords, causing them to miss private villa commissions.',
+      solution: 'We built a cinematic, minimalist web experience with sandstone arch transitions and subtle golden hour lighting. We paired this with an intent-driven SEO strategy capturing affluent queries like "luxury mountain villa architects" and "sandstone heritage restoration".',
+      results: [
+        { metric: '4.6x', label: 'High-Ticket Inbound Inquiries' },
+        { metric: '#1 Rank', label: 'Across 18 Affluent Keywords' },
+        { metric: '₹140M+', label: 'Commission Pipeline Generated' }
+      ],
+      quote: '“Our clients constantly comment on the elegance of our site before we even meet for our first consultation.”',
+      quoteAuthor: 'Radhika Singhania, Principal Architect'
+    },
+    'vesta': {
+      title: 'Vesta Botanical Wellness',
+      category: 'Paid Advertising / Social Media / Content',
+      client: 'Vesta Bio-Formulations',
+      duration: '6 Months Ongoing',
+      challenge: 'A clinical botanical skincare brand had stalled at ₹25L/month due to escalating Meta acquisition costs and high customer churn in an overcrowded beauty sector.',
+      solution: 'Kartik and Sapna overhauled the creative strategy. We created authentic founder-led micro-documentaries explaining cold-pressed foothill herbs, paired with a rapid creative testing matrix that identified winning angles in 72 hours. We implemented server-side tracking to bypass iOS privacy blindspots.',
+      results: [
+        { metric: '5.2x', label: 'Blended Paid Media ROAS' },
+        { metric: '3.8x', label: 'Monthly DTC Revenue Growth' },
+        { metric: '-44%', label: 'Reduction in Cost Per Acquisition' }
+      ],
+      quote: '“IKSY transformed our unit economics from surviving to an undeniable market leader.”',
+      quoteAuthor: 'Devina Khurana, Co-Founder'
+    },
+    'siddhartha': {
+      title: 'Siddhartha Private Wealth',
+      category: 'Branding / Strategy / Web Design',
+      client: 'Siddhartha Multi-Family Office',
+      duration: '5 Months Sprint',
+      challenge: 'A boutique multi-family office serving ultra-high-net-worth families needed a discreet, authoritative digital presence that conveyed unassailable trust without boastful corporate jargon.',
+      solution: 'Ishika and Yash designed a private-salon experience. Featuring deep forest green and ivory accents, institutional-grade editorial commentary on generational governance, and an encrypted client portal, the brand radiates understated prestige.',
+      results: [
+        { metric: '100%', label: 'Discreet Brand Positioning' },
+        { metric: '₹4.2B', label: 'New AUM Influenced' },
+        { metric: '0', label: 'Gimmicks or Fluff' }
+      ],
+      quote: '“They understood that for our clientele, silence and taste speak louder than loud marketing.”',
+      quoteAuthor: 'Anand Siddhartha, Managing Partner'
+    },
+    'samudra': {
+      title: 'Samudra Coastal Retreats',
+      category: 'SEO / Social Media / Content',
+      client: 'Samudra Hospitality Group',
+      duration: '4 Months Sprint',
+      challenge: 'A collection of four ultra-luxury cliffside retreats in Southern India suffered from low off-season bookings and excessive reliance on 25% OTA commissions.',
+      solution: 'We engineered an immersive visual storytelling campaign focusing on monsoon wellness, slow dining, and Ayurvedic restoration. Through targeted SEO and cinematic Instagram Reels, direct bookings surged.',
+      results: [
+        { metric: '+240%', label: 'Direct Booking Revenue' },
+        { metric: '82%', label: 'Average Off-Season Occupancy' },
+        { metric: '₹32L', label: 'Saved in OTA Commissions' }
+      ],
+      quote: '“Direct bookings went from 18% to over 64% within 120 days. Outstanding execution.”',
+      quoteAuthor: 'Tara Varma, Commercial Director'
+    },
+    'nirvana': {
+      title: 'Nirvana Artisan Coffee',
+      category: 'Branding / Paid Advertising / E-Commerce',
+      client: 'Nirvana Single Estate Beans',
+      duration: '3 Months Launch Sprint',
+      challenge: 'Launching a single-estate shade-grown coffee brand into a competitive specialty market without an existing customer base.',
+      solution: 'We crafted the entire launch narrative: packaging design celebrating misty foothill estates, an automated coffee quiz matching bean roast to brewing gear, and a subscription flywheel powered by paid Meta and Search ads.',
+      results: [
+        { metric: '14,000+', label: 'Active Monthly Subscribers' },
+        { metric: '6.1x', label: 'Launch Month ROAS' },
+        { metric: '48hr', label: 'Sold Out Initial Reserve Batch' }
+      ],
+      quote: '“IKSY executed the cleanest and most profitable product launch I have ever witnessed.”',
+      quoteAuthor: 'Vikram Joshi, Founder'
+    }
+  };
+
+  const INSIGHTS_DATA = {
+    'luxury-digital': {
+      category: 'Brand Strategy',
+      readTime: '6 Min Read',
+      title: 'Why The World’s Most Desirable Brands Never Compete On Volume',
+      author: 'Ishika — Brand Strategy & Narrative',
+      date: 'September 2026',
+      content: `
+        <p class="lead">In an era of relentless algorithmic noise, volume is the default refuge of brands that lack a distinct point of view. When you have nothing original to say, you shout more frequently.</p>
+        <p>True luxury, however, operates on the opposite principle: deliberate curation, narrative tension, and emotional restraint. When a brand communicates with surgical clarity, every touchpoint gains gravitational weight.</p>
+        <h4>The Illusion of Ubiquity</h4>
+        <p>Most digital agencies instruct brands to post twice a day across five channels, flood ad accounts with seventy variations of discounted carousels, and optimize for momentary blips in dopamine. The result? Brand dilution, plummeting customer lifetime value, and an irreversible slip into commodity status.</p>
+        <p>At IKSY, we help brands identify their <em>unnegotiable core</em>. We replace frantic output with strategic cultural artifacts: immersive brand films, thoughtfully penned publications, and digital flagship experiences that reward patient curiosity.</p>
+        <h4>The 3 Rules of Editorial Distinction</h4>
+        <p><strong>1. Protect Your Mystique:</strong> Not every feature needs an explainer video. Let your craftsmanship and client outcomes create intrigue.</p>
+        <p><strong>2. Elevate Sensory Details:</strong> Typography, whitespace, page transitions, and physical packaging are not afterthoughts; they are the tangible expression of your brand’s self-respect.</p>
+        <p><strong>3. Honor the Human Intellect:</strong> Speak to your audience as discerning connoisseurs, not passive traffic funnels. Respect commands loyalty.</p>
+      `
+    },
+    'growth-rigor': {
+      category: 'Performance & Scale',
+      readTime: '8 Min Read',
+      title: 'Beyond Blended ROAS: Engineering Durable Customer Lifetime Value in 2026',
+      author: 'Kartik — Performance & Growth Engineering',
+      date: 'August 2026',
+      content: `
+        <p class="lead">The era of cheap, hacky media buying is officially dead. Ad platforms have consolidated, tracking privacy is universal, and algorithmic bidding commoditizes basic ad setup in seconds.</p>
+        <p>What remains defensible? First-principles unit economics, creative velocity, and full-funnel retention architecture.</p>
+        <h4>The False Promise of Day-1 ROAS</h4>
+        <p>Countless founders come to us celebrating a 4x Day-1 ROAS, only to discover their net cash flow is negative once shipping, returns, and overhead are deducted. Even worse, 85% of their acquired customers never make a second purchase.</p>
+        <p>We treat paid acquisition as the front door of an enduring relationship. Our growth models analyze Cohort LTV over 60, 180, and 365 days, calibrating allowable customer acquisition cost against repeatable margin.</p>
+        <h4>Our Creative Testing Engine</h4>
+        <p>Rather than guessing what creative converts, we deploy a modular creative framework: testing hooks, visual archetypes, social proof, and problem-solution framings systematically. When an angle hits, we scale horizontally across secondary platforms before ad fatigue sets in.</p>
+      `
+    },
+    'web-craft': {
+      category: 'Digital Architecture',
+      readTime: '5 Min Read',
+      title: 'The Editorial Web: Why Websites Should Feel Like Flagship Boutiques, Not SaaS Dashboards',
+      author: 'Yash — Digital Architecture & Web Craft',
+      date: 'August 2026',
+      content: `
+        <p class="lead">Step into a luxury boutique on MG Road or New Bond Street. The heavy oak doors, the faint scent of sandalwood, the deliberate silence, the respectful distance of the staff. Everything tells you: this place possesses taste.</p>
+        <p>Now consider modern websites: popups within 1.5 seconds, flashing discount banners, cookie compliance walls, chatbots pleading for attention, and generic blue rounded buttons. It feels like an open-air flea market.</p>
+        <h4>Restoring Dignity to Front-End Craft</h4>
+        <p>Web design does not need to sacrifice conversion rate to look breathtaking. In fact, high-end buyers are dramatically more likely to engage with interfaces that exhibit restraint, speed, and bespoke typographic hierarchy.</p>
+        <p>By blending architectural motifs—such as warm sandstone palettes, sandstone arches, delicate serif typography, and tactile micro-interactions—we build digital properties that feel timeless rather than disposable.</p>
+      `
+    }
+  };
+
+  const STUDIO_HOTSPOTS = {
+    strategy: {
+      eyebrow: '01 / Strategic Foundation',
+      title: 'The Strategy Desk',
+      text: 'Where market diagnostics, competitive whitespace analysis, and brand positioning take physical form. We dissect consumer psychology before writing a single line of code or copy.',
+      tools: 'Tools: Primary Research, Persona Archetyping, Category Definition, Unit Economic Audits'
+    },
+    creative: {
+      eyebrow: '02 / Visual Direction',
+      title: 'The Design & Moodboard Atelier',
+      text: 'Material swatches, bespoke serif typography specimens, and color theory inspired by Rajasthan sandstone and foothill evening light. We reject sterile templates in favor of tactile soul.',
+      tools: 'Tools: Custom Type Foundry Specimens, Material Texture Archives, High-Contrast Editorial Grids'
+    },
+    content: {
+      eyebrow: '03 / Narrative & Production',
+      title: 'The Content & Cinematography Lab',
+      text: 'Stories live and die by their cadence. Here, we script founder documentaries, storyboard cinematic reels, and write copy that makes readers pause their busy lives.',
+      tools: 'Tools: Leica & Cinema Glass, Scriptwriting Workrooms, Audio Foley, Lighting Rigs'
+    },
+    growth: {
+      eyebrow: '04 / Scalable Momentum',
+      title: 'The Growth & Attribution Terminal',
+      text: 'Real-time telemetry on customer acquisition, media spend efficiency, Core Web Vitals, and organic rank velocity. Rigorous numbers informing creative intuition.',
+      tools: 'Tools: First-Party CAPI, Attribution Models, GA4 Custom Pipelines, Algorithmic Bidding'
+    }
+  };
+
+  // -------------------------------------------------------------------------
+  // 2. CANVAS AMBIENT GOLDEN HOUR DUST PARTICLES
+  // -------------------------------------------------------------------------
+  function initHeroCanvas() {
+    const canvas = document.getElementById('hero-canvas');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let width = (canvas.width = canvas.offsetWidth);
+    let height = (canvas.height = canvas.offsetHeight);
+
+    const particles = [];
+    const particleCount = Math.min(Math.floor(width * 0.04), 45);
+
+    class DustParticle {
+      constructor() {
+        this.reset(true);
+      }
+
+      reset(initial = false) {
+        this.x = Math.random() * width;
+        this.y = initial ? Math.random() * height : height + 10;
+        this.size = Math.random() * 2.2 + 0.8;
+        this.speedY = Math.random() * 0.4 + 0.15;
+        this.speedX = (Math.random() - 0.5) * 0.3;
+        this.opacity = Math.random() * 0.6 + 0.2;
+        this.fadeSpeed = Math.random() * 0.005 + 0.002;
+        this.hue = Math.random() > 0.6 ? '216, 185, 138' : '233, 215, 184'; // Warm Sand tones
+      }
+
+      update() {
+        this.y -= this.speedY;
+        this.x += this.speedX;
+
+        // Gentle fade
+        this.opacity += this.fadeSpeed;
+        if (this.opacity > 0.75 || this.opacity < 0.15) {
+          this.fadeSpeed = -this.fadeSpeed;
+        }
+
+        if (this.y < -10 || this.x < -10 || this.x > width + 10) {
+          this.reset(false);
+        }
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${this.hue}, ${this.opacity})`;
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new DustParticle());
+    }
+
+    let animationFrameId;
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+      }
+      animationFrameId = requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = canvas.offsetWidth;
+      height = canvas.height = canvas.offsetHeight;
+    });
+  }
+
+  // -------------------------------------------------------------------------
+  // 3. STICKY HEADER & SCROLL BEHAVIOR
+  // -------------------------------------------------------------------------
+  function initHeaderScroll() {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  }
+
+  // -------------------------------------------------------------------------
+  // 4. MOBILE NAVIGATION DRAWER
+  // -------------------------------------------------------------------------
+  function initMobileDrawer() {
+    const toggle = document.querySelector('.mobile-toggle');
+    const drawer = document.querySelector('.mobile-drawer');
+    const backdrop = document.querySelector('.drawer-backdrop');
+    const links = document.querySelectorAll('.mobile-nav-link');
+
+    if (!toggle || !drawer || !backdrop) return;
+
+    function openDrawer() {
+      toggle.classList.add('active');
+      drawer.classList.add('open');
+      backdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      toggle.classList.remove('active');
+      drawer.classList.remove('open');
+      backdrop.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    toggle.addEventListener('click', () => {
+      if (drawer.classList.contains('open')) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    });
+
+    backdrop.addEventListener('click', closeDrawer);
+
+    links.forEach(link => {
+      link.addEventListener('click', closeDrawer);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer.classList.contains('open')) {
+        closeDrawer();
+      }
+    });
+  }
+
+  // -------------------------------------------------------------------------
+  // 5. INTERACTIVE SERVICES SHOWCASE
+  // -------------------------------------------------------------------------
+  function initServicesShowcase() {
+    const serviceItems = document.querySelectorAll('.service-item');
+    const previewPanel = document.querySelector('.service-preview-panel');
+    if (!serviceItems.length || !previewPanel) return;
+
+    const previewBadge = previewPanel.querySelector('.preview-badge');
+    const previewTitle = previewPanel.querySelector('.preview-title');
+    const previewDesc = previewPanel.querySelector('.preview-desc');
+    const deliverablesList = previewPanel.querySelector('.preview-deliverables-list');
+    const metricsContainer = previewPanel.querySelector('.preview-metrics');
+
+    function updatePreview(serviceKey) {
+      const data = SERVICES_DATA[serviceKey];
+      if (!data) return;
+
+      // Update active class
+      serviceItems.forEach(item => {
+        if (item.getAttribute('data-service') === serviceKey) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      // Update panel content
+      previewBadge.textContent = `${data.index} — ${data.badge}`;
+      previewTitle.textContent = data.name;
+      previewDesc.textContent = data.description;
+
+      // Update deliverables
+      deliverablesList.innerHTML = data.deliverables
+        .map(item => `<li>${item}</li>`)
+        .join('');
+
+      // Update metrics
+      metricsContainer.innerHTML = data.metrics
+        .map(m => `
+          <div class="metric-item">
+            <div class="metric-num">${m.value}</div>
+            <div class="metric-label">${m.label}</div>
+          </div>
+        `)
+        .join('');
+    }
+
+    serviceItems.forEach(item => {
+      const key = item.getAttribute('data-service');
+      item.addEventListener('mouseenter', () => updatePreview(key));
+      item.addEventListener('click', () => updatePreview(key));
+    });
+
+    // Default select first service
+    updatePreview('social-media');
+  }
+
+  // -------------------------------------------------------------------------
+  // 6. CREATIVE STUDIO HOTSPOTS
+  // -------------------------------------------------------------------------
+  function initStudioHotspots() {
+    const buttons = document.querySelectorAll('.hotspot-btn');
+    const card = document.querySelector('.studio-hotspot-modal');
+    if (!buttons.length || !card) return;
+
+    const eyebrow = card.querySelector('.hotspot-card-eyebrow');
+    const title = card.querySelector('.hotspot-card-title');
+    const text = card.querySelector('.hotspot-card-text');
+    const tools = card.querySelector('.hotspot-card-tools');
+
+    function showHotspot(key) {
+      const data = STUDIO_HOTSPOTS[key];
+      if (!data) return;
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-hotspot') === key) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      eyebrow.textContent = data.eyebrow;
+      title.textContent = data.title;
+      text.textContent = data.text;
+      tools.textContent = data.tools;
+    }
+
+    buttons.forEach(btn => {
+      const key = btn.getAttribute('data-hotspot');
+      btn.addEventListener('click', () => showHotspot(key));
+      btn.addEventListener('mouseenter', () => showHotspot(key));
+    });
+
+    // Default show Strategy
+    showHotspot('strategy');
+  }
+
+  // -------------------------------------------------------------------------
+  // 7. PORTFOLIO FILTER & CASE STUDY MODAL
+  // -------------------------------------------------------------------------
+  function initPortfolio() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const modal = document.getElementById('case-study-modal');
+    if (!modal) return;
+
+    const modalClose = modal.querySelector('.modal-close-btn');
+    const modalContent = modal.querySelector('.case-study-modal-body');
+
+    // Filter functionality
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category.includes(filter)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Open Case Study Modal
+    projectCards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        const key = card.getAttribute('data-project');
+        const data = CASE_STUDIES[key];
+        if (!data) return;
+
+        modalContent.innerHTML = `
+          <div class="case-study-header">
+            <span class="eyebrow">${data.category}</span>
+            <h2 style="font-size: clamp(2rem, 3.5vw, 2.8rem); margin-bottom: 0.5rem; color: var(--color-deep-forest);">${data.title}</h2>
+            <p style="color: var(--color-charcoal-muted); font-size: 0.9rem; margin-bottom: 2rem;">Client: <strong>${data.client}</strong> | Engagement: ${data.duration}</p>
+          </div>
+
+          <div class="case-study-narrative" style="margin-bottom: 2rem;">
+            <h4 style="color: var(--color-deep-forest); margin-bottom: 0.5rem;">The Challenge</h4>
+            <p style="margin-bottom: 1.5rem; line-height: 1.8;">${data.challenge}</p>
+
+            <h4 style="color: var(--color-deep-forest); margin-bottom: 0.5rem;">The IKSY Strategic Solution</h4>
+            <p style="margin-bottom: 1.5rem; line-height: 1.8;">${data.solution}</p>
+          </div>
+
+          <div class="case-metrics-grid">
+            ${data.results.map(r => `
+              <div style="text-align: center;">
+                <div style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-deep-forest); font-weight: 600;">${r.metric}</div>
+                <div style="font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-muted-gold); margin-top: 0.25rem;">${r.label}</div>
+              </div>
+            `).join('')}
+          </div>
+
+          <div style="background: var(--color-cream); padding: 2rem; border-left: 3px solid var(--color-muted-gold); border-radius: var(--radius-xs); margin: 2rem 0;">
+            <p style="font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--color-charcoal); margin-bottom: 0.5rem;">${data.quote}</p>
+            <p style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-muted-gold); font-weight: 600;">— ${data.quoteAuthor}</p>
+          </div>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <button class="btn btn-primary open-consultation-btn" style="width: 100%;">Discuss A Similar Project With Our Partners →</button>
+          </div>
+        `;
+
+        // Re-attach consultation button listener inside modal
+        const innerConsultBtn = modalContent.querySelector('.open-consultation-btn');
+        if (innerConsultBtn) {
+          innerConsultBtn.addEventListener('click', () => {
+            closeModal(modal);
+            openConsultationModal(`Interested in Case Study: ${data.title}`);
+          });
+        }
+
+        openModal(modal);
+      });
+    });
+
+    if (modalClose) {
+      modalClose.addEventListener('click', () => closeModal(modal));
+    }
+  }
+
+  // -------------------------------------------------------------------------
+  // 8. INSIGHTS / EDITORIAL JOURNAL MODAL
+  // -------------------------------------------------------------------------
+  function initInsightsModal() {
+    const cards = document.querySelectorAll('.insight-card');
+    const modal = document.getElementById('article-modal');
+    if (!modal) return;
+
+    const modalClose = modal.querySelector('.modal-close-btn');
+    const modalContent = modal.querySelector('.article-modal-body');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const key = card.getAttribute('data-article');
+        const data = INSIGHTS_DATA[key];
+        if (!data) return;
+
+        modalContent.innerHTML = `
+          <div class="article-header" style="margin-bottom: 2.5rem; border-bottom: 1px solid var(--color-border-sand); padding-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+              <span class="eyebrow" style="margin-bottom: 0;">${data.category}</span>
+              <span style="font-size: 0.8rem; color: var(--color-charcoal-muted);">${data.readTime}</span>
+            </div>
+            <h2 style="font-size: clamp(2rem, 3.8vw, 2.8rem); line-height: 1.2; color: var(--color-deep-forest); margin-bottom: 1rem;">${data.title}</h2>
+            <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.88rem; color: var(--color-charcoal-light);">
+              <span>${data.author}</span>
+              <span>•</span>
+              <span style="color: var(--color-charcoal-muted);">${data.date}</span>
+            </div>
+          </div>
+
+          <div class="article-reader-content">
+            ${data.content}
+          </div>
+
+          <div style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--color-border-subtle); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+            <div>
+              <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-deep-forest);">Have thoughts on this perspective?</div>
+              <div style="font-size: 0.88rem; color: var(--color-charcoal-muted);">Exchange ideas directly with Ishika, Kartik, Sapna, or Yash.</div>
+            </div>
+            <button class="btn btn-primary open-consultation-btn">Start A Conversation →</button>
+          </div>
+        `;
+
+        const consultBtn = modalContent.querySelector('.open-consultation-btn');
+        if (consultBtn) {
+          consultBtn.addEventListener('click', () => {
+            closeModal(modal);
+            openConsultationModal(`Ref: Perspective on "${data.title}"`);
+          });
+        }
+
+        openModal(modal);
+      });
+    });
+
+    if (modalClose) {
+      modalClose.addEventListener('click', () => closeModal(modal));
+    }
+  }
+
+  // -------------------------------------------------------------------------
+  // 9. LUXURY GROWTH INQUIRY & CONSULTATION MODAL
+  // -------------------------------------------------------------------------
+  function initConsultationModal() {
+    const modal = document.getElementById('consultation-modal');
+    if (!modal) return;
+
+    const modalClose = modal.querySelector('.modal-close-btn');
+    const form = modal.querySelector('#consultation-form');
+    const triggerButtons = document.querySelectorAll('.open-consultation-btn, .header-cta, .hero-cta-primary');
+
+    triggerButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openConsultationModal();
+      });
+    });
+
+    if (modalClose) {
+      modalClose.addEventListener('click', () => closeModal(modal));
+    }
+
+    // Radio card selection state
+    const radioCards = modal.querySelectorAll('.custom-radio-card');
+    radioCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const group = card.getAttribute('data-group');
+        modal.querySelectorAll(`.custom-radio-card[data-group="${group}"]`).forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+        const input = card.querySelector('input');
+        if (input) input.checked = true;
+      });
+    });
+
+    // Form submission feedback
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Connecting with Ishika, Kartik, Sapna & Yash...';
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+          form.innerHTML = `
+            <div style="text-align: center; padding: 3rem 1.5rem;">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-sand-muted); border: 1px solid var(--color-muted-gold); color: var(--color-deep-forest); display: inline-flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1.5rem;">✓</div>
+              <h3 style="font-size: 2.2rem; color: var(--color-deep-forest); margin-bottom: 1rem;">Invitation Received.</h3>
+              <p style="font-size: 1.05rem; line-height: 1.7; color: var(--color-charcoal-light); max-width: 520px; margin: 0 auto 2rem;">
+                Thank you for entrusting your brand's next chapter to IKSY. One of our founding partners will personally review your inquiry and connect with you within 24 hours.
+              </p>
+              <div class="four-motif" style="margin-bottom: 2rem;">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <button class="btn btn-secondary" onclick="document.getElementById('consultation-modal').classList.remove('active'); document.body.style.overflow='';">Return to IKSY Studio</button>
+            </div>
+          `;
+        }, 1200);
+      });
+    }
+  }
+
+  function openConsultationModal(prefSubject = '') {
+    const modal = document.getElementById('consultation-modal');
+    if (!modal) return;
+    if (prefSubject) {
+      const notesField = modal.querySelector('#inquiry-notes');
+      if (notesField) notesField.value = prefSubject;
+    }
+    openModal(modal);
+  }
+
+  // -------------------------------------------------------------------------
+  // 10. MODAL UTILITIES & ESCAPE KEY HANDLER
+  // -------------------------------------------------------------------------
+  function openModal(modalEl) {
+    if (!modalEl) return;
+    modalEl.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(modalEl) {
+    if (!modalEl) return;
+    modalEl.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const activeModal = document.querySelector('.modal-overlay.active');
+      if (activeModal) closeModal(activeModal);
+    }
+  });
+
+  document.querySelectorAll('.modal-overlay').forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal(modal);
+    });
+  });
+
+  // -------------------------------------------------------------------------
+  // 11. DESKTOP CURSOR AMBIENT GLOW
+  // -------------------------------------------------------------------------
+  function initCursorGlow() {
+    const glow = document.querySelector('.cursor-glow');
+    if (!glow || window.innerWidth <= 1024) return;
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let currentX = mouseX;
+    let currentY = mouseY;
+
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function renderGlow() {
+      currentX += (mouseX - currentX) * 0.12;
+      currentY += (mouseY - currentY) * 0.12;
+      glow.style.transform = `translate(${currentX}px, ${currentY}px)`;
+      requestAnimationFrame(renderGlow);
+    }
+
+    renderGlow();
+  }
+
+  // -------------------------------------------------------------------------
+  // 12. SMOOTH SECTION ANCHOR SCROLL
+  // -------------------------------------------------------------------------
+  function initAnchorScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          const headerOffset = 80;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  }
+
+  // -------------------------------------------------------------------------
+  // INITIALIZATION ON DOM READY
+  // -------------------------------------------------------------------------
+  document.addEventListener('DOMContentLoaded', () => {
+    initHeroCanvas();
+    initHeaderScroll();
+    initMobileDrawer();
+    initServicesShowcase();
+    initStudioHotspots();
+    initPortfolio();
+    initInsightsModal();
+    initConsultationModal();
+    initCursorGlow();
+    initAnchorScroll();
+  });
+})();
+</script>
+
+  <!-- WhatsApp Direct Chat Floating Button -->
+  <a href="https://wa.me/919079369668?text=Hello%20IKSY%2C%20I%20would%20like%20to%20discuss%20a%20digital%20marketing%20project." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with IKSY on WhatsApp">
+    <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12C2 13.89 2.525 15.657 3.438 17.174L2.052 21.758L6.772 20.407C8.243 21.42 10.052 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM8.5 7.5C8.2 7.5 7.8 7.6 7.6 8C7.4 8.4 6.8 9.4 6.8 10.7C6.8 12 7.8 13.3 8 13.5C8.2 13.7 9.8 16.3 12.4 17.3C14.6 18.1 15.1 17.9 15.6 17.8C16.1 17.7 17.2 17 17.4 16.2C17.6 15.4 17.6 14.7 17.5 14.6C17.4 14.5 17.2 14.4 16.7 14.1C16.2 13.8 13.8 12.6 13.5 12.5C13.2 12.4 13 12.4 12.8 12.7C12.6 13 12 13.7 11.8 13.9C11.6 14.1 11.4 14.1 11.1 13.9C10.8 13.7 9.8 13.4 8.6 12.3C7.7 11.5 7.1 10.5 6.9 10.2C6.7 9.9 6.9 9.7 7 9.6C7.1 9.5 7.3 9.3 7.4 9.1C7.5 8.9 7.6 8.8 7.7 8.6C7.8 8.4 7.7 8.2 7.6 8.1C7.5 8 8.8 7.5 8.5 7.5Z" fill="currentColor"/>
+    </svg>
+  </a>
+
+</body>
+</html>
