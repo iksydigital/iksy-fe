@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
   <title>IKSY — Digital Marketing Agency | Strategy, Creativity & Growth</title>
   <meta name="description" content="IKSY is a modern digital marketing agency helping businesses grow through social media marketing, SEO, web design, content creation, advertising and branding. 4 Minds | 1 Vision | Infinite Possibilities.">
   <meta name="keywords" content="IKSY, digital marketing agency, brand strategy, SEO, luxury web design, social media marketing, performance advertising, creative studio">
-  <meta name="author" content="IKSY — Brand & Growth Agency | Insights • Creative • Performance • Yield">
+  <meta name="author" content="IKSY — Ishika, Kartik, Sapna, Yash">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="logo.png">
@@ -15,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://iksy.studio/">
   <meta property="og:title" content="IKSY — Digital Marketing Agency | Strategy, Creativity & Growth">
-  <meta property="og:description" content="IKSY is a modern brand & growth agency where strategy meets creativity, making brands impossible to ignore across social media, SEO, video, and performance ads.">
+  <meta property="og:description" content="A creative digital marketing studio where strategy meets creativity, and ideas turn into meaningful brand growth. Ishika | Kartik | Sapna | Yash.">
   <meta property="og:image" content="logo.png">
 
   <!-- Twitter -->
@@ -44,11 +45,11 @@
       "postalCode": "248001",
       "addressCountry": "IN"
     },
-    "department": [
-      { "@type": "Organization", "name": "Brand Strategy & Insights" },
-      { "@type": "Organization", "name": "Kinetic Creative & Reels Production" },
-      { "@type": "Organization", "name": "Performance Advertising & Media" },
-      { "@type": "Organization", "name": "Web Architecture & Technical SEO" }
+    "founder": [
+      { "@type": "Person", "name": "Ishika" },
+      { "@type": "Person", "name": "Kartik" },
+      { "@type": "Person", "name": "Sapna" },
+      { "@type": "Person", "name": "Yash" }
     ],
     "description": "IKSY is a creative digital marketing studio where strategy meets creativity, and ideas turn into meaningful brand growth.",
     "slogan": "Your Brand. Our Digital Vision.",
@@ -63,10 +64,10 @@
   }
   </script>
 
-  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, Italiana, Noto Serif Devanagari -->
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif), Plus Jakarta Sans (Clean UI), Italiana (Handwritten luxury script) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <style>
@@ -471,8 +472,6 @@ p.lead {
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
   color: var(--color-deep-forest);
 }
 
@@ -481,8 +480,6 @@ p.lead {
   width: auto;
   object-fit: contain;
   mix-blend-mode: multiply;
-  display: block;
-  align-self: flex-start;
   transition: transform 0.3s ease;
 }
 
@@ -499,8 +496,6 @@ p.lead {
   border-radius: 6px;
   border: 1px solid var(--color-border-sand);
   margin-bottom: 0.5rem;
-  display: block;
-  align-self: flex-start;
   transition: var(--transition-smooth);
 }
 
@@ -535,115 +530,19 @@ p.lead {
 
 .brand-partners {
   font-family: var(--font-sans);
-  font-size: clamp(0.58rem, 0.7vw, 0.68rem);
+  font-size: 0.65rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-charcoal-muted);
   margin-top: 3px;
   opacity: 0.9;
-  white-space: nowrap;
-  text-align: left;
-  align-self: flex-start;
 }
 
 .brand-partners span {
   margin: 0 3px;
   color: var(--color-muted-gold);
   opacity: 0.6;
-}
-
-/* WhatsApp Direct Chat Floating Button (IKSY Deep Forest #123A34) */
-.whatsapp-float {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  width: 60px;
-  height: 60px;
-  background-color: #123A34;
-  color: #FCF9F2;
-  border: 1.5px solid var(--color-border-sand);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 28px rgba(18, 58, 52, 0.45);
-  z-index: 9999;
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.whatsapp-float:hover {
-  background-color: #0D2B27;
-  color: #D8B98A;
-  border-color: #B28A4A;
-  transform: scale(1.08) translateY(-2px);
-  box-shadow: 0 14px 36px rgba(13, 43, 39, 0.6);
-}
-
-.whatsapp-float::before {
-  content: '';
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  border-radius: 50%;
-  border: 2px solid #123A34;
-  opacity: 0.75;
-  animation: waPulse 2s infinite;
-  pointer-events: none;
-}
-
-@keyframes waPulse {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.15); opacity: 0; }
-  100% { transform: scale(0.95); opacity: 0; }
-}
-
-.whatsapp-tooltip {
-  position: absolute;
-  right: 70px;
-  background-color: var(--color-deep-forest);
-  color: var(--color-ivory);
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.4rem 0.85rem;
-  border-radius: 4px;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(10px);
-  transition: all 0.3s ease;
-  pointer-events: none;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
-}
-
-.whatsapp-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -6px;
-  transform: translateY(-50%);
-  border-width: 6px 0 6px 6px;
-  border-style: solid;
-  border-color: transparent transparent transparent var(--color-deep-forest);
-}
-
-.whatsapp-float:hover .whatsapp-tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-}
-
-@media (max-width: 640px) {
-  .whatsapp-float {
-    bottom: 20px;
-    right: 20px;
-    width: 52px;
-    height: 52px;
-  }
 }
 
 /* Nav Menu */
@@ -2558,6 +2457,496 @@ p.lead {
   }
 }
 
+/* ==========================================================================
+   SECTION: PACKAGES & PRICING (pricing.jpeg & addon.jpeg)
+   ========================================================================== */
+.pricing-section {
+  background-color: var(--color-ivory);
+  position: relative;
+}
+
+.pricing-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 3.5rem;
+}
+
+.pricing-motto-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-deep-forest);
+  background: var(--color-sand-muted);
+  border: 1px solid var(--color-border-sand);
+  padding: 0.4rem 1.25rem;
+  border-radius: 40px;
+  margin-bottom: 1rem;
+}
+
+/* 3 Column Package Grid */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.package-card {
+  background-color: var(--color-cream-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.package-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-luxury);
+  border-color: var(--color-border-sand);
+}
+
+.package-card.featured {
+  background-color: var(--color-ivory);
+  border: 2px solid var(--color-muted-gold);
+  box-shadow: var(--shadow-luxury);
+}
+
+.package-card.featured:hover {
+  transform: translateY(-4px);
+}
+
+.package-badge-tag {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.3rem 1.25rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.package-title-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.package-name {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.35rem;
+}
+
+.package-subhead {
+  font-size: 0.88rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.5;
+  min-height: 2.7em;
+}
+
+.package-price-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-deep-forest);
+  color: var(--color-light-sand);
+  padding: 0.85rem 1.5rem;
+  border-radius: 40px;
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+.package-card.featured .package-price-badge {
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+}
+
+.price-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  opacity: 0.9;
+}
+
+.price-amount {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.price-period {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.package-content {
+  flex-grow: 1;
+  margin-bottom: 2rem;
+}
+
+.package-section-label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted-gold);
+  margin-bottom: 1rem;
+}
+
+.included-list {
+  list-style: none;
+  margin-bottom: 1.75rem;
+}
+
+.included-list li {
+  font-size: 0.88rem;
+  color: var(--color-charcoal);
+  padding: 0.45rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  border-bottom: 1px dashed rgba(37, 37, 34, 0.07);
+}
+
+.included-list li::before {
+  content: '✓';
+  color: var(--color-deep-forest);
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.package-card.featured .included-list li::before {
+  color: var(--color-muted-gold);
+}
+
+.ideal-for-box {
+  background: var(--color-sand-muted);
+  border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+}
+
+.ideal-for-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.ideal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.ideal-tag {
+  font-size: 0.75rem;
+  background: var(--color-ivory);
+  color: var(--color-charcoal-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-border-subtle);
+}
+
+/* Add-ons Subsection */
+.addons-divider-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 3.5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--color-border-sand);
+}
+
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .addons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .addons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .addons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.addon-card {
+  background-color: var(--color-cream-subtle);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.addon-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-muted-gold);
+  box-shadow: var(--shadow-luxury);
+  background-color: var(--color-ivory);
+}
+
+.addon-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-deep-forest);
+  color: var(--color-light-sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  transition: var(--transition-smooth);
+}
+
+.addon-card:hover .addon-icon {
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+}
+
+.addon-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-deep-forest);
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+
+.addon-desc {
+  font-size: 0.82rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.45;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.addon-price-tag {
+  background-color: var(--color-deep-forest);
+  color: var(--color-light-sand);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.45rem 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.addon-card:hover .addon-price-tag {
+  background-color: var(--color-muted-gold);
+  color: var(--color-ivory);
+}
+
+/* Why Choose IKSY Value Banner */
+.why-iksy-banner {
+  background-color: var(--color-dark-green);
+  border-radius: var(--radius-md);
+  padding: 2.75rem 2.25rem;
+  color: var(--color-ivory);
+  box-shadow: var(--shadow-luxury);
+}
+
+.why-banner-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(216, 185, 138, 0.25);
+}
+
+.why-banner-title {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  color: var(--color-light-sand);
+}
+
+.why-guarantees-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .why-guarantees-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .why-guarantees-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.guarantee-item {
+  padding: 0.75rem;
+}
+
+.guarantee-icon {
+  font-size: 1.5rem;
+  color: var(--color-muted-gold);
+  margin-bottom: 0.5rem;
+}
+
+.guarantee-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-cream);
+  line-height: 1.3;
+}
+
+/* WhatsApp Direct Chat Floating Button (IKSY Deep Forest #123A34) */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 60px;
+  height: 60px;
+  background-color: #123A34;
+  color: #FCF9F2;
+  border: 1.5px solid var(--color-border-sand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 28px rgba(18, 58, 52, 0.45);
+  z-index: 9999;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.whatsapp-float:hover {
+  background-color: #0D2B27;
+  color: #D8B98A;
+  border-color: #B28A4A;
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 14px 36px rgba(13, 43, 39, 0.6);
+}
+
+.whatsapp-float::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  border: 2px solid #123A34;
+  opacity: 0.75;
+  animation: waPulse 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes waPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  background-color: var(--color-deep-forest);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--color-deep-forest);
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
 @media (max-width: 640px) {
   .partners-editorial-grid,
   .pillars-container,
@@ -2579,834 +2968,9 @@ p.lead {
   }
 }
 
-
-/* ==========================================================================
-   IKSY GRAND ENTRANCE — 3D KNOCK KNOCK DOUBLE DOORS & LOGO REVEAL
-   ========================================================================== */
-
-body.portal-open {
-  overflow: hidden !important;
-}
-
-#iksy-door-entrance {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999999;
-  background: radial-gradient(circle at 50% 30%, #153c35 0%, #0c2723 45%, #051412 100%);
-  color: var(--color-cream);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-              filter 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-              visibility 0.85s;
-}
-
-#iksy-door-entrance.entrance-exiting {
-  opacity: 0;
-  transform: scale(1.06);
-  filter: blur(8px);
-  pointer-events: none;
-}
-
-#iksy-door-entrance.entrance-hidden {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-/* Skip Intro Button */
-.door-skip-btn {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  z-index: 50;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: rgba(18, 58, 52, 0.5);
-  border: 1px solid rgba(216, 185, 138, 0.3);
-  color: var(--color-light-sand);
-  padding: 0.45rem 1rem;
-  border-radius: 999px;
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  cursor: pointer;
-  backdrop-filter: blur(8px);
-  transition: var(--transition-smooth);
-}
-
-.door-skip-btn:hover {
-  background: var(--color-deep-forest);
-  color: #fff;
-  border-color: var(--color-warm-sand);
-}
-
-/* Ambient Particles & Lighting Canvas behind doors */
-.door-ambient-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.45;
-}
-
-/* 3D Perspective Stage */
-.door-perspective-stage {
-  perspective: 1400px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 5;
-}
-
-/* Architectural Sandstone Arch Frame */
-.arch-door-frame {
-  position: relative;
-  width: min(840px, 92vw);
-  height: min(650px, 84vh);
-  background: linear-gradient(180deg, #d3bc99 0%, #b89868 60%, #87693d 100%);
-  padding: 18px 18px 0 18px;
-  border-radius: 260px 260px 4px 4px;
-  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.75),
-              0 0 70px rgba(216, 185, 138, 0.25),
-              inset 0 4px 20px rgba(255, 255, 255, 0.35);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  border: 2px solid rgba(255, 240, 214, 0.35);
-}
-
-/* Inset Stone Trim */
-.arch-door-frame::before {
-  content: '';
-  position: absolute;
-  inset: 7px;
-  bottom: 0;
-  border-radius: 252px 252px 0 0;
-  border: 2px solid rgba(8, 27, 24, 0.4);
-  pointer-events: none;
-}
-
-/* Double Doors Container in 3D */
-.doors-chamber {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  transform-style: preserve-3d;
-  border-radius: 240px 240px 0 0;
-  overflow: visible;
-  background: #061311;
-}
-
-/* Golden Light Flood Chamber behind doors */
-.door-interior-chamber {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  border-radius: 240px 240px 0 0;
-  background: radial-gradient(circle at 50% 50%, #FAF7F0 0%, #F5ECDD 45%, #E9D7B8 80%, #D8B98A 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  box-shadow: inset 0 0 60px rgba(18, 58, 52, 0.4);
-}
-
-.interior-light-beams {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: repeating-conic-gradient(from 0deg at 50% 50%, rgba(255, 248, 225, 0.15) 0deg 15deg, transparent 15deg 30deg);
-  animation: spinBeams 40s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes spinBeams {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* EXACT IKSY LOGO SHOWCASE CARD (from user's image) */
-.iksy-logo-showcase {
-  position: relative;
-  z-index: 3;
-  width: min(520px, 86%);
-  background: #FCF9F2;
-  border: 1px solid rgba(216, 185, 138, 0.4);
-  box-shadow: 0 16px 48px rgba(13, 43, 39, 0.15), 0 0 35px rgba(216, 185, 138, 0.35);
-  border-radius: 8px;
-  padding: 3rem 2.5rem 2.5rem;
-  text-align: center;
-  transform: scale(0.92);
-  opacity: 0;
-  transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.35s;
-}
-
-.doors-open .iksy-logo-showcase {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* The exact I K | S Y typography structure */
-.exact-iksy-composition {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  user-select: none;
-}
-
-.exact-logo-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.85rem;
-  width: 100%;
-  position: relative;
-}
-
-.logo-pair-left, .logo-pair-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.65rem;
-  flex: 1;
-}
-
-.exact-logo-glyph {
-  font-family: 'Cormorant Garamond', Garamond, 'Playfair Display', Georgia, serif;
-  font-size: clamp(3.8rem, 7.5vw, 5.8rem);
-  font-weight: 700;
-  color: #0E332B;
-  line-height: 0.95;
-  letter-spacing: -0.02em;
-}
-
-/* Exact central vertical dividing line with top/bottom dots from image */
-.exact-logo-divider {
-  position: relative;
-  width: 1.5px;
-  height: clamp(85px, 14vw, 125px);
-  background: #252522;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0.5rem;
-}
-
-.divider-pin-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #252522;
-}
-
-/* Exact Hindi + English Tagline from image: बढ़ेगा BRAND बढ़ेगा BUSINESS */
-.exact-tagline-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 0.85rem;
-  padding: 0 0.5rem;
-}
-
-.tagline-segment {
-  display: flex;
-  align-items: baseline;
-  gap: 0.55rem;
-  font-family: 'Noto Serif Devanagari', 'Cormorant Garamond', Georgia, serif;
-  color: #8C5535;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.tagline-hindi {
-  font-size: clamp(0.92rem, 1.6vw, 1.2rem);
-  font-weight: 600;
-  color: #8C5535;
-  letter-spacing: 0.12em;
-}
-
-.tagline-english {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: clamp(0.82rem, 1.4vw, 1.05rem);
-  font-weight: 600;
-  color: #8C5535;
-  letter-spacing: 0.28em;
-}
-
-/* Enter Website Direct Button below logo in reveal stage */
-.revealed-enter-prompt {
-  margin-top: 1.75rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(216, 185, 138, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-}
-
-.revealed-enter-btn {
-  background: linear-gradient(135deg, var(--color-deep-forest), var(--color-dark-green));
-  color: var(--color-warm-sand);
-  border: 1px solid var(--color-deep-forest);
-  border-radius: 999px;
-  padding: 0.65rem 1.6rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-  transition: var(--transition-smooth);
-}
-
-.revealed-enter-btn:hover {
-  background: var(--color-forest-darker);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(18, 58, 52, 0.35);
-}
-
-/* ==========================================================================
-   THE 3D DOOR LEAVES (LEFT & RIGHT)
-   ========================================================================== */
-.door-leaf {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  height: 100%;
-  z-index: 10;
-  transform-style: preserve-3d;
-  transition: transform 1.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 1.35s ease;
-  background: linear-gradient(135deg, #164039 0%, #0D2B27 50%, #081B18 100%);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-  overflow: hidden;
-}
-
-/* Door Woodgrain Slats & Molding */
-.door-leaf::before {
-  content: '';
-  position: absolute;
-  inset: 12px;
-  border: 2px solid rgba(216, 185, 138, 0.38);
-  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.6), inset 0 0 0 4px rgba(18, 58, 52, 0.8);
-  border-radius: 4px;
-}
-
-.door-left {
-  left: 0;
-  transform-origin: left center;
-  border-right: 1.5px solid rgba(0, 0, 0, 0.6);
-  border-radius: 240px 0 0 0;
-}
-
-.door-right {
-  right: 0;
-  transform-origin: right center;
-  border-left: 1.5px solid rgba(216, 185, 138, 0.25);
-  border-radius: 0 240px 0 0;
-}
-
-/* Doors Open 3D Rotation */
-.doors-open .door-left {
-  transform: rotateY(-112deg);
-  box-shadow: -15px 10px 45px rgba(0, 0, 0, 0.75);
-}
-
-.doors-open .door-right {
-  transform: rotateY(112deg);
-  box-shadow: 15px 10px 45px rgba(0, 0, 0, 0.75);
-}
-
-/* Door Inset Panels & Carvings */
-.door-panels-grid {
-  position: absolute;
-  inset: 22px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.door-panel-box {
-  flex: 1;
-  background: linear-gradient(180deg, rgba(8, 27, 24, 0.7) 0%, rgba(18, 58, 52, 0.4) 100%);
-  border: 1px solid rgba(216, 185, 138, 0.25);
-  border-radius: 3px;
-  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.5);
-  position: relative;
-}
-
-/* Antique Brass Pyramid Studs on Doors */
-.brass-stud {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: radial-gradient(circle at 35% 35%, #FFF0D6 0%, #D8B98A 50%, #87693D 100%);
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.stud-top-left { top: 8px; left: 8px; }
-.stud-top-right { top: 8px; right: 8px; }
-.stud-bot-left { bottom: 8px; left: 8px; }
-.stud-bot-right { bottom: 8px; right: 8px; }
-
-/* Central Seam Golden Light Beam before opening */
-.door-seam-glow {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 3px;
-  transform: translateX(-50%);
-  background: linear-gradient(180deg, transparent 0%, rgba(255, 240, 214, 0.75) 35%, rgba(216, 185, 138, 0.95) 50%, rgba(255, 240, 214, 0.75) 65%, transparent 100%);
-  box-shadow: 0 0 16px 3px rgba(216, 185, 138, 0.6);
-  z-index: 12;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-  animation: pulseSeam 2.4s ease-in-out infinite alternate;
-}
-
-@keyframes pulseSeam {
-  0% { opacity: 0.4; }
-  100% { opacity: 0.95; }
-}
-
-.doors-open .door-seam-glow {
-  opacity: 0;
-}
-
-/* ==========================================================================
-   ANTIQUE BRASS KNOCKER ASSEMBLY (KNOCK KNOCK INTERACTION)
-   ========================================================================== */
-.knocker-center-assembly {
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 25;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-}
-
-.doors-open .knocker-center-assembly {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.knocker-rosette-backplate {
-  position: relative;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #FFF2D6 0%, #D8B98A 45%, #8C6A3B 80%, #4D381E 100%);
-  border: 2px solid #FFF0D6;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), inset 0 0 12px rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-}
-
-.knocker-center-assembly:hover .knocker-rosette-backplate {
-  transform: scale(1.05);
-  box-shadow: 0 12px 32px rgba(216, 185, 138, 0.5), inset 0 0 12px rgba(0, 0, 0, 0.3);
-}
-
-/* The Hanging Brass Knocker Ring that moves */
-.knocker-ring-hinge {
-  position: absolute;
-  top: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  transform-origin: top center;
-  cursor: pointer;
-  z-index: 2;
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.5));
-}
-
-/* When knocking is triggered */
-.knocker-striking .knocker-ring-hinge {
-  animation: knockerPhysicsRap 0.75s ease-in-out forwards;
-}
-
-@keyframes knockerPhysicsRap {
-  0%   { transform: translateX(-50%) rotateX(0deg); }
-  22%  { transform: translateX(-50%) rotateX(38deg); }
-  38%  { transform: translateX(-50%) rotateX(0deg); } /* RAP 1 */
-  55%  { transform: translateX(-50%) rotateX(28deg); }
-  72%  { transform: translateX(-50%) rotateX(0deg); } /* RAP 2 */
-  85%  { transform: translateX(-50%) rotateX(10deg); }
-  100% { transform: translateX(-50%) rotateX(0deg); }
-}
-
-/* Strike plate underneath */
-.knocker-strike-plate {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #FFF0D6 0%, #B28A4A 70%, #5E401F 100%);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-/* Golden Impact Shockwave Rings */
-.knock-ripple-ring {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 2.5px solid #FFE6B0;
-  box-shadow: 0 0 20px #E8A848;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.knocker-striking .knock-ripple-ring.ring-1 {
-  animation: knockRipple 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.28s forwards;
-}
-
-.knocker-striking .knock-ripple-ring.ring-2 {
-  animation: knockRipple 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.54s forwards;
-}
-
-@keyframes knockRipple {
-  0% { transform: translate(-50%, -50%) scale(0.2); opacity: 0.95; }
-  100% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; }
-}
-
-/* Knock To Enter Action Prompt */
-.knock-prompt-card {
-  margin-top: 1.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  z-index: 20;
-}
-
-.knock-action-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: linear-gradient(135deg, #FFF0D6 0%, #D8B98A 45%, #B28A4A 100%);
-  color: #081B18;
-  border: none;
-  border-radius: 999px;
-  padding: 0.95rem 2.25rem;
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45), 0 0 24px rgba(216, 185, 138, 0.45);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  animation: pulseKnockBtn 2.5s infinite ease-in-out alternate;
-}
-
-@keyframes pulseKnockBtn {
-  0% { transform: scale(1); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 16px rgba(216, 185, 138, 0.3); }
-  100% { transform: scale(1.04); box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55), 0 0 32px rgba(216, 185, 138, 0.65); }
-}
-
-.knock-action-btn:hover {
-  background: linear-gradient(135deg, #FFFFFF 0%, #FFF0D6 30%, #D8B98A 70%, #B28A4A 100%);
-  transform: translateY(-2px) scale(1.06);
-}
-
-.knock-hint-subtext {
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  color: var(--color-light-sand);
-  opacity: 0.85;
-}
-
-/* Door Replay Badge in Header */
-.portal-return-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.45rem 1rem;
-  background: rgba(18, 58, 52, 0.08);
-  border: 1px solid rgba(216, 185, 138, 0.4);
-  border-radius: 9999px;
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--color-deep-forest);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-right: 0.5rem;
-}
-
-.portal-return-badge:hover {
-  background: var(--color-deep-forest);
-  color: var(--color-warm-sand);
-  border-color: var(--color-deep-forest);
-}
-
-.status-pulse-small {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #E8A848;
-  box-shadow: 0 0 6px #E8A848;
-  animation: pulseAmber 2s infinite ease-in-out;
-}
-
-@keyframes pulseAmber {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.45); opacity: 0.55; }
-}
-
-/* Responsive adjustments for 3D Doors */
-@media (max-width: 680px) {
-  .arch-door-frame {
-    width: 95vw;
-    height: 74vh;
-    border-radius: 180px 180px 4px 4px;
-    padding: 10px 10px 0 10px;
-  }
-  .doors-chamber {
-    border-radius: 170px 170px 0 0;
-  }
-  .door-interior-chamber {
-    border-radius: 170px 170px 0 0;
-  }
-  .door-left {
-    border-radius: 170px 0 0 0;
-  }
-  .door-right {
-    border-radius: 0 170px 0 0;
-  }
-  .exact-logo-row {
-    gap: 0.85rem;
-  }
-  .logo-pair-left, .logo-pair-right {
-    gap: 0.75rem;
-  }
-  .exact-tagline-row {
-    flex-direction: column;
-    gap: 0.35rem;
-    text-align: center;
-  }
-  .tagline-segment {
-    justify-content: center;
-  }
-}
-
-
 </style>
 </head>
 <body>
-
-  <!-- ==========================================================================
-       IKSY GRAND ENTRANCE: 3D KNOCK-KNOCK DOUBLE DOORS & LOGO REVEAL
-       ========================================================================== -->
-  <section id="iksy-door-entrance" aria-label="IKSY Studio Grand Entrance">
-    <!-- Skip Button in top right -->
-    <button class="door-skip-btn" id="doorSkipBtn" aria-label="Skip Door Entrance">
-      <span>Skip Directly to Website</span>
-      <span>↗</span>
-    </button>
-
-    <!-- Canvas for ambient floating dust & golden hour light rays -->
-    <canvas id="doorAmbientCanvas" class="door-ambient-canvas" aria-hidden="true"></canvas>
-
-    <!-- 3D Perspective Doorway Stage -->
-    <div class="door-perspective-stage">
-      <div class="arch-door-frame">
-        
-        <!-- Double Doors Chamber in 3D -->
-        <div class="doors-chamber" id="doorsChamber">
-
-          <!-- Interior Chamber behind doors with Golden Flood & EXACT IKSY LOGO -->
-          <div class="door-interior-chamber" id="doorInteriorChamber">
-            <div class="interior-light-beams"></div>
-
-            <!-- EXACT IKSY LOGO CARD (from user's image) -->
-            <div class="iksy-logo-showcase" id="iksyLogoShowcase">
-              <div class="exact-iksy-composition">
-                <div class="exact-logo-row">
-                  <!-- Left Pair: I and K -->
-                  <div class="logo-pair-left">
-                    <span class="exact-logo-glyph">I</span>
-                    <span class="exact-logo-glyph">K</span>
-                  </div>
-
-                  <!-- Central vertical divider with circular dot terminals -->
-                  <div class="exact-logo-divider">
-                    <span class="divider-pin-dot"></span>
-                    <span class="divider-pin-dot"></span>
-                  </div>
-
-                  <!-- Right Pair: S and Y -->
-                  <div class="logo-pair-right">
-                    <span class="exact-logo-glyph">S</span>
-                    <span class="exact-logo-glyph">Y</span>
-                  </div>
-                </div>
-
-                <!-- Subtitle Tagline: बढ़ेगा BRAND बढ़ेगा BUSINESS -->
-                <div class="exact-tagline-row">
-                  <div class="tagline-segment">
-                    <span class="tagline-hindi">बढ़ेगा</span>
-                    <span class="tagline-english">BRAND</span>
-                  </div>
-                  <div class="tagline-segment">
-                    <span class="tagline-hindi">बढ़ेगा</span>
-                    <span class="tagline-english">BUSINESS</span>
-                  </div>
-                </div>
-
-                <!-- Direct Enter Button inside revealed stage -->
-                <div class="revealed-enter-prompt">
-                  <button class="revealed-enter-btn" id="revealedEnterBtn">
-                    Step Into Studio →
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Central Light Seam before opening -->
-          <div class="door-seam-glow"></div>
-
-          <!-- Left Door Leaf (Opens Outward to Left) -->
-          <div class="door-leaf door-left" id="doorLeft" title="Click to knock & open">
-            <div class="door-panels-grid">
-              <div class="door-panel-box">
-                <span class="brass-stud stud-top-left"></span>
-                <span class="brass-stud stud-top-right"></span>
-                <span class="brass-stud stud-bot-left"></span>
-                <span class="brass-stud stud-bot-right"></span>
-              </div>
-              <div class="door-panel-box">
-                <span class="brass-stud stud-top-left"></span>
-                <span class="brass-stud stud-top-right"></span>
-                <span class="brass-stud stud-bot-left"></span>
-                <span class="brass-stud stud-bot-right"></span>
-              </div>
-              <div class="door-panel-box">
-                <span class="brass-stud stud-top-left"></span>
-                <span class="brass-stud stud-top-right"></span>
-                <span class="brass-stud stud-bot-left"></span>
-                <span class="brass-stud stud-bot-right"></span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Door Leaf (Opens Outward to Right) -->
-          <div class="door-leaf door-right" id="doorRight" title="Click to knock & open">
-            <div class="door-panels-grid">
-              <div class="door-panel-box">
-                <span class="brass-stud stud-top-left"></span>
-                <span class="brass-stud stud-top-right"></span>
-                <span class="brass-stud stud-bot-left"></span>
-                <span class="brass-stud stud-bot-right"></span>
-              </div>
-              <div class="door-panel-box">
-                <span class="brass-stud stud-top-left"></span>
-                <span class="brass-stud stud-top-right"></span>
-                <span class="brass-stud stud-bot-left"></span>
-                <span class="brass-stud stud-bot-right"></span>
-              </div>
-              <div class="door-panel-box">
-                <span class="brass-stud stud-top-left"></span>
-                <span class="brass-stud stud-top-right"></span>
-                <span class="brass-stud stud-bot-left"></span>
-                <span class="brass-stud stud-bot-right"></span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Antique Brass Door Knocker Assembly (Centered on doors) -->
-          <div class="knocker-center-assembly" id="knockerAssembly" role="button" aria-label="Knock on door to enter">
-            <div class="knocker-rosette-backplate">
-              <!-- Radial lotus flower / sunburst engraving in SVG -->
-              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="34" cy="34" r="30" stroke="#FFF0D6" stroke-width="1.5" stroke-dasharray="3 3"/>
-                <circle cx="34" cy="34" r="22" stroke="#8C6A3B" stroke-width="1.5"/>
-                <path d="M34 8 L36 22 L48 14 L42 26 L56 26 L44 34 L56 42 L42 42 L48 54 L36 46 L34 60 L32 46 L20 54 L26 42 L12 42 L24 34 L12 26 L26 26 L20 14 L32 22 Z" fill="#D8B98A" opacity="0.35"/>
-              </svg>
-
-              <!-- Moveable Brass Knocker Ring Handle with heavy striker ball -->
-              <div class="knocker-ring-hinge" id="knockerRingHinge">
-                <svg width="46" height="64" viewBox="0 0 46 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <!-- Knocker Mounting Hinge -->
-                  <rect x="15" y="0" width="16" height="8" rx="2" fill="#5E401F"/>
-                  <rect x="17" y="1" width="12" height="6" rx="1" fill="#FFF0D6"/>
-                  <!-- Solid Brass Ring -->
-                  <path d="M23 8 C11 8 3 17 3 32 C3 46 12 55 23 55 C34 55 43 46 43 32 C43 17 35 8 23 8 Z M23 47 C16 47 11 40 11 32 C11 23 16 16 23 16 C30 16 35 23 35 32 C35 40 30 47 23 47 Z" fill="url(#knockerMetalGrad)"/>
-                  <!-- Striker Ball Base -->
-                  <circle cx="23" cy="55" r="7.5" fill="url(#knockerMetalGrad)"/>
-                  <circle cx="21" cy="53" r="2.5" fill="#FFF0D6" opacity="0.75"/>
-                  <defs>
-                    <linearGradient id="knockerMetalGrad" x1="3" y1="8" x2="43" y2="55" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#FFF2D6"/>
-                      <stop offset="0.35" stop-color="#D8B98A"/>
-                      <stop offset="0.7" stop-color="#A57E42"/>
-                      <stop offset="1" stop-color="#5E401F"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-
-              <!-- Anvil Strike Plate at bottom of knocker -->
-              <div class="knocker-strike-plate"></div>
-            </div>
-
-            <!-- Expanding Impact Shockwaves on Strike -->
-            <div class="knock-ripple-ring ring-1"></div>
-            <div class="knock-ripple-ring ring-2"></div>
-          </div>
-
-        </div>
-
-        <!-- Knock Action Prompt below doors -->
-        <div class="knock-prompt-card">
-          <button class="knock-action-btn" id="knockActionBtn">
-            <span>🚪 Knock Knock to Enter</span>
-            <span style="font-size: 1.1rem;">→</span>
-          </button>
-          <span class="knock-hint-subtext">Click the brass knocker or button to unlock the studio</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
 
   <!-- Ambient Cursor Glow (Desktop Only) -->
   <div class="cursor-glow" aria-hidden="true"></div>
@@ -3418,8 +2982,10 @@ body.portal-open {
     <div class="container-wide header-container">
       <!-- IKSY Brand Logo -->
       <a href="#hero" class="brand-wordmark" aria-label="IKSY Homepage">
-        <img src="logo.png" alt="IKSY — Innovative Knowledge, Strategy & Yield" class="site-logo-img">
-        <div class="brand-partners">Innovative Knowledge, Strategy & Yield</div>
+        <img src="logo.png" alt="IKSY — बढ़ेगा Brand बढ़ेगा Business" class="site-logo-img">
+        <div class="brand-partners">
+          Ishika<span>•</span>Kartik<span>•</span>Sapna<span>•</span>Yash
+        </div>
       </a>
 
       <!-- Desktop Navigation Menu -->
@@ -3428,6 +2994,7 @@ body.portal-open {
           <li><a href="#hero" class="nav-link">Home</a></li>
           <li><a href="#intro" class="nav-link">About</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
           <li><a href="#portfolio" class="nav-link">Work</a></li>
           <li><a href="#process" class="nav-link">Process</a></li>
           <li><a href="#studio" class="nav-link">Studio</a></li>
@@ -3438,12 +3005,6 @@ body.portal-open {
 
       <!-- Right Header Actions -->
       <div class="header-actions">
-        <!-- Door Entrance Replay Badge -->
-        <button id="returnToPortalBtn" class="portal-return-badge return-to-portal-action" title="Replay Knock Knock Door Entrance">
-          <span class="status-pulse-small"></span>
-          <span>🚪 Knock Knock Door</span>
-        </button>
-
         <a href="#contact" class="btn btn-primary header-cta header-cta-desktop open-consultation-btn">
           Let's Grow Together →
         </a>
@@ -3461,17 +3022,17 @@ body.portal-open {
   <!-- Mobile Drawer & Backdrop -->
   <div class="drawer-backdrop" aria-hidden="true"></div>
   <aside class="mobile-drawer" aria-label="Mobile Navigation">
-    <div style="padding: 1.25rem 1.5rem 0.5rem; text-align: left; border-bottom: 1px solid var(--color-border-subtle);">
-      <a href="#hero" aria-label="IKSY Homepage" style="display: inline-block;">
-        <img src="logo.png" alt="IKSY Logo" style="height: 44px; width: auto; mix-blend-mode: multiply; display: block;">
+    <div style="padding: 1.25rem 1.5rem 0.5rem; text-align: center; border-bottom: 1px solid var(--color-border-subtle);">
+      <a href="#hero" aria-label="IKSY Homepage">
+        <img src="logo.png" alt="IKSY Logo" style="height: 44px; width: auto; mix-blend-mode: multiply;">
       </a>
-      <div style="font-size: 0.62rem; color: var(--color-charcoal-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem; white-space: nowrap; text-align: left;">Innovative Knowledge, Strategy & Yield</div>
     </div>
     <ul class="mobile-nav-list">
       <li><a href="#hero" class="mobile-nav-link">Home</a></li>
       <li><a href="#intro" class="mobile-nav-link">About Us</a></li>
       <li><a href="#story" class="mobile-nav-link">The IKSY Story</a></li>
       <li><a href="#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="#pricing" class="mobile-nav-link">Pricing & Add-ons</a></li>
       <li><a href="#portfolio" class="mobile-nav-link">Selected Work</a></li>
       <li><a href="#process" class="mobile-nav-link">Our Process</a></li>
       <li><a href="#studio" class="mobile-nav-link">The Studio</a></li>
@@ -3543,38 +3104,33 @@ body.portal-open {
           </div>
 
           <h1 class="hero-title">
-            We Make Brands<br>
-            Impossible to <span class="script-accent">Ignore</span>.
+            Your Brand.<br>
+            Our Digital <span class="script-accent">Vision</span>.
           </h1>
 
           <p class="hero-subtext">
-            Your outsourced growth team. We engineer high-converting social media, short-form video reels, technical SEO dominance, and performance advertising for local businesses and ambitious brands ready to scale.
+            IKSY is a creative digital marketing studio where strategy meets creativity, and ideas turn into meaningful brand growth.
           </p>
 
           <div class="hero-cta-group">
-            <button class="btn btn-primary open-audit-btn">
-              Claim Free Growth Audit →
-            </button>
-            <a href="#services" class="btn btn-secondary">
-              Explore Our Solutions
+            <a href="#services" class="btn btn-primary">
+              Explore Our Services →
+            </a>
+            <a href="#portfolio" class="btn btn-secondary">
+              View Our Work
             </a>
           </div>
 
           <!-- Hero Partners Badge Strip -->
           <div class="hero-partners-badge">
-            <span class="badge-label">The 4 Strategic Pillars:</span>
+            <span class="badge-label">Founding Minds:</span>
             <div class="badge-names">
-              <span class="badge-name-item"><span class="letter">I</span> Insights & Strategy</span>
-              <span class="badge-name-item"><span class="letter">K</span> Kinetic Creative</span>
-              <span class="badge-name-item"><span class="letter">S</span> Scale & Ads</span>
-              <span class="badge-name-item"><span class="letter">Y</span> Yield & SEO</span>
+              <span class="badge-name-item"><span class="letter">I</span> Ishika</span>
+              <span class="badge-name-item"><span class="letter">K</span> Kartik</span>
+              <span class="badge-name-item"><span class="letter">S</span> Sapna</span>
+              <span class="badge-name-item"><span class="letter">Y</span> Yash</span>
             </div>
           </div>
-          <div class="hero-verticals-strip" style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--color-charcoal-muted); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-            <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--color-muted-gold);"></span>
-            <span>Dedicated Growth Partner for: <strong>Local Businesses</strong> (Salons, Clinics, Dining, Real Estate) & <strong>D2C Brands</strong></span>
-          </div>
-        </div>
         </div>
 
         <!-- Hero Visual Composition: Sandstone Architectural Arch with Studio Workspace Scene -->
@@ -3702,65 +3258,65 @@ body.portal-open {
           </div>
         </div>
 
-        <!-- The 4 Strategic Growth Pillars (Insights, Kinetic Creative, Scale Ads, Yield SEO) -->
+        <!-- The 4 Partners Editorial Cards (Ishika, Kartik, Sapna, Yash) -->
         <div class="partners-editorial-grid">
-          <!-- 01 — Insights & Strategy -->
+          <!-- 01 — Ishika -->
           <article class="partner-card">
             <div class="partner-letter-box">I</div>
-            <h3 class="partner-name">Insights & Strategy</h3>
-            <div class="partner-discipline">Market Intelligence & Brand Positioning</div>
+            <h3 class="partner-name">Ishika</h3>
+            <div class="partner-discipline">Brand Strategy & Narrative</div>
             <p class="partner-quote">
-              “A brand without clear positioning is just noise in a crowded market. We uncover the core competitive advantage that makes your business irreplaceable.”
+              “A brand without a soul is just inventory waiting to be discounted. We discover the emotional heartbeat that makes you irreplaceable.”
             </p>
             <div class="partner-focus-tags">
               <span class="partner-focus-tag">Market Positioning</span>
-              <span class="partner-focus-tag">Customer Psychographics</span>
-              <span class="partner-focus-tag">Offer Strategy</span>
+              <span class="partner-focus-tag">Brand Narrative</span>
+              <span class="partner-focus-tag">Cultural Relevance</span>
             </div>
           </article>
 
-          <!-- 02 — Kinetic Creative & Video -->
+          <!-- 02 — Kartik -->
           <article class="partner-card">
             <div class="partner-letter-box">K</div>
-            <h3 class="partner-name">Kinetic Creative</h3>
-            <div class="partner-discipline">Viral Reels & High-Retention Content</div>
+            <h3 class="partner-name">Kartik</h3>
+            <div class="partner-discipline">Performance & Growth</div>
             <p class="partner-quote">
-              “Attention is the new currency. We script, shoot, and edit scroll-stopping short-form video and visual assets that captivate audiences in the first 3 seconds.”
+              “Creativity without conversion is an indulgence. We engineer acquisition engines where every rupee spent compounds brand equity.”
             </p>
             <div class="partner-focus-tags">
-              <span class="partner-focus-tag">Reels & TikTok Production</span>
-              <span class="partner-focus-tag">Visual Brand Identity</span>
-              <span class="partner-focus-tag">Content Calendars</span>
+              <span class="partner-focus-tag">Paid Media ROAS</span>
+              <span class="partner-focus-tag">SEO Architecture</span>
+              <span class="partner-focus-tag">Attribution Modeling</span>
             </div>
           </article>
 
-          <!-- 03 — Scale & Performance Ads -->
+          <!-- 03 — Sapna -->
           <article class="partner-card">
             <div class="partner-letter-box">S</div>
-            <h3 class="partner-name">Scale Performance</h3>
-            <div class="partner-discipline">Meta & Google Ads Engineering</div>
+            <h3 class="partner-name">Sapna</h3>
+            <div class="partner-discipline">Creative Direction & Design</div>
             <p class="partner-quote">
-              “Creativity without commercial return is just art. We architect precision acquisition funnels where every rupee spent delivers compounding, profitable revenue.”
+              “True luxury whispers. We craft visual identities, typography systems, and aesthetics that captivate without gimmicks or noise.”
             </p>
             <div class="partner-focus-tags">
-              <span class="partner-focus-tag">High-ROI Meta Ads</span>
-              <span class="partner-focus-tag">Google Search & PMax</span>
-              <span class="partner-focus-tag">Retargeting Funnels</span>
+              <span class="partner-focus-tag">Visual Identity</span>
+              <span class="partner-focus-tag">Art Direction</span>
+              <span class="partner-focus-tag">Editorial Content</span>
             </div>
           </article>
 
-          <!-- 04 — Yield & Growth Architecture -->
+          <!-- 04 — Yash -->
           <article class="partner-card">
             <div class="partner-letter-box">Y</div>
-            <h3 class="partner-name">Yield Architecture</h3>
-            <div class="partner-discipline">Technical SEO & Conversion Web Design</div>
+            <h3 class="partner-name">Yash</h3>
+            <div class="partner-discipline">Digital Architecture & Web</div>
             <p class="partner-quote">
-              “Your website is your 24/7 rainmaker. We engineer lightning-fast digital storefronts and local search dominance that convert cold clicks into loyal paying clients.”
+              “Your website is your global flagship salon. We build high-speed, bespoke digital experiences that turn visitors into devoted patrons.”
             </p>
             <div class="partner-focus-tags">
-              <span class="partner-focus-tag">Google Maps & Local SEO</span>
               <span class="partner-focus-tag">Bespoke UI/UX</span>
-              <span class="partner-focus-tag">CRO & Sub-Second Speed</span>
+              <span class="partner-focus-tag">Sub-Second Speed</span>
+              <span class="partner-focus-tag">Scalable Engineering</span>
             </div>
           </article>
         </div>
@@ -3782,16 +3338,16 @@ body.portal-open {
           </div>
 
           <h2 class="story-statement">
-            4 Disciplines.<br>
-            1 Relentless Standard.<br>
-            Infinite Growth Possibilities.
+            4 Minds.<br>
+            1 Vision.<br>
+            Infinite Possibilities.
           </h2>
 
           <p>
             IKSY was born out of a shared frustration with the assembly-line mentality of modern digital marketing. Agencies either offered dry data dashboards devoid of taste, or superficial design that failed to deliver commercial impact.
           </p>
           <p>
-            By uniting <strong>Market Insights</strong> (Strategy), <strong>Kinetic Creative</strong> (Content & Reels), <strong>Scale Media</strong> (Paid Ads), and <strong>Yield Engineering</strong> (SEO & Web Craft), we operate as your dedicated outsourced growth department without passing your account to junior interns.
+            By uniting <strong>Ishika</strong> (Strategy), <strong>Kartik</strong> (Growth), <strong>Sapna</strong> (Aesthetics), and <strong>Yash</strong> (Technology), we established a boutique studio where no client is passed to junior trainees.
           </p>
           <p>
             We operate like master artisans in our foothill retreat: calm, deliberate, deeply invested in every detail, and relentless about measurable client ascension.
@@ -3985,6 +3541,352 @@ body.portal-open {
     </section>
 
     <!-- ==========================================================================
+         SECTION: PACKAGES & PRICING (MODELS FROM PRICING.JPEG & ADDON.JPEG)
+         ========================================================================== -->
+    <section id="pricing" class="section pricing-section" aria-label="Packages & Pricing">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="pricing-header">
+          <div class="eyebrow">
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            TRANSPARENT VALUE
+          </div>
+          <div class="pricing-motto-badge">
+            बढ़ेगा BRAND • बढ़ेगा BUSINESS
+          </div>
+          <h2>Digital Marketing Packages</h2>
+          <p class="lead" style="margin-top: 0.75rem;">
+            Strategic Marketing | Creative Content | Real Business Growth
+          </p>
+          <p style="font-family: var(--font-script); font-size: 1.3rem; color: var(--color-deep-forest); margin-top: 0.5rem; font-style: italic;">
+            "Your Growth is Our Mission"
+          </p>
+        </div>
+
+        <!-- 3 Core Packages Grid -->
+        <div class="packages-grid">
+          <!-- 01: STARTER PACKAGE -->
+          <div class="package-card">
+            <div>
+              <div class="package-title-header">
+                <h3 class="package-name">Starter Package</h3>
+                <p class="package-subhead">Perfect for businesses taking their first step online.</p>
+                <div class="package-price-badge">
+                  <span class="price-label">ONLY</span>
+                  <span class="price-amount">₹4,999</span>
+                  <span class="price-period">/ MONTH</span>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <div class="package-section-label">WHAT'S INCLUDED</div>
+                <ul class="included-list">
+                  <li><strong>1 Social Media Platform</strong> (Instagram or Facebook)</li>
+                  <li><strong>8 Posts Per Month</strong> (Creative Images)</li>
+                  <li><strong>2 Reels Per Month</strong></li>
+                  <li><strong>8 Stories Per Month</strong></li>
+                  <li>Captions + Hashtags (Engaging & Relevant)</li>
+                  <li>Creative Designing</li>
+                  <li>Basic Content Strategy</li>
+                  <li>Monthly Performance Report</li>
+                </ul>
+
+                <div class="ideal-for-box">
+                  <div class="ideal-for-title">IDEAL FOR</div>
+                  <div class="ideal-tags">
+                    <span class="ideal-tag">Local Shops</span>
+                    <span class="ideal-tag">Startups</span>
+                    <span class="ideal-tag">Entrepreneurs</span>
+                    <span class="ideal-tag">Service Providers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-secondary open-consultation-btn" style="width: 100%;" onclick="openConsultationModal('Inquiry for: Starter Package (₹4,999/mo)')">
+              Choose Starter Package →
+            </button>
+          </div>
+
+          <!-- 02: GROWTH PACKAGE (FEATURED) -->
+          <div class="package-card featured">
+            <div class="package-badge-tag">MOST POPULAR</div>
+            <div>
+              <div class="package-title-header">
+                <h3 class="package-name">Growth Package</h3>
+                <p class="package-subhead">For businesses ready to grow their reach & engagement.</p>
+                <div class="package-price-badge">
+                  <span class="price-label">ONLY</span>
+                  <span class="price-amount">₹9,999</span>
+                  <span class="price-period">/ MONTH</span>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <div class="package-section-label">WHAT'S INCLUDED</div>
+                <ul class="included-list">
+                  <li><strong>2 Social Media Platforms</strong> (Instagram + Facebook)</li>
+                  <li><strong>12 Posts Per Month</strong> (Creative Images)</li>
+                  <li><strong>4 Reels Per Month</strong></li>
+                  <li><strong>12 Stories Per Month</strong></li>
+                  <li>Captions + Hashtags (Engaging & Relevant)</li>
+                  <li>Google Business Profile Management</li>
+                  <li>Basic Local SEO</li>
+                  <li>Competitor Research</li>
+                  <li>Monthly Content Calendar</li>
+                  <li>Monthly Performance Report</li>
+                </ul>
+
+                <div class="ideal-for-box">
+                  <div class="ideal-for-title">IDEAL FOR</div>
+                  <div class="ideal-tags">
+                    <span class="ideal-tag">Retail Stores</span>
+                    <span class="ideal-tag">Restaurants</span>
+                    <span class="ideal-tag">Gyms & Salons</span>
+                    <span class="ideal-tag">Local Businesses</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-gold open-consultation-btn" style="width: 100%;" onclick="openConsultationModal('Inquiry for: Growth Package (₹9,999/mo)')">
+              Choose Growth Package →
+            </button>
+          </div>
+
+          <!-- 03: PREMIUM PACKAGE -->
+          <div class="package-card">
+            <div>
+              <div class="package-title-header">
+                <h3 class="package-name">Premium Package</h3>
+                <p class="package-subhead">For businesses serious about growth, leads & brand dominance.</p>
+                <div class="package-price-badge">
+                  <span class="price-label">ONLY</span>
+                  <span class="price-amount">₹17,999</span>
+                  <span class="price-period">/ MONTH</span>
+                </div>
+              </div>
+
+              <div class="package-content">
+                <div class="package-section-label">WHAT'S INCLUDED</div>
+                <ul class="included-list">
+                  <li><strong>3–4 Social Media Platforms</strong> (Instagram, Facebook, YouTube, LinkedIn)</li>
+                  <li><strong>16 Posts Per Month</strong> (Creative Images)</li>
+                  <li><strong>8 Reels Per Month</strong></li>
+                  <li><strong>20 Stories Per Month</strong></li>
+                  <li>Captions + Hashtags (Engaging & Relevant)</li>
+                  <li>Google Business Profile Full Management & Optimization</li>
+                  <li>Advanced SEO</li>
+                  <li>Competitor Analysis</li>
+                  <li>Content Strategy & Planning</li>
+                  <li>Ad Campaign Setup & Management (Meta / Google Ads)</li>
+                  <li>WhatsApp Marketing Strategy</li>
+                  <li>Monthly Performance Report (Detailed Analytics)</li>
+                </ul>
+
+                <div class="ideal-for-box">
+                  <div class="ideal-for-title">IDEAL FOR</div>
+                  <div class="ideal-tags">
+                    <span class="ideal-tag">Established Businesses</span>
+                    <span class="ideal-tag">E-commerce Brands</span>
+                    <span class="ideal-tag">Real Estate</span>
+                    <span class="ideal-tag">Enterprises</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary open-consultation-btn" style="width: 100%;" onclick="openConsultationModal('Inquiry for: Premium Package (₹17,999/mo)')">
+              Choose Premium Package →
+            </button>
+          </div>
+        </div>
+
+        <!-- ==========================================================================
+             ADD-ON SERVICES SUBSECTION (addon.jpeg)
+             ========================================================================== -->
+        <div class="addons-divider-header">
+          <div class="eyebrow">
+            <div class="four-motif">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            EXTRA SERVICES • EXTRA GROWTH!
+          </div>
+          <h2>Result-Driven Add-On Services</h2>
+          <p class="lead" style="margin-top: 0.5rem;">
+            Add more power to your brand with our customized add-on services.
+          </p>
+          <p style="font-family: var(--font-script); font-size: 1.25rem; color: var(--color-deep-forest); margin-top: 0.4rem; font-style: italic;">
+            "Tailored for Your Business Needs!"
+          </p>
+        </div>
+
+        <!-- 12 Add-On Service Cards Grid -->
+        <div class="addons-grid">
+          <!-- 01: Product Photography -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Product Photography (Starting ₹2,000)')">
+            <div class="addon-icon">📷</div>
+            <div>
+              <h3 class="addon-title">Product Photography</h3>
+              <p class="addon-desc">High-quality product photos that attract attention and build trust.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹2,000</div>
+          </div>
+
+          <!-- 02: Professional Video Shoot -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Professional Video Shoot (Starting ₹3,000)')">
+            <div class="addon-icon">📹</div>
+            <div>
+              <h3 class="addon-title">Professional Video Shoot</h3>
+              <p class="addon-desc">Professional shoots that showcase your brand in the best way.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹3,000</div>
+          </div>
+
+          <!-- 03: Extra Reel Creation -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Extra Reel Creation (Starting ₹700)')">
+            <div class="addon-icon">🎬</div>
+            <div>
+              <h3 class="addon-title">Extra Reel Creation</h3>
+              <p class="addon-desc">High-quality, engaging reels to increase reach and engagement.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹700</div>
+          </div>
+
+          <!-- 04: Extra Static Post -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Extra Static Post (Starting ₹300)')">
+            <div class="addon-icon">🖼️</div>
+            <div>
+              <h3 class="addon-title">Extra Static Post</h3>
+              <p class="addon-desc">Additional eye-catching posts to keep your feed active and attractive.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹300</div>
+          </div>
+
+          <!-- 05: Meta Ads -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Meta Ads Management (Starting ₹3,000/mo)')">
+            <div class="addon-icon">📣</div>
+            <div>
+              <h3 class="addon-title">Meta (FB & IG) Ads</h3>
+              <p class="addon-desc">Targeted ad campaigns to reach the right audience and get more leads.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹3,000 / MO</div>
+          </div>
+
+          <!-- 06: Google Ads -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Google Ads Management (Starting ₹3,000/mo)')">
+            <div class="addon-icon">🎯</div>
+            <div>
+              <h3 class="addon-title">Google Ads Management</h3>
+              <p class="addon-desc">Drive quality traffic & leads with performance-based Google Ads.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹3,000 / MO</div>
+          </div>
+
+          <!-- 07: SEO -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Search Engine Optimization (Starting ₹5,000/mo)')">
+            <div class="addon-icon">🔍</div>
+            <div>
+              <h3 class="addon-title">Search Engine Optimization</h3>
+              <p class="addon-desc">Improve your website ranking & get discovered by more potential customers.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹5,000 / MO</div>
+          </div>
+
+          <!-- 08: Website Development -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Website Development (Starting ₹8,000)')">
+            <div class="addon-icon">🌐</div>
+            <div>
+              <h3 class="addon-title">Website Development</h3>
+              <p class="addon-desc">Modern, responsive & SEO-friendly websites that convert visitors.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹8,000</div>
+          </div>
+
+          <!-- 09: Landing Page Design -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Landing Page Design (Starting ₹3,000)')">
+            <div class="addon-icon">💻</div>
+            <div>
+              <h3 class="addon-title">Landing Page Design</h3>
+              <p class="addon-desc">High-converting landing pages for campaigns, offers & lead generation.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹3,000</div>
+          </div>
+
+          <!-- 10: WhatsApp Marketing -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: WhatsApp Marketing (Starting ₹2,000/mo)')">
+            <div class="addon-icon">💬</div>
+            <div>
+              <h3 class="addon-title">WhatsApp Marketing</h3>
+              <p class="addon-desc">Smart WhatsApp strategies to engage, nurture & convert customers.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹2,000 / MO</div>
+          </div>
+
+          <!-- 11: Google Business Profile Setup -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Google Business Profile Setup (Starting ₹1,500)')">
+            <div class="addon-icon">🏪</div>
+            <div>
+              <h3 class="addon-title">Google Business Setup</h3>
+              <p class="addon-desc">Setup & optimize your GMB profile for more calls, direction requests & views.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹1,500</div>
+          </div>
+
+          <!-- 12: Logo & Branding Design -->
+          <div class="addon-card" onclick="openConsultationModal('Add-on Inquiry: Logo & Branding Design (Starting ₹1,500)')">
+            <div class="addon-icon">✒️</div>
+            <div>
+              <h3 class="addon-title">Logo & Branding Design</h3>
+              <p class="addon-desc">Creative logos & branding that make your business stand out.</p>
+            </div>
+            <div class="addon-price-tag">STARTING FROM ₹1,500</div>
+          </div>
+        </div>
+
+        <!-- Why Choose IKSY Packages Banner -->
+        <div class="why-iksy-banner">
+          <div class="why-banner-top">
+            <div>
+              <h3 class="why-banner-title">Why Choose IKSY Packages & Add-Ons?</h3>
+              <p style="font-size: 0.9rem; color: var(--color-light-sand); margin-top: 0.25rem;">
+                CHOOSE WHAT YOUR BUSINESS NEEDS & GROW FASTER WITH IKSY!
+              </p>
+            </div>
+            <button class="btn btn-gold open-consultation-btn" onclick="openConsultationModal('Custom Growth Package Inquiry')">
+              Let's Grow Your Brand Together! →
+            </button>
+          </div>
+
+          <div class="why-guarantees-grid">
+            <div class="guarantee-item">
+              <div class="guarantee-icon">🎯</div>
+              <div class="guarantee-label">Result-Driven<br>Services</div>
+            </div>
+            <div class="guarantee-item">
+              <div class="guarantee-icon">📈</div>
+              <div class="guarantee-label">Improve Reach<br>& Engagement</div>
+            </div>
+            <div class="guarantee-item">
+              <div class="guarantee-icon">🤝</div>
+              <div class="guarantee-label">Customized for<br>Your Business</div>
+            </div>
+            <div class="guarantee-item">
+              <div class="guarantee-icon">⚡</div>
+              <div class="guarantee-label">Quality Work &<br>Timely Delivery</div>
+            </div>
+            <div class="guarantee-item">
+              <div class="guarantee-icon">💎</div>
+              <div class="guarantee-label">Affordable &<br>Transparent</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
          SECTION: WHY IKSY ("MORE THAN MARKETING")
          ========================================================================== -->
     <section class="section why-section" aria-label="Why Choose IKSY">
@@ -4006,7 +3908,7 @@ body.portal-open {
           <div class="metric-box">
             <div class="metric-big-num">04</div>
             <div class="metric-box-title">Creative Minds</div>
-            <p class="metric-box-desc">Senior growth directors and creative strategists actively leading your campaigns.</p>
+            <p class="metric-box-desc">Ishika, Kartik, Sapna, and Yash actively leading your strategy.</p>
           </div>
 
           <div class="metric-box">
@@ -4457,7 +4359,7 @@ body.portal-open {
           <div class="testimonial-card">
             <div class="testimonial-quote-mark" aria-hidden="true">“</div>
             <p class="testimonial-quote-text">
-              The IKSY team brought an unmatched transformation. Their strategy gave us our authentic brand voice, their creative team produced viral reels that drove foot traffic, their performance team achieved a 4.8x ROAS, and our new website loads instantly.
+              The four partners bring an unmatched harmony. Ishika gave us our voice, Sapna created our timeless visual system, Kartik made our ad spend massively profitable, and Yash built a website that wins awards.
             </p>
             <div class="testimonial-author-row">
               <div class="author-avatar-initials">DK</div>
@@ -4527,7 +4429,7 @@ body.portal-open {
               When everyone is shouting on social media, restraint becomes the ultimate differentiator. How editorial curation builds gravitational brand pull.
             </p>
             <div class="insight-author-credit">
-              By IKSY Strategy Group (Market Intelligence & Narrative)
+              By Ishika (Brand Strategy & Narrative)
             </div>
           </article>
 
@@ -4544,7 +4446,7 @@ body.portal-open {
               Why day-1 ad metrics lie, and how top direct-to-consumer founders build compounding retention engines that survive platform price hikes.
             </p>
             <div class="insight-author-credit">
-              By IKSY Growth Engineering (Performance Media & ROAS)
+              By Kartik (Performance & Growth)
             </div>
           </article>
 
@@ -4561,7 +4463,7 @@ body.portal-open {
               Rejecting generic SaaS templates and cookie-cutter dashboards in favor of sandstone textures, calm serif hierarchy, and lightning speed.
             </p>
             <div class="insight-author-credit">
-              By IKSY Digital Architecture (Technical SEO & Web Craft)
+              By Yash (Digital Architecture)
             </div>
           </article>
         </div>
@@ -4611,9 +4513,11 @@ body.portal-open {
         <!-- Brand Column -->
         <div class="footer-brand-column">
           <a href="#hero" aria-label="IKSY Homepage" style="display: inline-block;">
-            <img src="logo.png" alt="IKSY — Innovative Knowledge, Strategy & Yield" class="footer-logo-img">
+            <img src="logo.png" alt="IKSY — बढ़ेगा Brand बढ़ेगा Business" class="footer-logo-img">
           </a>
-          <div class="brand-partners">Innovative Knowledge, Strategy & Yield</div>
+          <div class="brand-partners">
+            Ishika<span>•</span>Kartik<span>•</span>Sapna<span>•</span>Yash
+          </div>
           <div class="footer-tagline">
             बढ़ेगा Brand, बढ़ेगा Business • Strategy. Creativity. Growth.
           </div>
@@ -4630,6 +4534,7 @@ body.portal-open {
             <li><a href="#intro">About IKSY</a></li>
             <li><a href="#story">The 4 Partners</a></li>
             <li><a href="#services">What We Do</a></li>
+            <li><a href="#pricing">Packages & Pricing</a></li>
             <li><a href="#portfolio">Selected Work</a></li>
             <li><a href="#studio">Inside The Studio</a></li>
             <li><a href="#insights">Editorial Journal</a></li>
@@ -4668,6 +4573,9 @@ body.portal-open {
 
       <!-- Bottom Bar -->
       <div class="footer-bottom-bar">
+        <div>
+          © 2026 IKSY. All Rights Reserved. Your Brand. Our Digital Vision.
+        </div>
         <div class="footer-bottom-partners">
           <span>4 Minds</span> | <span>1 Vision</span> | <span>Infinite Possibilities</span>
         </div>
@@ -4712,7 +4620,7 @@ body.portal-open {
           Let's Grow Together
         </h2>
         <p style="font-size: 0.95rem; color: var(--color-charcoal-muted);">
-          Connect directly with our senior strategy directors. We take on a limited number of brands each quarter to ensure obsessive attention to detail.
+          Connect directly with Ishika, Kartik, Sapna, and Yash. We take on a limited number of brands each quarter to ensure obsessive attention to detail.
         </p>
       </div>
 
@@ -4783,7 +4691,7 @@ body.portal-open {
           <!-- Specific Project Context / Notes -->
           <div class="form-group-full">
             <label class="form-label" for="inquiry-notes">Describe Your Current Challenge & Vision</label>
-            <textarea id="inquiry-notes" class="form-control" rows="3" placeholder="Tell our strategy team about your current business traction, revenue goals, target audience, or upcoming milestones..."></textarea>
+            <textarea id="inquiry-notes" class="form-control" rows="3" placeholder="Tell Ishika, Kartik, Sapna, and Yash about your current traction, ambitions, or upcoming milestones..."></textarea>
           </div>
         </div>
 
@@ -4955,7 +4863,7 @@ body.portal-open {
       client: 'Vesta Bio-Formulations',
       duration: '6 Months Ongoing',
       challenge: 'A clinical botanical skincare brand had stalled at ₹25L/month due to escalating Meta acquisition costs and high customer churn in an overcrowded beauty sector.',
-      solution: 'Our creative and performance teams overhauled the acquisition strategy. We produced authentic founder-led micro-documentaries explaining cold-pressed foothill herbs, paired with a rapid creative testing matrix that identified winning angles in 72 hours. We implemented server-side tracking to bypass iOS privacy blindspots.',
+      solution: 'Kartik and Sapna overhauled the creative strategy. We created authentic founder-led micro-documentaries explaining cold-pressed foothill herbs, paired with a rapid creative testing matrix that identified winning angles in 72 hours. We implemented server-side tracking to bypass iOS privacy blindspots.',
       results: [
         { metric: '5.2x', label: 'Blended Paid Media ROAS' },
         { metric: '3.8x', label: 'Monthly DTC Revenue Growth' },
@@ -4970,7 +4878,7 @@ body.portal-open {
       client: 'Siddhartha Multi-Family Office',
       duration: '5 Months Sprint',
       challenge: 'A boutique multi-family office serving ultra-high-net-worth families needed a discreet, authoritative digital presence that conveyed unassailable trust without boastful corporate jargon.',
-      solution: 'Our branding and web architecture teams designed a private-client experience. Featuring deep forest green and ivory accents, institutional-grade editorial commentary on generational governance, and an encrypted client portal, the brand radiates understated prestige.',
+      solution: 'Ishika and Yash designed a private-salon experience. Featuring deep forest green and ivory accents, institutional-grade editorial commentary on generational governance, and an encrypted client portal, the brand radiates understated prestige.',
       results: [
         { metric: '100%', label: 'Discreet Brand Positioning' },
         { metric: '₹4.2B', label: 'New AUM Influenced' },
@@ -5016,7 +4924,7 @@ body.portal-open {
       category: 'Brand Strategy',
       readTime: '6 Min Read',
       title: 'Why The World’s Most Desirable Brands Never Compete On Volume',
-      author: 'IKSY Strategy Group — Market Intelligence',
+      author: 'Ishika — Brand Strategy & Narrative',
       date: 'September 2026',
       content: `
         <p class="lead">In an era of relentless algorithmic noise, volume is the default refuge of brands that lack a distinct point of view. When you have nothing original to say, you shout more frequently.</p>
@@ -5034,7 +4942,7 @@ body.portal-open {
       category: 'Performance & Scale',
       readTime: '8 Min Read',
       title: 'Beyond Blended ROAS: Engineering Durable Customer Lifetime Value in 2026',
-      author: 'IKSY Growth Lab — Performance Media',
+      author: 'Kartik — Performance & Growth Engineering',
       date: 'August 2026',
       content: `
         <p class="lead">The era of cheap, hacky media buying is officially dead. Ad platforms have consolidated, tracking privacy is universal, and algorithmic bidding commoditizes basic ad setup in seconds.</p>
@@ -5050,7 +4958,7 @@ body.portal-open {
       category: 'Digital Architecture',
       readTime: '5 Min Read',
       title: 'The Editorial Web: Why Websites Should Feel Like Flagship Boutiques, Not SaaS Dashboards',
-      author: 'IKSY Digital Craft — Web Architecture',
+      author: 'Yash — Digital Architecture & Web Craft',
       date: 'August 2026',
       content: `
         <p class="lead">Step into a luxury boutique on MG Road or New Bond Street. The heavy oak doors, the faint scent of sandalwood, the deliberate silence, the respectful distance of the staff. Everything tells you: this place possesses taste.</p>
@@ -5453,7 +5361,7 @@ body.portal-open {
           <div style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--color-border-subtle); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
             <div>
               <div style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-deep-forest);">Have thoughts on this perspective?</div>
-              <div style="font-size: 0.88rem; color: var(--color-charcoal-muted);">Exchange ideas directly with our senior growth directors.</div>
+              <div style="font-size: 0.88rem; color: var(--color-charcoal-muted);">Exchange ideas directly with Ishika, Kartik, Sapna, or Yash.</div>
             </div>
             <button class="btn btn-primary open-consultation-btn">Start A Conversation →</button>
           </div>
@@ -5510,36 +5418,14 @@ body.portal-open {
       });
     });
 
-    // Form submission feedback & CRM synchronization
+    // Form submission feedback
     if (form) {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         const submitBtn = form.querySelector('button[type="submit"]');
-        submitBtn.innerHTML = 'Connecting with IKSY Strategy Team...';
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Connecting with Ishika, Kartik, Sapna & Yash...';
         submitBtn.disabled = true;
-
-        // Synchronize with Admin Portal CRM in localStorage
-        try {
-          const newLead = {
-            id: 'lead_' + Date.now(),
-            name: form.querySelector('#inquiry-name')?.value || 'Inbound Client',
-            brand: form.querySelector('#inquiry-brand')?.value || 'Client Brand',
-            email: form.querySelector('#inquiry-email')?.value || '',
-            phone: '+91 98200 45890',
-            url: form.querySelector('#inquiry-url')?.value || '',
-            objective: form.querySelector('input[name="objective"]:checked')?.value || 'Full Brand Transformation',
-            budget: form.querySelector('input[name="budget"]:checked')?.value || '₹5L – ₹12L /mo',
-            notes: form.querySelector('#inquiry-notes')?.value || 'Direct consultation inquiry submitted from website.',
-            internalNotes: 'Inbound inquiry received via public consultation modal.',
-            date: new Date().toISOString().split('T')[0],
-            status: 'New'
-          };
-          const existingLeads = JSON.parse(localStorage.getItem('iksy_leads') || '[]');
-          existingLeads.unshift(newLead);
-          localStorage.setItem('iksy_leads', JSON.stringify(existingLeads));
-        } catch (err) {
-          console.error('Lead storage sync error:', err);
-        }
 
         setTimeout(() => {
           form.innerHTML = `
@@ -5626,202 +5512,6 @@ body.portal-open {
   }
 
   // -------------------------------------------------------------------------
-  
-  // -------------------------------------------------------------------------
-  // 13. GRAND ENTRANCE: 3D KNOCK-KNOCK DOUBLE DOORS & EXACT IKSY LOGO REVEAL
-  // -------------------------------------------------------------------------
-  function initKnockDoorEntrance() {
-    const entrance = document.getElementById('iksy-door-entrance');
-    if (!entrance) return;
-
-    const doorsChamber = document.getElementById('doorsChamber');
-    const knockerAssembly = document.getElementById('knockerAssembly');
-    const knockActionBtn = document.getElementById('knockActionBtn');
-    const doorLeft = document.getElementById('doorLeft');
-    const doorRight = document.getElementById('doorRight');
-    const revealedEnterBtn = document.getElementById('revealedEnterBtn');
-    const doorSkipBtn = document.getElementById('doorSkipBtn');
-    const returnBtns = document.querySelectorAll('.return-to-portal-action');
-    const canvas = document.getElementById('doorAmbientCanvas');
-
-    let isKnocking = false;
-    let isOpened = false;
-
-    // Ambient floating gold dust particles on doorway backdrop
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      let width = (canvas.width = window.innerWidth);
-      let height = (canvas.height = window.innerHeight);
-
-      window.addEventListener('resize', () => {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-      });
-
-      const particles = [];
-      for (let i = 0; i < 35; i++) {
-        particles.push({
-          x: Math.random() * width,
-          y: Math.random() * height,
-          r: Math.random() * 2.2 + 0.8,
-          vx: (Math.random() - 0.5) * 0.35,
-          vy: -Math.random() * 0.45 - 0.15,
-          alpha: Math.random() * 0.65 + 0.2
-        });
-      }
-
-      function drawAmbient() {
-        ctx.clearRect(0, 0, width, height);
-        for (let i = 0; i < particles.length; i++) {
-          const p = particles[i];
-          p.x += p.vx;
-          p.y += p.vy;
-          if (p.y < 0) { p.y = height; p.x = Math.random() * width; }
-          if (p.x < 0) p.x = width;
-          if (p.x > width) p.x = 0;
-
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(216, 185, 138, ${p.alpha})`;
-          ctx.fill();
-        }
-        if (!entrance.classList.contains('entrance-hidden')) {
-          requestAnimationFrame(drawAmbient);
-        }
-      }
-      requestAnimationFrame(drawAmbient);
-    }
-
-    // Web Audio Synthesized Antique Brass Door Knock Sound
-    function playAcousticKnock() {
-      try {
-        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-        if (!AudioContextClass) return;
-        const audioCtx = new AudioContextClass();
-        if (audioCtx.state === 'suspended') {
-          audioCtx.resume();
-        }
-
-        function singleRap(delayMs) {
-          setTimeout(() => {
-            const now = audioCtx.currentTime;
-
-            // 1. Heavy resonant door wood impact (Low frequency body thump)
-            const osc = audioCtx.createOscillator();
-            const oscGain = audioCtx.createGain();
-            osc.type = 'sine';
-            osc.frequency.setValueAtTime(175, now);
-            osc.frequency.exponentialRampToValueAtTime(42, now + 0.12);
-
-            oscGain.gain.setValueAtTime(0.9, now);
-            oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.14);
-
-            osc.connect(oscGain);
-            oscGain.connect(audioCtx.destination);
-            osc.start(now);
-            osc.stop(now + 0.15);
-
-            // 2. Crisp antique brass clack (Filtered metallic noise burst)
-            const bufferLen = Math.floor(audioCtx.sampleRate * 0.045);
-            const buffer = audioCtx.createBuffer(1, bufferLen, audioCtx.sampleRate);
-            const channel = buffer.getChannelData(0);
-            for (let i = 0; i < bufferLen; i++) {
-              channel[i] = (Math.random() * 2 - 1) * Math.exp(-i / (audioCtx.sampleRate * 0.007));
-            }
-
-            const noiseNode = audioCtx.createBufferSource();
-            noiseNode.buffer = buffer;
-
-            const bandpass = audioCtx.createBiquadFilter();
-            bandpass.type = 'bandpass';
-            bandpass.frequency.value = 1950;
-            bandpass.Q.value = 3.5;
-
-            const noiseGain = audioCtx.createGain();
-            noiseGain.gain.setValueAtTime(0.7, now);
-            noiseGain.gain.exponentialRampToValueAtTime(0.01, now + 0.045);
-
-            noiseNode.connect(bandpass);
-            bandpass.connect(noiseGain);
-            noiseGain.connect(audioCtx.destination);
-            noiseNode.start(now);
-          }, delayMs);
-        }
-
-        // Trigger two realistic door raps: "Knock... Knock!"
-        singleRap(200);
-        singleRap(480);
-
-      } catch (err) {
-        console.log('Audio autoplay policy or not supported:', err);
-      }
-    }
-
-    // Trigger Door Knock and Opening Sequence
-    function triggerDoorKnock() {
-      if (isKnocking || isOpened) return;
-      isKnocking = true;
-
-      // Play synthesized acoustic door knock sound
-      playAcousticKnock();
-
-      // Trigger knocker physical rap animation
-      if (knockerAssembly) {
-        knockerAssembly.classList.add('knocker-striking');
-      }
-
-      // After the 2nd knock (~750ms), swing open the double doors in 3D!
-      setTimeout(() => {
-        if (doorsChamber) {
-          doorsChamber.classList.add('doors-open');
-        }
-        isOpened = true;
-
-        // Auto-transition into main website after showcasing exact logo
-        setTimeout(() => {
-          enterWebsite();
-        }, 3400);
-
-      }, 820);
-    }
-
-    // Smoothly dissolve entrance into the live website
-    function enterWebsite() {
-      entrance.classList.add('entrance-exiting');
-      document.body.classList.remove('portal-open');
-      setTimeout(() => {
-        entrance.classList.remove('entrance-exiting');
-        entrance.classList.add('entrance-hidden');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, 750);
-    }
-
-    // Reset and replay the door entrance on demand
-    function resetAndReplayDoor() {
-      isKnocking = false;
-      isOpened = false;
-      if (doorsChamber) doorsChamber.classList.remove('doors-open');
-      if (knockerAssembly) knockerAssembly.classList.remove('knocker-striking');
-
-      entrance.classList.remove('entrance-hidden');
-      entrance.classList.remove('entrance-exiting');
-      document.body.classList.add('portal-open');
-    }
-
-    // Event listeners
-    if (knockerAssembly) knockerAssembly.addEventListener('click', triggerDoorKnock);
-    if (knockActionBtn) knockActionBtn.addEventListener('click', triggerDoorKnock);
-    if (doorLeft) doorLeft.addEventListener('click', triggerDoorKnock);
-    if (doorRight) doorRight.addEventListener('click', triggerDoorKnock);
-
-    if (revealedEnterBtn) revealedEnterBtn.addEventListener('click', enterWebsite);
-    if (doorSkipBtn) doorSkipBtn.addEventListener('click', enterWebsite);
-    returnBtns.forEach(btn => btn.addEventListener('click', resetAndReplayDoor));
-
-    // Ensure body has portal-open on initial load
-    document.body.classList.add('portal-open');
-  }
-
   // 12. SMOOTH SECTION ANCHOR SCROLL
   // -------------------------------------------------------------------------
   function initAnchorScroll() {
@@ -5846,64 +5536,6 @@ body.portal-open {
   }
 
   // -------------------------------------------------------------------------
-  // 14. FREE DIGITAL GROWTH AUDIT MODAL CONTROLLER
-  // -------------------------------------------------------------------------
-  function initAuditModal() {
-    const modal = document.getElementById('auditModal');
-    if (!modal) return;
-    const closeBtn = modal.querySelector('.modal-close-btn');
-    const form = modal.querySelector('#auditForm');
-
-    // Attach open triggers
-    document.querySelectorAll('.open-audit-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        openModal(modal);
-      });
-    });
-
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => closeModal(modal));
-    }
-
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const typeSelect = form.querySelector('#audit-type');
-        const newAudit = {
-          id: 'audit_' + Date.now(),
-          name: form.querySelector('#audit-name')?.value || 'Growth Founder',
-          business: form.querySelector('#audit-business')?.value || 'Private Brand',
-          type: typeSelect?.options[typeSelect.selectedIndex]?.text || 'Comprehensive Digital Growth Audit',
-          phone: form.querySelector('#audit-phone')?.value || '+91 98200 45890',
-          email: form.querySelector('#audit-email')?.value || '',
-          date: new Date().toISOString().split('T')[0],
-          status: 'Requested'
-        };
-
-        try {
-          const existingAudits = JSON.parse(localStorage.getItem('iksy_audits') || '[]');
-          existingAudits.unshift(newAudit);
-          localStorage.setItem('iksy_audits', JSON.stringify(existingAudits));
-        } catch (err) {
-          console.error('Audit storage sync error:', err);
-        }
-
-        form.innerHTML = `
-          <div style="text-align: center; padding: 2.5rem 1rem;">
-            <div style="width: 54px; height: 54px; border-radius: 50%; background: var(--color-sand-muted); border: 1px solid var(--color-muted-gold); color: var(--color-deep-forest); display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1rem;">✓</div>
-            <h3 style="font-size: 1.8rem; color: var(--color-deep-forest); margin-bottom: 0.75rem;">Audit Request Confirmed.</h3>
-            <p style="font-size: 0.95rem; color: var(--color-charcoal-light); line-height: 1.6; margin-bottom: 1.5rem;">
-              Our senior growth directors have queued your bespoke analysis. We will deliver the teardown report to <strong>${newAudit.email}</strong> and message your WhatsApp at <strong>${newAudit.phone}</strong> within 48 hours.
-            </p>
-            <button class="btn btn-secondary" onclick="document.getElementById('auditModal').classList.remove('active'); document.body.style.overflow='';">Close & Return to Studio</button>
-          </div>
-        `;
-      });
-    }
-  }
-
-  // -------------------------------------------------------------------------
   // INITIALIZATION ON DOM READY
   // -------------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', () => {
@@ -5917,63 +5549,9 @@ body.portal-open {
     initConsultationModal();
     initCursorGlow();
     initAnchorScroll();
-    initKnockDoorEntrance();
-    initAuditModal();
   });
 })();
-
 </script>
-
-  <!-- ==========================================================================
-       MODAL: FREE DIGITAL GROWTH AUDIT (Lead Magnet from Blueprint)
-       ========================================================================== -->
-  <div id="auditModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="auditModalTitle">
-    <div class="modal-card" style="max-width: 620px;">
-      <button class="modal-close-btn" aria-label="Close Audit Modal">&times;</button>
-      <div class="modal-header">
-        <div class="eyebrow" style="color: var(--color-warm-sand); margin-bottom: 0.5rem;">
-          HIGH-CONVERTING AUDIT • 100% FREE
-        </div>
-        <h2 id="auditModalTitle" style="font-size: 2rem; margin-bottom: 0.5rem;">Claim Your Free Growth Audit</h2>
-        <p style="font-size: 0.95rem; color: var(--color-charcoal-muted);">
-          Select your business type and we will analyze your digital presence, competitor gaps, and provide actionable revenue recommendations within 48 hours.
-        </p>
-      </div>
-      <form id="auditForm" style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem;">
-        <div>
-          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Select Audit Type:</label>
-          <select id="audit-type" class="form-control" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-sand); border-radius: 6px; font-family: inherit;">
-            <option value="complete">Comprehensive Digital Growth Audit (All Channels)</option>
-            <option value="instagram">Instagram & Short-Form Video / Reels Audit</option>
-            <option value="seo">SEO & Google Search Ranking Audit</option>
-            <option value="maps">Google Business Profile & Local Maps Audit (Local Stores/Clinics)</option>
-            <option value="ads">Meta & Google Ads Funnel Audit (ROAS Check)</option>
-          </select>
-        </div>
-        <div>
-          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Business Name & Website / Social Handle:</label>
-          <input type="text" id="audit-business" required placeholder="e.g. Acme Studio / @acmestudio / acme.com" class="form-control" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-sand); border-radius: 6px; font-family: inherit;">
-        </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-          <div>
-            <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Your Name:</label>
-            <input type="text" id="audit-name" required placeholder="Full Name" class="form-control" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-sand); border-radius: 6px; font-family: inherit;">
-          </div>
-          <div>
-            <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">WhatsApp Number / Phone:</label>
-            <input type="tel" id="audit-phone" required placeholder="+91 98765 43210" class="form-control" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-sand); border-radius: 6px; font-family: inherit;">
-          </div>
-        </div>
-        <div>
-          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Email Address (for audit PDF delivery):</label>
-          <input type="email" id="audit-email" required placeholder="founder@yourbusiness.com" class="form-control" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border-sand); border-radius: 6px; font-family: inherit;">
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem; margin-top: 0.5rem; justify-content: center; font-weight: 600;">
-          Request Free Audit Report (No Obligation) →
-        </button>
-      </form>
-    </div>
-  </div>
 
   <!-- WhatsApp Direct Chat Floating Button -->
   <a href="https://wa.me/919079369668?text=Hello%20IKSY%2C%20I%20would%20like%20to%20discuss%20a%20digital%20marketing%20project." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with IKSY on WhatsApp">
