@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Process & Methodology — IKSY Digital Marketing Agency</title>
+  <meta name="description" content="Discover IKSY's 4-Phase Growth Methodology: Deep Discovery, Strategic Architecture, Studio Execution, and Continuous Yield Optimization.">
+  <meta name="keywords" content="IKSY Process, digital marketing methodology, growth framework, marketing audit, campaign scaling">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+:root {
+  --color-deep-forest: #123A34;
+  --color-dark-green: #0D2B27;
+  --color-forest-darker: #081B18;
+  --color-warm-sand: #D8B98A;
+  --color-light-sand: #E9D7B8;
+  --color-sand-muted: #F3EADB;
+  --color-cream: #F7F1E5;
+  --color-cream-subtle: #FDFBF7;
+  --color-ivory: #FCF9F2;
+  --color-muted-gold: #B28A4A;
+  --color-charcoal: #252522;
+  --color-charcoal-light: #3D3D38;
+  --color-charcoal-muted: #6B6B63;
+  --color-border-subtle: rgba(37, 37, 34, 0.08);
+  --color-border-sand: rgba(216, 185, 138, 0.35);
+
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --container-max: 1380px;
+  --container-wide: 1560px;
+  --header-height: 96px;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-luxury: 0 16px 48px rgba(13, 43, 39, 0.09);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); background: var(--color-ivory); color: var(--color-charcoal); line-height: 1.65; overflow-x: hidden; }
+
+.container { width: 100%; max-width: var(--container-max); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
+.container-wide { width: 100%; max-width: var(--container-wide); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3.5rem); }
+.section { padding: clamp(4rem, 7vw, 7.5rem) 0; }
+
+h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 400; color: var(--color-charcoal); }
+h1 { font-size: clamp(2.6rem, 5.5vw, 4.8rem); line-height: 1.15; }
+h2 { font-size: clamp(2.1rem, 4vw, 3.6rem); line-height: 1.15; }
+h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+p { color: var(--color-charcoal-light); font-size: 1.05rem; }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.22em; color: var(--color-muted-gold); margin-bottom: 1.25rem;
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem;
+  font-size: 0.875rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none;
+  padding: 1rem 2rem; border-radius: var(--radius-xs); transition: var(--transition-smooth); cursor: pointer; border: 1px solid transparent;
+}
+.btn-primary { background: var(--color-deep-forest); color: var(--color-ivory); }
+.btn-primary:hover { background: var(--color-dark-green); color: var(--color-light-sand); transform: translateY(-2px); }
+.btn-gold { background: var(--color-muted-gold); color: var(--color-ivory); }
+
+/* Header */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: var(--header-height); background: rgba(252, 249, 242, 0.95); backdrop-filter: blur(12px);
+  z-index: 1000; border-bottom: 1px solid var(--color-border-subtle); display: flex; align-items: center;
+}
+.header-container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+.brand-wordmark { text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; }
+.site-logo-img { height: 52px; width: auto; mix-blend-mode: multiply; }
+.brand-partners { font-size: clamp(0.58rem, 0.7vw, 0.68rem); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-charcoal-muted); margin-top: 3px; white-space: nowrap; }
+
+.nav-menu { display: flex; align-items: center; list-style: none; gap: 2.25rem; }
+.nav-link { text-decoration: none; color: var(--color-charcoal); font-size: 0.88rem; font-weight: 500; transition: var(--transition-smooth); }
+.nav-link:hover, .nav-link.active { color: var(--color-muted-gold); }
+
+.header-actions { display: flex; align-items: center; gap: 1rem; }
+.mobile-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+.mobile-toggle span { width: 24px; height: 2px; background: var(--color-deep-forest); }
+
+/* Banner */
+.page-banner {
+  padding-top: calc(var(--header-height) + 4rem); padding-bottom: 4rem;
+  background: linear-gradient(180deg, var(--color-sand-muted) 0%, var(--color-ivory) 100%);
+  border-bottom: 1px solid var(--color-border-sand); text-align: center;
+}
+
+/* Timeline Layout */
+.process-timeline {
+  display: flex; flex-direction: column; gap: 3.5rem; position: relative; margin-top: 2rem;
+}
+.process-timeline::before {
+  content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px;
+  background: var(--color-border-sand); transform: translateX(-50%); z-index: 0;
+}
+
+.process-step-card {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1;
+}
+.process-step-card:nth-child(even) { direction: rtl; }
+.process-step-card:nth-child(even) .step-content { direction: ltr; }
+
+.step-content {
+  background: var(--color-cream-subtle); border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md); padding: 3rem 2.5rem; transition: var(--transition-smooth);
+}
+.step-content:hover { border-color: var(--color-border-sand); box-shadow: var(--shadow-luxury); }
+
+.step-number {
+  font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--color-muted-gold); line-height: 1; margin-bottom: 0.5rem;
+}
+.step-title { font-size: 2.2rem; color: var(--color-deep-forest); margin-bottom: 1rem; }
+.step-desc { font-size: 1.02rem; color: var(--color-charcoal-light); margin-bottom: 1.5rem; }
+
+.step-checklist { list-style: none; margin-top: 1rem; }
+.step-checklist li {
+  font-size: 0.92rem; color: var(--color-charcoal); padding: 0.5rem 0; border-bottom: 1px dashed rgba(37, 37, 34, 0.1);
+  display: flex; align-items: flex-start; gap: 0.75rem;
+}
+.step-checklist li::before { content: '✓'; color: var(--color-deep-forest); font-weight: 700; }
+
+.step-visual-box {
+  background: var(--color-sand-muted); border: 1px solid var(--color-border-sand);
+  border-radius: var(--radius-md); padding: 3.5rem 2.5rem; text-align: center;
+}
+.step-badge {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-deep-forest); margin-bottom: 1rem;
+}
+
+/* Footer & Mobile Drawer */
+.site-footer { background: var(--color-forest-darker); color: var(--color-cream); padding: 5rem 0 2.5rem; }
+.footer-top-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 4rem; }
+.footer-logo-img { height: 56px; width: auto; background: var(--color-sand-muted); padding: 6px 14px; border-radius: 6px; margin-bottom: 0.5rem; }
+.footer-col-title { font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-light-sand); margin-bottom: 1.25rem; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 0.6rem; }
+.footer-links a { color: rgba(252,249,242,0.75); text-decoration: none; font-size: 0.88rem; }
+.footer-links a:hover { color: var(--color-warm-sand); }
+.footer-bottom-bar { border-top: 1px solid rgba(216, 185, 138, 0.2); padding-top: 2rem; display: flex; justify-content: space-between; font-size: 0.82rem; color: rgba(252, 249, 242, 0.6); }
+
+.whatsapp-float {
+  position: fixed; bottom: 28px; right: 28px; width: 60px; height: 60px;
+  background: #123A34; color: #FCF9F2; border: 1.5px solid var(--color-border-sand); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 28px rgba(18, 58, 52, 0.45); z-index: 9999; text-decoration: none;
+}
+.whatsapp-float:hover { background: #0D2B27; color: #D8B98A; transform: scale(1.08); }
+
+.mobile-drawer {
+  position: fixed; top: 0; right: -320px; width: 300px; height: 100vh;
+  background: var(--color-ivory); z-index: 2000; transition: right 0.4s ease; padding: 2rem 1.5rem; display: flex; flex-direction: column; justify-content: space-between;
+}
+.mobile-drawer.open { right: 0; }
+.drawer-backdrop { position: fixed; inset: 0; background: rgba(8, 27, 24, 0.6); z-index: 1999; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+.drawer-backdrop.active { opacity: 1; visibility: visible; }
+.mobile-nav-list { list-style: none; }
+.mobile-nav-list li { margin-bottom: 1.2rem; }
+.mobile-nav-link { font-size: 1.1rem; text-decoration: none; color: var(--color-charcoal); font-family: var(--font-serif); }
+
+@media (max-width: 992px) {
+  .nav-menu, .header-cta-desktop { display: none; }
+  .mobile-toggle { display: flex; }
+  .process-timeline::before { display: none; }
+  .process-step-card, .process-step-card:nth-child(even) { grid-template-columns: 1fr; gap: 2rem; direction: ltr; }
+  .footer-top-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .footer-top-grid { grid-template-columns: 1fr; }
+}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container-wide header-container">
+      <a href="index.html" class="brand-wordmark" aria-label="IKSY Homepage">
+        <img src="logo.png" alt="IKSY — Innovative Knowledge, Strategy & Yield" class="site-logo-img">
+        <div class="brand-partners">Innovative Knowledge, Strategy & Yield</div>
+      </a>
+
+      <nav class="nav-wrapper" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="portfolio.html" class="nav-link">Work</a></li>
+          <li><a href="process.html" class="nav-link active">Process</a></li>
+          <li><a href="studio.html" class="nav-link">Studio</a></li>
+          <li><a href="insights.html" class="nav-link">Insights</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary header-cta header-cta-desktop">Let's Grow Together →</a>
+        <button class="mobile-toggle" aria-label="Open mobile menu" id="mobileToggleBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle); margin-bottom: 1.5rem;">
+        <img src="logo.png" alt="IKSY Logo" style="height: 42px; mix-blend-mode: multiply;">
+        <div style="font-size: 0.62rem; color: var(--color-charcoal-muted); text-transform: uppercase;">Innovative Knowledge, Strategy & Yield</div>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="pricing.html" class="mobile-nav-link">Pricing & Add-ons</a></li>
+        <li><a href="portfolio.html" class="mobile-nav-link">Selected Work</a></li>
+        <li><a href="process.html" class="mobile-nav-link">Our Process</a></li>
+        <li><a href="studio.html" class="mobile-nav-link">The Studio</a></li>
+        <li><a href="insights.html" class="mobile-nav-link">Editorial Journal</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Grow Together →</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="page-banner">
+      <div class="container" style="max-width: 860px;">
+        <div class="eyebrow">OUR METHODOLOGY</div>
+        <h1>The 4-Phase Growth Architecture</h1>
+        <p style="margin-top: 1.25rem; font-size: 1.15rem;">
+          How we systematically transform brand potential into market dominance through research, creative precision, studio production, and quantitative yield optimization.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4-PHASE TIMELINE -->
+    <section class="section">
+      <div class="container">
+        <div class="process-timeline">
+          
+          <!-- PHASE 01 -->
+          <div class="process-step-card">
+            <div class="step-content">
+              <div class="step-number">01</div>
+              <h2 class="step-title">Deep Discovery & Growth Audit</h2>
+              <p class="step-desc">
+                We begin by dissecting your brand ecosystem, analyzing historical performance data, auditing competitor ad funnels, and mapping your highest-value customer personas.
+              </p>
+              <ul class="step-checklist">
+                <li>36-Point Technical & Creative Brand Audit</li>
+                <li>Competitor Ad & Keyword Positioning Analysis</li>
+                <li>Ideal Customer Profile (ICP) & Persona Mapping</li>
+                <li>Unclaimed Revenue Opportunity Identification</li>
+              </ul>
+            </div>
+            <div class="step-visual-box">
+              <div class="step-badge">Phase 01 Deliverable</div>
+              <h3 style="color: var(--color-deep-forest); font-size: 1.75rem; margin-bottom: 0.75rem;">Comprehensive Audit Dossier</h3>
+              <p style="font-size: 0.9rem;">A granular report revealing conversion leaks, SEO content gaps, and exact ad targeting hooks.</p>
+            </div>
+          </div>
+
+          <!-- PHASE 02 -->
+          <div class="process-step-card">
+            <div class="step-content">
+              <div class="step-number">02</div>
+              <h2 class="step-title">Strategic Architecture</h2>
+              <p class="step-desc">
+                We translate insights into a bespoke growth strategy: crafting your visual identity guide, editorial calendar roadmap, and multi-channel paid ad funnel.
+              </p>
+              <ul class="step-checklist">
+                <li>Bespoke Visual Style Guide & Typography System</li>
+                <li>90-Day Editorial & Reel Scripting Framework</li>
+                <li>Full-Funnel Meta & Google Ads Campaign Blueprint</li>
+                <li>Target KPI Benchmarks & Yield Forecast</li>
+              </ul>
+            </div>
+            <div class="step-visual-box">
+              <div class="step-badge">Phase 02 Deliverable</div>
+              <h3 style="color: var(--color-deep-forest); font-size: 1.75rem; margin-bottom: 0.75rem;">Strategic Roadmap & Playbook</h3>
+              <p style="font-size: 0.9rem;">Your complete architectural plan detailing every script, design asset, and budget allocation.</p>
+            </div>
+          </div>
+
+          <!-- PHASE 03 -->
+          <div class="process-step-card">
+            <div class="step-content">
+              <div class="step-number">03</div>
+              <h2 class="step-title">Studio Production & Launch</h2>
+              <p class="step-desc">
+                Our in-house studio team brings the strategy to life—producing high-retention video content, designing high-converting graphics, and setting up campaign tracking.
+              </p>
+              <ul class="step-checklist">
+                <li>High-Definition Video Shoot & Reel Editing</li>
+                <li>Custom Static & Carousel Graphic Creation</li>
+                <li>Technical Website / Landing Page Deployment</li>
+                <li>Meta Pixel & Google Conversion API Integration</li>
+              </ul>
+            </div>
+            <div class="step-visual-box">
+              <div class="step-badge">Phase 03 Deliverable</div>
+              <h3 style="color: var(--color-deep-forest); font-size: 1.75rem; margin-bottom: 0.75rem;">Asset Production & Live Launch</h3>
+              <p style="font-size: 0.9rem;">Deployment of ready-to-convert content feeds and tracking-enabled ad campaigns.</p>
+            </div>
+          </div>
+
+          <!-- PHASE 04 -->
+          <div class="process-step-card">
+            <div class="step-content">
+              <div class="step-number">04</div>
+              <h2 class="step-title">Yield Optimization & Scaling</h2>
+              <p class="step-desc">
+                Growth is an ongoing science. We continuously monitor ad performance, optimize bid strategies, run landing page A/B tests, and scale winning campaign angles.
+              </p>
+              <ul class="step-checklist">
+                <li>Daily Ad Bid & Placement Tuning</li>
+                <li>A/B Testing of Ad Creative Hooks & Headlines</li>
+                <li>Conversion Rate Optimization (CRO) Enhancements</li>
+                <li>Transparent Monthly Performance & Yield Reviews</li>
+              </ul>
+            </div>
+            <div class="step-visual-box">
+              <div class="step-badge">Phase 04 Deliverable</div>
+              <h3 style="color: var(--color-deep-forest); font-size: 1.75rem; margin-bottom: 0.75rem;">Compounding ROAS & Revenue</h3>
+              <p style="font-size: 0.9rem;">Continuous metric optimization leading to sustainable multi-channel brand scaling.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="section" style="background: var(--color-deep-forest); color: var(--color-ivory);">
+      <div class="container" style="text-align: center; max-width: 800px;">
+        <div class="eyebrow" style="color: var(--color-warm-sand);">READY TO BEGIN PHASE 1?</div>
+        <h2 style="color: var(--color-ivory); margin-bottom: 1.25rem;">Initiate Your Brand's Growth Audit Today</h2>
+        <p style="color: var(--color-light-sand); margin-bottom: 2.25rem;">
+          Schedule your initial consultation with our senior strategy team and let's map out your 4-phase rollout.
+        </p>
+        <a href="contact.html" class="btn btn-gold">Book Strategy Session →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        <div>
+          <img src="logo.png" alt="IKSY Logo" class="footer-logo-img">
+          <div style="font-size: 0.7rem; letter-spacing: 0.14em; color: var(--color-warm-sand); text-transform: uppercase; margin-bottom: 1rem;">
+            Innovative Knowledge, Strategy & Yield
+          </div>
+          <p style="font-size: 0.88rem; color: rgba(252,249,242,0.7); max-width: 320px;">
+            A premier luxury digital marketing agency turning brand potential into high-converting digital authority.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing & Add-ons</a></li>
+            <li><a href="portfolio.html">Selected Work</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="process.html">Our 4-Phase Process</a></li>
+            <li><a href="studio.html">Inside The Studio</a></li>
+            <li><a href="insights.html">Editorial Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <p style="font-size: 0.88rem; color: rgba(252,249,242,0.8); margin-bottom: 0.5rem;">Phone: +91 90793 69668</p>
+          <p style="font-size: 0.88rem; color: rgba(252,249,242,0.8); margin-bottom: 1.25rem;">Email: iksydigital@gmail.com</p>
+          <a href="https://wa.me/919079369668" target="_blank" rel="noopener" class="btn btn-gold" style="padding: 0.6rem 1.2rem; font-size: 0.78rem;">Chat on WhatsApp →</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 IKSY Digital Marketing Agency. All rights reserved.</div>
+        <div>Innovative Knowledge, Strategy & Yield</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Deep Forest WhatsApp Button -->
+  <a href="https://wa.me/919079369668" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Direct Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+  </a>
+
+  <!-- Mobile Drawer Script -->
+  <script>
+    const toggleBtn = document.getElementById('mobileToggleBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const drawerBackdrop = document.getElementById('drawerBackdrop');
+
+    toggleBtn?.addEventListener('click', () => {
+      mobileDrawer.classList.toggle('open');
+      drawerBackdrop.classList.toggle('active');
+    });
+
+    drawerBackdrop?.addEventListener('click', () => {
+      mobileDrawer.classList.remove('open');
+      drawerBackdrop.classList.remove('active');
+    });
+  </script>
+</body>
+</html>

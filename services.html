@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Capabilities — IKSY Digital Marketing Agency</title>
+  <meta name="description" content="Discover IKSY's core capabilities: Social Media Marketing, SEO, Website Design & Dev, Content Creation, Paid Advertising, and Brand Strategy.">
+  <meta name="keywords" content="IKSY Services, social media marketing, SEO, web design, content creation, paid ads, brand strategy">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italiana&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+:root {
+  --color-deep-forest: #123A34;
+  --color-dark-green: #0D2B27;
+  --color-forest-darker: #081B18;
+  --color-warm-sand: #D8B98A;
+  --color-light-sand: #E9D7B8;
+  --color-sand-muted: #F3EADB;
+  --color-cream: #F7F1E5;
+  --color-cream-subtle: #FDFBF7;
+  --color-ivory: #FCF9F2;
+  --color-muted-gold: #B28A4A;
+  --color-charcoal: #252522;
+  --color-charcoal-light: #3D3D38;
+  --color-charcoal-muted: #6B6B63;
+  --color-border-subtle: rgba(37, 37, 34, 0.08);
+  --color-border-sand: rgba(216, 185, 138, 0.35);
+
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --container-max: 1380px;
+  --container-wide: 1560px;
+  --header-height: 96px;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-luxury: 0 16px 48px rgba(13, 43, 39, 0.09);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); background: var(--color-ivory); color: var(--color-charcoal); line-height: 1.65; overflow-x: hidden; }
+
+.container { width: 100%; max-width: var(--container-max); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
+.container-wide { width: 100%; max-width: var(--container-wide); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3.5rem); }
+.section { padding: clamp(4rem, 7vw, 7.5rem) 0; }
+
+h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 400; color: var(--color-charcoal); }
+h1 { font-size: clamp(2.6rem, 5.5vw, 4.8rem); line-height: 1.15; }
+h2 { font-size: clamp(2.1rem, 4vw, 3.6rem); line-height: 1.15; }
+h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+p { color: var(--color-charcoal-light); font-size: 1.05rem; }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.22em; color: var(--color-muted-gold); margin-bottom: 1.25rem;
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem;
+  font-size: 0.875rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none;
+  padding: 1rem 2rem; border-radius: var(--radius-xs); transition: var(--transition-smooth); cursor: pointer; border: 1px solid transparent;
+}
+.btn-primary { background: var(--color-deep-forest); color: var(--color-ivory); }
+.btn-primary:hover { background: var(--color-dark-green); color: var(--color-light-sand); transform: translateY(-2px); }
+.btn-gold { background: var(--color-muted-gold); color: var(--color-ivory); }
+.btn-gold:hover { background: #9c753b; }
+
+/* Header */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: var(--header-height); background: rgba(252, 249, 242, 0.95); backdrop-filter: blur(12px);
+  z-index: 1000; border-bottom: 1px solid var(--color-border-subtle); display: flex; align-items: center;
+}
+.header-container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+.brand-wordmark { text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; }
+.site-logo-img { height: 52px; width: auto; mix-blend-mode: multiply; }
+.brand-partners { font-size: clamp(0.58rem, 0.7vw, 0.68rem); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-charcoal-muted); margin-top: 3px; white-space: nowrap; }
+
+.nav-menu { display: flex; align-items: center; list-style: none; gap: 2.25rem; }
+.nav-link { text-decoration: none; color: var(--color-charcoal); font-size: 0.88rem; font-weight: 500; transition: var(--transition-smooth); }
+.nav-link:hover, .nav-link.active { color: var(--color-muted-gold); }
+
+.header-actions { display: flex; align-items: center; gap: 1rem; }
+.mobile-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; }
+.mobile-toggle span { width: 24px; height: 2px; background: var(--color-deep-forest); }
+
+/* Banner */
+.page-banner {
+  padding-top: calc(var(--header-height) + 4rem); padding-bottom: 4rem;
+  background: linear-gradient(180deg, var(--color-sand-muted) 0%, var(--color-ivory) 100%);
+  border-bottom: 1px solid var(--color-border-sand); text-align: center;
+}
+
+/* Service Detail Cards */
+.services-detailed-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 3.5rem;
+}
+
+.service-detailed-card {
+  background: var(--color-cream-subtle); border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md); padding: 2.5rem 2rem; display: flex; flex-direction: column; justify-content: space-between;
+  transition: var(--transition-smooth);
+}
+.service-detailed-card:hover { transform: translateY(-4px); border-color: var(--color-border-sand); box-shadow: var(--shadow-luxury); }
+
+.service-index-badge {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-muted-gold); margin-bottom: 0.5rem;
+}
+
+.service-title { font-size: 2.1rem; color: var(--color-deep-forest); margin-bottom: 0.75rem; }
+.service-desc { margin-bottom: 1.5rem; color: var(--color-charcoal-light); font-size: 0.98rem; }
+
+.deliverables-list { list-style: none; margin-bottom: 1.75rem; }
+.deliverables-list li {
+  font-size: 0.9rem; color: var(--color-charcoal); padding: 0.4rem 0; display: flex; align-items: flex-start; gap: 0.5rem;
+}
+.deliverables-list li::before { content: '✓'; color: var(--color-deep-forest); font-weight: 700; }
+
+.service-metrics-row {
+  display: flex; gap: 1.5rem; background: var(--color-sand-muted); padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;
+}
+.metric-val { font-family: var(--font-serif); font-size: 1.75rem; font-weight: 700; color: var(--color-deep-forest); line-height: 1; }
+.metric-lbl { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-charcoal-muted); }
+
+/* Footer & Mobile Drawer */
+.site-footer { background: var(--color-forest-darker); color: var(--color-cream); padding: 5rem 0 2.5rem; }
+.footer-top-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 4rem; }
+.footer-logo-img { height: 56px; width: auto; background: var(--color-sand-muted); padding: 6px 14px; border-radius: 6px; margin-bottom: 0.5rem; }
+.footer-col-title { font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-light-sand); margin-bottom: 1.25rem; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 0.6rem; }
+.footer-links a { color: rgba(252,249,242,0.75); text-decoration: none; font-size: 0.88rem; }
+.footer-links a:hover { color: var(--color-warm-sand); }
+.footer-bottom-bar { border-top: 1px solid rgba(216, 185, 138, 0.2); padding-top: 2rem; display: flex; justify-content: space-between; font-size: 0.82rem; color: rgba(252, 249, 242, 0.6); }
+
+.whatsapp-float {
+  position: fixed; bottom: 28px; right: 28px; width: 60px; height: 60px;
+  background: #123A34; color: #FCF9F2; border: 1.5px solid var(--color-border-sand); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 28px rgba(18, 58, 52, 0.45); z-index: 9999; text-decoration: none;
+}
+.whatsapp-float:hover { background: #0D2B27; color: #D8B98A; transform: scale(1.08); }
+
+.mobile-drawer {
+  position: fixed; top: 0; right: -320px; width: 300px; height: 100vh;
+  background: var(--color-ivory); z-index: 2000; transition: right 0.4s ease; padding: 2rem 1.5rem; display: flex; flex-direction: column; justify-content: space-between;
+}
+.mobile-drawer.open { right: 0; }
+.drawer-backdrop { position: fixed; inset: 0; background: rgba(8, 27, 24, 0.6); z-index: 1999; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+.drawer-backdrop.active { opacity: 1; visibility: visible; }
+.mobile-nav-list { list-style: none; }
+.mobile-nav-list li { margin-bottom: 1.2rem; }
+.mobile-nav-link { font-size: 1.1rem; text-decoration: none; color: var(--color-charcoal); font-family: var(--font-serif); }
+
+@media (max-width: 992px) {
+  .nav-menu, .header-cta-desktop { display: none; }
+  .mobile-toggle { display: flex; }
+  .services-detailed-grid { grid-template-columns: 1fr; }
+  .footer-top-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .footer-top-grid { grid-template-columns: 1fr; }
+}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container-wide header-container">
+      <a href="index.html" class="brand-wordmark" aria-label="IKSY Homepage">
+        <img src="logo.png" alt="IKSY — Innovative Knowledge, Strategy & Yield" class="site-logo-img">
+        <div class="brand-partners">Innovative Knowledge, Strategy & Yield</div>
+      </a>
+
+      <nav class="nav-wrapper" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="portfolio.html" class="nav-link">Work</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="studio.html" class="nav-link">Studio</a></li>
+          <li><a href="insights.html" class="nav-link">Insights</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary header-cta header-cta-desktop">Let's Grow Together →</a>
+        <button class="mobile-toggle" aria-label="Open mobile menu" id="mobileToggleBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--color-border-subtle); margin-bottom: 1.5rem;">
+        <img src="logo.png" alt="IKSY Logo" style="height: 42px; mix-blend-mode: multiply;">
+        <div style="font-size: 0.62rem; color: var(--color-charcoal-muted); text-transform: uppercase;">Innovative Knowledge, Strategy & Yield</div>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="pricing.html" class="mobile-nav-link">Pricing & Add-ons</a></li>
+        <li><a href="portfolio.html" class="mobile-nav-link">Selected Work</a></li>
+        <li><a href="process.html" class="mobile-nav-link">Our Process</a></li>
+        <li><a href="studio.html" class="mobile-nav-link">The Studio</a></li>
+        <li><a href="insights.html" class="mobile-nav-link">Editorial Journal</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Grow Together →</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="page-banner">
+      <div class="container" style="max-width: 860px;">
+        <div class="eyebrow">OUR CAPABILITIES</div>
+        <h1>Digital Solutions Designed to Make Your Brand Impossible to Ignore</h1>
+        <p style="margin-top: 1.25rem; font-size: 1.15rem;">
+          From high-converting visual feeds to technical SEO architecture and paid media scale, explore our full spectrum of growth engineering.
+        </p>
+      </div>
+    </section>
+
+    <!-- DETAILED SERVICES GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="services-detailed-grid">
+          <!-- 01: Social Media -->
+          <article class="service-detailed-card">
+            <div>
+              <div class="service-index-badge">01 — Community & Culture</div>
+              <h2 class="service-title">Social Media Marketing</h2>
+              <p class="service-desc">We turn passive scrollers into passionate brand advocates through culturally attuned storytelling, visual feed curation, and high-engagement content systems.</p>
+              
+              <ul class="deliverables-list">
+                <li>Bespoke Visual Feed Curation & Art Direction</li>
+                <li>High-Impact Short-Form Video (Reels/TikTok)</li>
+                <li>Community Architecture & Proactive Engagement</li>
+                <li>Influencer Alignment & Creator Collaborations</li>
+                <li>Executive Founder Branding</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="service-metrics-row">
+                <div><div class="metric-val">+340%</div><div class="metric-lbl">Avg. Organic Reach</div></div>
+                <div><div class="metric-val">12.4M+</div><div class="metric-lbl">Quarterly Views</div></div>
+              </div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire About Social Media →</a>
+            </div>
+          </article>
+
+          <!-- 02: SEO -->
+          <article class="service-detailed-card">
+            <div>
+              <div class="service-index-badge">02 — Organic Authority</div>
+              <h2 class="service-title">Search Engine Optimization</h2>
+              <p class="service-desc">Sustainable visibility engineered for qualified buyer intent. We blend deep technical architecture with high-editorial content to capture organic search real estate.</p>
+
+              <ul class="deliverables-list">
+                <li>Architectural Technical Audits & Core Web Vitals</li>
+                <li>High-Intent Commercial Keyword Mapping</li>
+                <li>Editorial Topical Authority Clustering</li>
+                <li>Digital PR & High-Domain Citation Building</li>
+                <li>Local SEO & Google Business Profile Setup</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="service-metrics-row">
+                <div><div class="metric-val">4.6x</div><div class="metric-lbl">Inbound Organic Pipeline</div></div>
+                <div><div class="metric-val">#1</div><div class="metric-lbl">Tier-1 Keyword Ranks</div></div>
+              </div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire About SEO →</a>
+            </div>
+          </article>
+
+          <!-- 03: Web Design -->
+          <article class="service-detailed-card">
+            <div>
+              <div class="service-index-badge">03 — Digital Architecture</div>
+              <h2 class="service-title">Website Design & Development</h2>
+              <p class="service-desc">Flagship digital experiences built with editorial elegance and conversion engineering. Ultra-fast, responsive, and unmistakably memorable.</p>
+
+              <ul class="deliverables-list">
+                <li>Custom Editorial UI/UX & Interactive Design</li>
+                <li>Sub-Second Front-End Speed Architecture</li>
+                <li>E-Commerce & High-Converting Funnel Design</li>
+                <li>Interactive Product Showcases</li>
+                <li>Headless / Custom CMS Integrations</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="service-metrics-row">
+                <div><div class="metric-val">99/100</div><div class="metric-lbl">Lighthouse Speed</div></div>
+                <div><div class="metric-val">+185%</div><div class="metric-lbl">Lead Conversion</div></div>
+              </div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire About Web Design →</a>
+            </div>
+          </article>
+
+          <!-- 04: Content Creation -->
+          <article class="service-detailed-card">
+            <div>
+              <div class="service-index-badge">04 — Narrative & Visual Craft</div>
+              <h2 class="service-title">Content Creation</h2>
+              <p class="service-desc">Words, imagery, and cinematography that demand emotional connection. We craft authentic narratives that elevate your brand far above commodity status.</p>
+
+              <ul class="deliverables-list">
+                <li>Editorial Brand Copywriting & Voice Guides</li>
+                <li>Studio & Location Art Direction / Photography</li>
+                <li>Cinematic Brand Films & Founder Documentaries</li>
+                <li>Thought Leadership Whitepapers & Reports</li>
+                <li>Interactive Digital Lookbooks</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="service-metrics-row">
+                <div><div class="metric-val">4.8x</div><div class="metric-lbl">Avg. Time On Page</div></div>
+                <div><div class="metric-val">88%</div><div class="metric-lbl">Brand Recall Lift</div></div>
+              </div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire About Content →</a>
+            </div>
+          </article>
+
+          <!-- 05: Paid Advertising -->
+          <article class="service-detailed-card">
+            <div>
+              <div class="service-index-badge">05 — Performance & Scale</div>
+              <h2 class="service-title">Paid Advertising</h2>
+              <p class="service-desc">Precision media buying across Meta, Google Search, YouTube, and LinkedIn. We test aggressively, allocate ruthlessly, and maximize net profitability.</p>
+
+              <ul class="deliverables-list">
+                <li>Omnichannel Full-Funnel Paid Acquisition</li>
+                <li>Creative Testing Matrices & Iterative Sprints</li>
+                <li>First-Party CAPI & Server-Side Tracking</li>
+                <li>High-ROAS Retargeting & LTV Scaling</li>
+                <li>Account-Based Marketing (ABM)</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="service-metrics-row">
+                <div><div class="metric-val">5.2x</div><div class="metric-lbl">Blended Paid ROAS</div></div>
+                <div><div class="metric-val">₹18M+</div><div class="metric-lbl">Client Revenue Scaled</div></div>
+              </div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire About Paid Ads →</a>
+            </div>
+          </article>
+
+          <!-- 06: Branding & Strategy -->
+          <article class="service-detailed-card">
+            <div>
+              <div class="service-index-badge">06 — Foundational Identity</div>
+              <h2 class="service-title">Branding & Strategy</h2>
+              <p class="service-desc">Before you scale, you must be distinct. We define your market positioning, brand archetypes, and sensory visual systems that withstand the test of time.</p>
+
+              <ul class="deliverables-list">
+                <li>Strategic Brand Positioning & Value Matrix</li>
+                <li>Sensory Identity Systems (Logo, Typography, Palette)</li>
+                <li>Brand Guidelines & Voice/Tone Frameworks</li>
+                <li>Tactile Packaging & Print Art Direction</li>
+                <li>Internal Brand Launch Sprint</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="service-metrics-row">
+                <div><div class="metric-val">100%</div><div class="metric-lbl">Custom Identity Craft</div></div>
+                <div><div class="metric-val">4-Week</div><div class="metric-lbl">Sprint Execution</div></div>
+              </div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire About Branding →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-column">
+          <a href="index.html" style="display: inline-block;">
+            <img src="logo.png" alt="IKSY" class="footer-logo-img">
+          </a>
+          <div style="font-size: 0.65rem; color: rgba(252,249,242,0.6); text-transform: uppercase; margin-bottom: 1rem;">Innovative Knowledge, Strategy & Yield</div>
+          <p style="font-size: 0.88rem; color: rgba(252,249,242,0.7);">A luxury boutique creative studio fusing Indian architectural elegance with world-class digital performance.</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About IKSY</a></li>
+            <li><a href="services.html">What We Do</a></li>
+            <li><a href="pricing.html">Packages & Pricing</a></li>
+            <li><a href="portfolio.html">Selected Work</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="studio.html">The Studio</a></li>
+            <li><a href="insights.html">Editorial Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Social Media Marketing</a></li>
+            <li><a href="services.html">Search Engine Optimization</a></li>
+            <li><a href="services.html">Website Design & Dev</a></li>
+            <li><a href="services.html">Content Creation</a></li>
+            <li><a href="services.html">Paid Advertising</a></li>
+            <li><a href="services.html">Branding & Strategy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Direct Contact</div>
+          <div style="font-size: 0.88rem; line-height: 1.8;">
+            <div><a href="tel:+919079369668" style="color: inherit; text-decoration: none;">Direct Line: +91 90793 69668</a></div>
+            <div><a href="mailto:iksydigital@gmail.com" style="color: inherit; text-decoration: none;">Inquiries: iksydigital@gmail.com</a></div>
+            <div style="margin-top: 1rem;"><a href="contact.html" class="btn btn-gold" style="padding: 0.5rem 1rem; font-size: 0.75rem;">Request Growth Audit</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 IKSY. All Rights Reserved. Your Brand. Our Digital Vision.</div>
+        <div>Innovative Knowledge • Strategy & Yield</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919079369668?text=Hello%20IKSY%2C%20I%20would%20like%20to%20discuss%20a%20digital%20marketing%20project." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.477 2 12C2 13.89 2.525 15.657 3.438 17.174L2.052 21.758L6.772 20.407C8.243 21.42 10.052 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM8.5 7.5C8.2 7.5 7.8 7.6 7.6 8C7.4 8.4 6.8 9.4 6.8 10.7C6.8 12 7.8 13.3 8 13.5C8.2 13.7 9.8 16.3 12.4 17.3C14.6 18.1 15.1 17.9 15.6 17.8C16.1 17.7 17.2 17 17.4 16.2C17.6 15.4 17.6 14.7 17.5 14.6C17.4 14.5 17.2 14.4 16.7 14.1C16.2 13.8 13.8 12.6 13.5 12.5C13.2 12.4 13 12.4 12.8 12.7C12.6 13 12 13.7 11.8 13.9C11.6 14.1 11.4 14.1 11.1 13.9C10.8 13.7 9.8 13.4 8.6 12.3C7.7 11.5 7.1 10.5 6.9 10.2C6.7 9.9 6.9 9.7 7 9.6C7.1 9.5 7.3 9.3 7.4 9.1C7.5 8.9 7.6 8.8 7.7 8.6C7.8 8.4 7.7 8.2 7.6 8.1C7.5 8 8.8 7.5 8.5 7.5Z" fill="currentColor"/></svg>
+  </a>
+
+  <script>
+    const mobileToggleBtn = document.getElementById('mobileToggleBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const drawerBackdrop = document.getElementById('drawerBackdrop');
+
+    if (mobileToggleBtn && mobileDrawer && drawerBackdrop) {
+      mobileToggleBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('open');
+        drawerBackdrop.classList.toggle('active');
+      });
+      drawerBackdrop.addEventListener('click', () => {
+        mobileDrawer.classList.remove('open');
+        drawerBackdrop.classList.remove('active');
+      });
+    }
+  </script>
+</body>
+</html>
